@@ -1,0 +1,81 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_8ca3c9ef54f1",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T20:39:17.625806+00:00",
+  "updated_at": "2026-06-28T20:39:17.626835+00:00",
+  "description": "An early concept for Apple, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "perception_e526512fe7c5:shape"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "perception_e526512fe7c5:color"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth and slightly reflective.",
+      "confidence": 0.5249999999999999,
+      "evidence_refs": [
+        "perception_e526512fe7c5:surface"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "local_structure",
+      "value": "The top area may contain a stem or indentation.",
+      "confidence": 0.41250000000000003,
+      "evidence_refs": [
+        "perception_e526512fe7c5:local_structure"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "experience_9546b588164c"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "perception_e526512fe7c5:shape",
+    "perception_e526512fe7c5:color",
+    "perception_e526512fe7c5:surface",
+    "perception_e526512fe7c5:local_structure",
+    "experience_9546b588164c"
+  ],
+  "open_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ]
+}

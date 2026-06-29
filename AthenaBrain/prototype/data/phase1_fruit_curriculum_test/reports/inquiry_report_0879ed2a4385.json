@@ -1,0 +1,1390 @@
+{
+  "inquiry_report_id": "inquiry_report_0879ed2a4385",
+  "timestamp": "2026-06-29T00:16:53.530762+00:00",
+  "provider": "MockInquiryProvider",
+  "requested_steps": 10,
+  "completed_steps": 10,
+  "steps": [
+    {
+      "step": 1,
+      "question": {
+        "question_id": "curiosity_b166afdef0d4",
+        "concept": "FoodSafety",
+        "question": "FoodSafety 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_c579a13b92f7",
+          "concept": "VitaminC",
+          "question": "VitaminC 和一些已知 Nutrient 例子有相似特征（rel:supports）。VitaminC 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2ab50d7a6a81",
+          "concept": "Health",
+          "question": "Health 被 Nutrient 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_b166afdef0d4",
+          "concept": "FoodSafety",
+          "question": "FoodSafety 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ddeae497c382",
+          "concept": "Mineral",
+          "question": "Mineral is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_mechanism_unclear",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "question": {
+        "question_id": "curiosity_c579a13b92f7",
+        "concept": "VitaminC",
+        "question": "VitaminC 和一些已知 Nutrient 例子有相似特征（rel:supports）。VitaminC 会不会也是一种 Nutrient？",
+        "reason": "similarity_based_candidate_category",
+        "priority": 0.98,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "similarity_based_candidate_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "VitaminC is a nutrient, not a fruit. Many fruits contain VitaminC. VitaminC supports Immunity and helps maintain Health.",
+      "claim_count": 11,
+      "updated_concepts": [
+        "Fruit",
+        "Health",
+        "Immunity",
+        "Nutrient",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_b8c23721506c",
+          "concept": "Immunity",
+          "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:supports, rel:supports:Health）。Immunity 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c4f2c1fd2039",
+          "concept": "Health",
+          "question": "Health 被 Immunity, Nutrient, VitaminC 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_e6862757b377",
+          "concept": "Health",
+          "question": "Health 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_55be3f0f4556",
+          "concept": "Immunity",
+          "question": "Immunity 和 Health 之间的“supports”关系，在我已有知识里意味着什么？",
+          "reason": "relation_meaning_gap",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_meaning_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "question": {
+        "question_id": "curiosity_b8c23721506c",
+        "concept": "Immunity",
+        "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:supports, rel:supports:Health）。Immunity 会不会也是一种 Nutrient？",
+        "reason": "similarity_based_candidate_category",
+        "priority": 0.98,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "similarity_based_candidate_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_b8c23721506c",
+          "concept": "Immunity",
+          "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:supports, rel:supports:Health）。Immunity 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c4f2c1fd2039",
+          "concept": "Health",
+          "question": "Health 被 Immunity, Nutrient, VitaminC 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_e6862757b377",
+          "concept": "Health",
+          "question": "Health 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_55be3f0f4556",
+          "concept": "Immunity",
+          "question": "Immunity 和 Health 之间的“supports”关系，在我已有知识里意味着什么？",
+          "reason": "relation_meaning_gap",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_meaning_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "question": {
+        "question_id": "curiosity_c4f2c1fd2039",
+        "concept": "Health",
+        "question": "Health 被 Immunity, Nutrient, VitaminC 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "VitaminC is a nutrient, not a fruit. Many fruits contain VitaminC. VitaminC supports Immunity and helps maintain Health.",
+      "claim_count": 11,
+      "updated_concepts": [
+        "Fruit",
+        "Health",
+        "Immunity",
+        "Nutrient",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_c4f2c1fd2039",
+          "concept": "Health",
+          "question": "Health 被 Immunity, Nutrient, VitaminC 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_e6862757b377",
+          "concept": "Health",
+          "question": "Health 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ae7906a65aae",
+          "concept": "Immunity",
+          "question": "Immunity 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_55be3f0f4556",
+          "concept": "Immunity",
+          "question": "Immunity 和 Health 之间的“supports”关系，在我已有知识里意味着什么？",
+          "reason": "relation_meaning_gap",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_meaning_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "question": {
+        "question_id": "curiosity_e6862757b377",
+        "concept": "Health",
+        "question": "Health 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Health is not a fruit. Health is a condition of the body. Nutrient is related to Health. Digestion is related to Health. Immunity is related to Health. Energy is related to Health.",
+      "claim_count": 11,
+      "updated_concepts": [
+        "Digestion",
+        "Energy",
+        "Fruit",
+        "Health",
+        "Immunity",
+        "Nutrient"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_62f5361f5f6c",
+          "concept": "Energy",
+          "question": "Energy 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health）。Energy 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_225b83f99ad6",
+          "concept": "Immunity",
+          "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health, rel:supports）。Immunity 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c32e48a78098",
+          "concept": "Health",
+          "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_1a728a4ea2cc",
+          "concept": "Health",
+          "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_mechanism_unclear",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "question": {
+        "question_id": "curiosity_62f5361f5f6c",
+        "concept": "Energy",
+        "question": "Energy 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health）。Energy 会不会也是一种 Nutrient？",
+        "reason": "similarity_based_candidate_category",
+        "priority": 0.98,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "similarity_based_candidate_category",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_62f5361f5f6c",
+          "concept": "Energy",
+          "question": "Energy 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health）。Energy 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_225b83f99ad6",
+          "concept": "Immunity",
+          "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health, rel:supports）。Immunity 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c32e48a78098",
+          "concept": "Health",
+          "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_1a728a4ea2cc",
+          "concept": "Health",
+          "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_mechanism_unclear",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "question": {
+        "question_id": "curiosity_225b83f99ad6",
+        "concept": "Immunity",
+        "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health, rel:supports）。Immunity 会不会也是一种 Nutrient？",
+        "reason": "similarity_based_candidate_category",
+        "priority": 0.98,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "similarity_based_candidate_category",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_225b83f99ad6",
+          "concept": "Immunity",
+          "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health, rel:supports）。Immunity 会不会也是一种 Nutrient？",
+          "reason": "similarity_based_candidate_category",
+          "priority": 0.98,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "similarity_based_candidate_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c32e48a78098",
+          "concept": "Health",
+          "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_0c3963a6cf53",
+          "concept": "Health",
+          "question": "Health 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_862a5e1f3d3e",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "question": {
+        "question_id": "curiosity_c32e48a78098",
+        "concept": "Health",
+        "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.04
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Digestion is not a fruit. Digestion is a body process for handling food and nutrients. DietaryFiber supports Digestion. Digestion is related to Health.",
+      "claim_count": 8,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Digestion",
+        "Fruit",
+        "Health",
+        "Nutrient"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_c32e48a78098",
+          "concept": "Health",
+          "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_0c3963a6cf53",
+          "concept": "Health",
+          "question": "Health 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_a843f1b6fa5c",
+          "concept": "Mango",
+          "question": "Mango 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_862a5e1f3d3e",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "question": {
+        "question_id": "curiosity_0c3963a6cf53",
+        "concept": "Health",
+        "question": "Health 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_0c3963a6cf53",
+          "concept": "Health",
+          "question": "Health 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_a843f1b6fa5c",
+          "concept": "Mango",
+          "question": "Mango 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_1a728a4ea2cc",
+          "concept": "Health",
+          "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_mechanism_unclear",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_862a5e1f3d3e",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "question": {
+        "question_id": "curiosity_a843f1b6fa5c",
+        "concept": "Mango",
+        "question": "Mango 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_a843f1b6fa5c",
+          "concept": "Mango",
+          "question": "Mango 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_dc268448c759",
+          "concept": "Mango",
+          "question": "Mango 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_1a728a4ea2cc",
+          "concept": "Health",
+          "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear",
+          "priority": 0.86,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_mechanism_unclear",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_862a5e1f3d3e",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    }
+  ],
+  "final_top_questions": [
+    {
+      "question_id": "curiosity_dc268448c759",
+      "concept": "Mango",
+      "question": "Mango 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_dc8b1bd37282",
+      "concept": "Plastic",
+      "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1a728a4ea2cc",
+      "concept": "Health",
+      "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "priority": 0.86,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "relation_mechanism_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_862a5e1f3d3e",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ec2dc705fad8",
+      "concept": "FoodSafety",
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_74b40fee1ddf",
+      "concept": "Tangerine",
+      "question": "Tangerine 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ]
+}

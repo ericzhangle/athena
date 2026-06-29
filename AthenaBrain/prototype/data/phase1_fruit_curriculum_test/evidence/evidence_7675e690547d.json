@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Mineral is a nutrient",
+    "subject": "Mineral",
+    "predicate": "is-a",
+    "object": "Nutrient"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_1b9a6015c87c",
+    "experience_f5446c38edfd"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_7675e690547d",
+  "timestamp": "2026-06-29T00:18:03.934761+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Vitamin",
+  "display_name": null,
+  "concept_id": "concept_c5b63a542b41",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.795352+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Vitamin.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Nutrient",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_68e2b5e8e6e3",
+        "evidence_884511982556",
+        "evidence_ffe490af93dd",
+        "evidence_8e7d5443ddc7",
+        "evidence_4376ef55481a",
+        "evidence_35cd0f4000a4",
+        "evidence_2896a442c99f",
+        "evidence_285bd94c2c87",
+        "evidence_9f001c725d52"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_68e2b5e8e6e3",
+    "evidence_884511982556",
+    "evidence_ffe490af93dd",
+    "evidence_8e7d5443ddc7",
+    "evidence_4376ef55481a",
+    "evidence_35cd0f4000a4",
+    "evidence_2896a442c99f",
+    "evidence_285bd94c2c87",
+    "evidence_9f001c725d52"
+  ],
+  "open_questions": [
+    {
+      "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Vitamin 被 Apple 通过“contains”联系起来。这说明 Vitamin 和 Apple 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_9ecd12dc156d"
+      ]
+    },
+    {
+      "question": "Vitamin 被 Fruit 通过“contains”联系起来。这说明 Vitamin 和 Fruit 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_91d9f82f8b65"
+      ]
+    },
+    {
+      "question": "Vitamin 被 Grape 通过“contains”联系起来。这说明 Vitamin 和 Grape 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "answer_evidence_refs": [
+        "experience_99b0c74aaa39"
+      ]
+    },
+    {
+      "question": "Vitamin 被 Orange 通过“contains”联系起来。这说明 Vitamin 和 Orange 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁。橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用。",
+      "answer_evidence_refs": [
+        "experience_3980d5de4710"
+      ]
+    },
+    {
+      "question": "Vitamin 被 Apple, Orange, Fruit, Grape 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "answer_evidence_refs": [
+        "experience_6354501c8907"
+      ]
+    },
+    {
+      "question": "Vitamin is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Nutrient",
+      "relation_evidence_refs": [
+        "evidence_68e2b5e8e6e3",
+        "evidence_884511982556",
+        "evidence_ffe490af93dd",
+        "evidence_8e7d5443ddc7",
+        "evidence_4376ef55481a"
+      ],
+      "inferred_answer": "Vitamin is-a Nutrient 已由关系证据回答。"
+    },
+    {
+      "question": "Nutrient 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Vitamin 被 Apple, Orange, Mango, Fruit 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Orange is a fruit. Orange belongs to the citrus group. Orange can usually be eaten directly or made into juice. Orange contains VitaminC.",
+      "answer_evidence_refs": [
+        "experience_34cebe4ee84c"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

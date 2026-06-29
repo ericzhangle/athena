@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+    "subject": "Orange",
+    "predicate": "taste",
+    "object": "Orange has a described taste in the text."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_e1fefdd313ac",
+    "experience_3980d5de4710"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_5c34f1135c3d",
+  "timestamp": "2026-06-29T00:08:10.038562+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

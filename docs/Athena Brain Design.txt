@@ -1,0 +1,300 @@
+Athena Brain
+Cognitive Foundation and Phase-1 Design Decisions
+Version 0.1
+
+Purpose
+This document records the current design decisions regarding Athena Brain's cognitive architecture.
+It is not an implementation document.
+Its purpose is to define how Athena should perceive, learn and gradually build cognition.
+
+Design Principle
+Athena Brain is NOT another LLM.
+LLM is only one component.
+Athena's intelligence should not come from pretraining.
+Instead, intelligence should emerge from continuous interaction with the world.
+Therefore Phase-1 focuses on one goal:
+Can an artificial intelligence gradually build concepts from experiences?
+
+Question 1
+Should Athena have its own vision model?
+Current answer:
+No.
+But Athena should own its own cognition.
+Vision and cognition are two completely different problems.
+
+Human babies are not born knowing what a dog is.
+However, they are born with a functioning visual system.
+Their eyes detect edges, colors and motion.
+Their brain learns meaning.
+Therefore Athena should follow the same philosophy.
+
+Three-layer Vision Architecture
+World
+¡ý
+Vision Interface
+¡ý
+Raw Observation
+¡ý
+Athena Cognition
+¡ý
+Experience
+¡ý
+Concept
+¡ý
+Reasoning
+The Vision Interface is NOT Athena's brain.
+It is only Athena's eyes.
+
+Phase-1 Vision Strategy
+Use mature open-source vision models.
+Possible choices:
+* SigLIP
+* CLIP
+* Qwen-VL
+* LLaVA
+These models should only generate observations.
+They should NOT directly become Athena's knowledge.
+Example
+Input image
+¡ý
+Vision Model
+¡ý
+Outputs
+Red object
+Round
+Green stem
+Smooth surface
+Approximately 12cm
+Confidence 0.92
+Athena should NOT immediately conclude:
+"This is an apple."
+Instead Athena asks:
+"What is this?"
+The user replies:
+"This is an apple."
+Now a new Experience is created.
+
+Future Vision
+Phase-2
+Athena begins asking visual questions.
+Example
+Vision says
+63% Dog
+Athena asks
+"What makes this a dog?"
+"What features distinguish dogs from wolves?"
+This begins self-generated visual reasoning.
+
+Phase-3
+Athena may eventually develop specialized visual modules.
+Animal Vision
+Plant Vision
+Vehicle Vision
+Medical Vision
+These are future expert modules.
+They are NOT required for BabyBrain.
+
+Question 2
+What does "Don't memorize Wikipedia" actually mean?
+The phrase
+"Don't memorize Wikipedia"
+can be misunderstood.
+The real principle should be:
+Knowledge should originate from evidence.
+NOT from copied encyclopedia definitions.
+
+Bad Example
+Vision detects Apple.
+Athena immediately imports:
+Apple belongs to Rosaceae.
+Originated in Central Asia.
+Rich in Vitamin C.
+...
+This is merely copying external knowledge.
+Athena has not actually learned anything.
+
+Correct Example
+Day 1
+User uploads picture.
+User says
+"This is an apple."
+Athena stores
+Experience.
+
+Day 2
+User says
+"Apples can be eaten."
+Athena updates Apple.
+
+Day 3
+User says
+"Apple is a fruit."
+Athena creates
+Apple
+¡ý
+Fruit
+
+Day 10
+Athena has observed many apples.
+Sleep Engine extracts common properties.
+Apple becomes a mature Concept.
+This is concept growth.
+
+Knowledge Sources
+Instead of classifying information as
+Wikipedia
+Google
+Books
+Parents
+Teachers
+Everything should become
+Evidence.
+Every Concept is supported by Evidence.
+
+Evidence Priority
+Priority 1
+Direct Experience
+Highest confidence
+
+Priority 2
+Repeated Observation
+Confidence increases over time.
+
+Priority 3
+Verified External Knowledge
+May accelerate learning.
+Must never automatically become truth.
+
+Priority 4
+Generated Hypothesis
+Lowest confidence.
+Needs verification.
+
+Confidence Growth
+Example
+Experience
+"This is an apple."
+Confidence
+0.45
+
+Second confirmation
+Confidence
+0.60
+
+Observed many apples
+Confidence
+0.85
+
+Repeated successful recognition
+Confidence
+0.98
+Concepts mature gradually.
+Nothing becomes absolute truth immediately.
+
+New Design Principle
+Athena does NOT learn answers.
+Athena learns evidence.
+Knowledge emerges from accumulated evidence.
+This should become one of the fundamental principles of Athena Brain.
+
+Raw Observation
+One improvement to the previous architecture.
+Separate perception from experience.
+Raw Observation
+¡ý
+Experience
+¡ý
+Concept
+
+Raw Observation
+Contains only sensory information.
+Example
+Red
+Round
+Green stem
+Smooth surface
+Reflective surface
+No semantic meaning.
+
+Experience
+Adds context.
+Example
+Today
+User pointed to this object.
+User called it
+Apple.
+This is one Experience.
+
+Concept
+Created only after many Experiences.
+Apple
+Fruit
+Food
+Plant
+These Concepts emerge naturally.
+
+Why this separation matters
+Without Raw Observation
+Vision models directly inject concepts.
+Athena becomes a database.
+
+With Raw Observation
+Vision provides perception.
+Athena provides understanding.
+The architecture becomes much closer to human cognition.
+
+Proposed Cognitive Pipeline
+Image
+¡ý
+Vision Interface
+¡ý
+Raw Observation
+¡ý
+User Interaction
+¡ý
+Experience
+¡ý
+Working Memory
+¡ý
+Sleep Engine
+¡ý
+Concept Extraction
+¡ý
+Relation Generation
+¡ý
+Long-term Memory
+¡ý
+Reasoning
+¡ý
+Planning
+¡ý
+New Experiences
+This loop never ends.
+
+Phase-1 Conclusion
+BabyBrain should NOT attempt to build a new vision model.
+BabyBrain should verify one hypothesis:
+Can concepts gradually emerge from evidence?
+Everything in Phase-1 should serve this goal.
+Nothing else should distract the architecture.
+
+Important Principle
+The objective of Athena Brain is not to build a larger neural network.
+The objective is to discover whether continuous cognition can emerge from:
+Observation
+¡ý
+Experience
+¡ý
+Memory
+¡ý
+Sleep
+¡ý
+Concept
+¡ý
+Reasoning
+¡ý
+Curiosity
+¡ý
+Continuous Growth
+If this hypothesis is validated, Athena Brain becomes more than an AI application.
+It becomes a new cognitive architecture.

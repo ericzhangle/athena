@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "水果是植物结出的果实，很多水果可以直接食用",
+    "subject": "Fruit",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_c59b32716fe4",
+    "experience_df1fdea651f5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_d2b6b37bd5b6",
+  "timestamp": "2026-06-28T22:42:25.792844+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

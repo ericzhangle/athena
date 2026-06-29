@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "苹果是一种水果。",
+    "subject": "Apple",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_7dee442fd356"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_6e93c4bb2473",
+  "timestamp": "2026-06-28T21:32:28.165155+00:00",
+  "sample_id": "curriculum_apple_001",
+  "validation_events": []
+}

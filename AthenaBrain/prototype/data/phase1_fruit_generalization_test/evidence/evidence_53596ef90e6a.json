@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Peach observed color: The observed object has a pink or orange surface.",
+    "subject": "Peach",
+    "predicate": "observed_color",
+    "object": "The observed object has a pink or orange surface."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_324533452643",
+    "sample:fruit_test_peach_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.74,
+  "evidence_id": "evidence_53596ef90e6a",
+  "timestamp": "2026-06-28T21:25:22.260168+00:00",
+  "sample_id": "fruit_test_peach_001",
+  "validation_events": []
+}

@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "香蕉是一种水果。",
+    "subject": "Banana",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_44e52cbf7ed1"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_c516c54af528",
+  "timestamp": "2026-06-28T21:32:28.442196+00:00",
+  "sample_id": "curriculum_banana_001",
+  "validation_events": []
+}

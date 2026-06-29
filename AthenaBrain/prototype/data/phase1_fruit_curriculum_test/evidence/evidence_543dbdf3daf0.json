@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Digestion is a body process for handling food and nutrients",
+    "subject": "Nutrient",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_9703f342c424",
+    "experience_3abdc3911232"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_543dbdf3daf0",
+  "timestamp": "2026-06-29T00:14:26.070461+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

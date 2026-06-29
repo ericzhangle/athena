@@ -1,0 +1,41 @@
+{
+  "input_ref": "../experiments/phase1_apple_test/inputs/apple_red_001.jpg",
+  "features": [
+    {
+      "category": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.82,
+      "evidence": "image observation"
+    },
+    {
+      "category": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.78,
+      "evidence": "image observation"
+    },
+    {
+      "category": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.7,
+      "evidence": "image observation"
+    },
+    {
+      "category": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.75,
+      "evidence": "image observation"
+    }
+  ],
+  "sample_id": "fruit_test_apple_001",
+  "source_model": "manual_or_mock_interface",
+  "perception_id": "perception_badb4964f364",
+  "timestamp": "2026-06-28T21:25:22.175570+00:00",
+  "unverified_hypotheses": [
+    {
+      "hypothesis": "Apple",
+      "source": "user_statement_or_vision_label",
+      "confidence": 0.3,
+      "status": "unverified"
+    }
+  ]
+}

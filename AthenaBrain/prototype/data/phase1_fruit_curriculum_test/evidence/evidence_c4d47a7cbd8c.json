@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "user answered Athena's question: Pear 是不是都能吃？有没有不能吃或不应该吃的情况？ -> pear 是可以吃的，除了Plastic 的水果之外，一般的水果都是可以吃的。",
+    "subject": "Pear",
+    "predicate": "curiosity_answer:curiosity_f45e2991f931",
+    "object": "pear 是可以吃的，除了plastic 的水果之外，一般的水果都是可以吃的。"
+  },
+  "source_type": "user_curiosity_answer",
+  "source_identity": "user",
+  "refs": [
+    "curiosity_f45e2991f931"
+  ],
+  "status": "provisional",
+  "confidence": 0.65,
+  "evidence_id": "evidence_c4d47a7cbd8c",
+  "timestamp": "2026-06-28T22:21:02.069407+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

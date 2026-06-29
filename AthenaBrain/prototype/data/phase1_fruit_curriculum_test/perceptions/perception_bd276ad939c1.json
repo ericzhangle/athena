@@ -1,0 +1,47 @@
+{
+  "input_ref": "../experiments/phase1_apple_test/inputs/plastic_apple_001.jpg",
+  "features": [
+    {
+      "category": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.8,
+      "evidence": "image observation"
+    },
+    {
+      "category": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.78,
+      "evidence": "image observation"
+    },
+    {
+      "category": "surface",
+      "value": "The observed object appears shiny and artificial.",
+      "confidence": 0.72,
+      "evidence": "image observation"
+    },
+    {
+      "category": "use",
+      "value": "The user says it should not be eaten.",
+      "confidence": 0.8,
+      "evidence": "image observation"
+    },
+    {
+      "category": "origin",
+      "value": "The user says it is made of plastic.",
+      "confidence": 0.82,
+      "evidence": "image observation"
+    }
+  ],
+  "sample_id": "curriculum_plastic_apple_001",
+  "source_model": "manual_or_mock_interface",
+  "perception_id": "perception_bd276ad939c1",
+  "timestamp": "2026-06-28T21:32:28.644124+00:00",
+  "unverified_hypotheses": [
+    {
+      "hypothesis": "PlasticApple",
+      "source": "user_statement_or_vision_label",
+      "confidence": 0.3,
+      "status": "unverified"
+    }
+  ]
+}

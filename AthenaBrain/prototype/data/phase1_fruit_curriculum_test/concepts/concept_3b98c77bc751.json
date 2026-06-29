@@ -1,0 +1,132 @@
+{
+  "name": "Pear",
+  "display_name": null,
+  "concept_id": "concept_3b98c77bc751",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.342766+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Pear, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object has a pear-like shape.",
+      "confidence": 0.5700000000000001,
+      "evidence_refs": [
+        "evidence_07aec2d35511"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a green or yellow surface.",
+      "confidence": 0.54,
+      "evidence_refs": [
+        "evidence_37813bbaedf3"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_85f2fa98dbf4"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_f44c2387457b"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_f81b99262278"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "can usually be eaten: pear 是可以吃的，除了Plastic 的水果之外，一般的水果都是可以吃的。.",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_c4d47a7cbd8c"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "Inferred from rule rule_e703e8ae6e75: Pear is a Fruit, and Fruit is usually edible unless it matches Plastic, PlasticFruit.",
+      "confidence": 0.49299999999999994,
+      "evidence_refs": [
+        "rule_e703e8ae6e75"
+      ],
+      "scope": "inferred",
+      "generalization_status": "inferred_from_rule"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_da64896f2207"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_07aec2d35511",
+    "evidence_37813bbaedf3",
+    "evidence_85f2fa98dbf4",
+    "evidence_f44c2387457b",
+    "evidence_f81b99262278",
+    "evidence_da64896f2207",
+    "evidence_c4d47a7cbd8c",
+    "rule_e703e8ae6e75"
+  ],
+  "open_questions": [
+    {
+      "question": "Pear 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_da64896f2207"
+      ],
+      "inferred_answer": "Pear is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Pear 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_curiosity_question",
+      "status": "answered",
+      "last_answer": "pear 是可以吃的，除了Plastic 的水果之外，一般的水果都是可以吃的。",
+      "answer_evidence_refs": [
+        "evidence_c4d47a7cbd8c"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

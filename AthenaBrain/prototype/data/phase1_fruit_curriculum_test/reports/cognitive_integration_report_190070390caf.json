@@ -1,0 +1,119 @@
+{
+  "integration_report_id": "cognitive_integration_report_190070390caf",
+  "timestamp": "2026-06-29T00:08:09.041446+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Orange",
+        "Tomato",
+        "Peach",
+        "Grape"
+      ],
+      "counterexamples": [
+        "PlasticApple",
+        "Allergy"
+      ],
+      "example_count": 7,
+      "counterexample_count": 2
+    }
+  ],
+  "question_resolution": [
+    {
+      "concept": "Banana",
+      "question": "Banana contains Potassium 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Potassium"
+    },
+    {
+      "concept": "PlasticApple",
+      "question": "PlasticApple made-of Plastic 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "made-of",
+      "target": "Plastic"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "DietaryFiber"
+    },
+    {
+      "concept": "Orange",
+      "question": "Orange contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber supports Digestion 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "supports",
+      "target": "Digestion"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "DietaryFiber"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains Mineral 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Mineral"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit may_trigger Allergy 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "may_trigger",
+      "target": "Allergy"
+    },
+    {
+      "concept": "VitaminC",
+      "question": "VitaminC supports Immunity 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "supports",
+      "target": "Immunity"
+    },
+    {
+      "concept": "Grape",
+      "question": "Grape contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    }
+  ],
+  "boundary_questions": []
+}

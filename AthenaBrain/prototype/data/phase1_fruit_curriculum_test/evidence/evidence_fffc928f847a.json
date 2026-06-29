@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒",
+    "subject": "Grape",
+    "predicate": "edibility",
+    "object": "Grape can be eaten according to the text."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_4757fb51a2e9",
+    "experience_99b0c74aaa39"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_fffc928f847a",
+  "timestamp": "2026-06-29T00:08:09.838231+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

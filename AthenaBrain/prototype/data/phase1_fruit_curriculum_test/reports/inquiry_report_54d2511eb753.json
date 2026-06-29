@@ -1,0 +1,1368 @@
+{
+  "inquiry_report_id": "inquiry_report_54d2511eb753",
+  "timestamp": "2026-06-29T00:18:14.038122+00:00",
+  "provider": "MockInquiryProvider",
+  "requested_steps": 10,
+  "completed_steps": 10,
+  "steps": [
+    {
+      "step": 1,
+      "question": {
+        "question_id": "curiosity_dc268448c759",
+        "concept": "Mango",
+        "question": "Mango 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Mango is a fruit. Mango can usually be eaten directly. Mango contains Vitamin and DietaryFiber. Mango may trigger Allergy for some people.",
+      "claim_count": 11,
+      "updated_concepts": [
+        "Allergy",
+        "DietaryFiber",
+        "Fruit",
+        "Mango",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_8fa6b598ea52",
+          "concept": "Vitamin",
+          "question": "Vitamin 被 Apple, Orange, Mango, Fruit 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.92,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_dc8b1bd37282",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_d17f98ed8c78",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "question": {
+        "question_id": "curiosity_8fa6b598ea52",
+        "concept": "Vitamin",
+        "question": "Vitamin 被 Apple, Orange, Mango, Fruit 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.92,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.04
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Orange is a fruit. Orange belongs to the citrus group. Orange can usually be eaten directly or made into juice. Orange contains VitaminC.",
+      "claim_count": 5,
+      "updated_concepts": [
+        "Fruit",
+        "Orange",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_8fa6b598ea52",
+          "concept": "Vitamin",
+          "question": "Vitamin 被 Apple, Orange, Mango, Fruit 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.92,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_dc8b1bd37282",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_d17f98ed8c78",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "question": {
+        "question_id": "curiosity_dc8b1bd37282",
+        "concept": "Plastic",
+        "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "claim_count": 2,
+      "updated_concepts": [
+        "Fruit",
+        "Plastic"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_dc8b1bd37282",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_d17f98ed8c78",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "question": {
+        "question_id": "curiosity_d17f98ed8c78",
+        "concept": "Plastic",
+        "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_d17f98ed8c78",
+          "concept": "Plastic",
+          "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_e22279336f8c",
+          "concept": "Tangerine",
+          "question": "Tangerine 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "question": {
+        "question_id": "curiosity_e22279336f8c",
+        "concept": "Tangerine",
+        "question": "Tangerine 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_e22279336f8c",
+          "concept": "Tangerine",
+          "question": "Tangerine 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_514750c2edeb",
+          "concept": "Tangerine",
+          "question": "Tangerine 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "question": {
+        "question_id": "curiosity_514750c2edeb",
+        "concept": "Tangerine",
+        "question": "Tangerine 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_514750c2edeb",
+          "concept": "Tangerine",
+          "question": "Tangerine 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_3e5025373d39",
+          "concept": "Water",
+          "question": "Water 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "question": {
+        "question_id": "curiosity_3e5025373d39",
+        "concept": "Water",
+        "question": "Water 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_3e5025373d39",
+          "concept": "Water",
+          "question": "Water 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_677223d45c05",
+          "concept": "Water",
+          "question": "Water 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "question": {
+        "question_id": "curiosity_677223d45c05",
+        "concept": "Water",
+        "question": "Water 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_677223d45c05",
+          "concept": "Water",
+          "question": "Water 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "question": {
+        "question_id": "curiosity_0b01d2ef9614",
+        "concept": "Plastic",
+        "question": "Plastic 是什么材料？它有哪些特性？",
+        "reason": "material_concept_from_curiosity_answer",
+        "priority": 0.84,
+        "domain": "composition",
+        "status": "open",
+        "score_factors": {
+          "base": "material_concept_from_curiosity_answer",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "claim_count": 2,
+      "updated_concepts": [
+        "Fruit",
+        "Plastic"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "question": {
+        "question_id": "curiosity_3f2e04781a0d",
+        "concept": "Plastic",
+        "question": "Plastic 是由什么构成的？它有哪些材料或物理特性？",
+        "reason": "composition_gap",
+        "priority": 0.98,
+        "domain": "composition",
+        "status": "open",
+        "score_factors": {
+          "base": "composition_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.04
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "claim_count": 2,
+      "updated_concepts": [
+        "Fruit",
+        "Plastic"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_3f2e04781a0d",
+          "concept": "Plastic",
+          "question": "Plastic 是由什么构成的？它有哪些材料或物理特性？",
+          "reason": "composition_gap",
+          "priority": 0.98,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "composition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "final_top_questions": [
+    {
+      "question_id": "curiosity_713ebc2b6cd9",
+      "concept": "Allergy",
+      "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_da587c3b2bb4",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.8,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.2
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7a8ce8177fd1",
+      "concept": "Allergy",
+      "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.76,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8af299b37a5a",
+      "concept": "Fruit",
+      "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.76,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ec2dc705fad8",
+      "concept": "FoodSafety",
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_3682b38b5921",
+      "concept": "Apple",
+      "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.66,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_088b2c954edb",
+      "concept": "Grape",
+      "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.66,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    }
+  ]
+}

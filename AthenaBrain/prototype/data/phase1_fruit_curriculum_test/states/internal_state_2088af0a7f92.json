@@ -1,0 +1,68 @@
+{
+  "attention_focus": [
+    {
+      "target": "PlasticApple",
+      "reason": "new_concept_introduced_by_user",
+      "strength": 0.85
+    },
+    {
+      "target": "perceptual_features_for_PlasticApple",
+      "reason": "new_perception_may_support_active_concept",
+      "strength": 0.9
+    }
+  ],
+  "pending_questions": [
+    {
+      "question_id": "question_ca77fe8e0b89",
+      "question": "PlasticApple 是什么？你能给我一个具体例子吗？",
+      "reason": "new_concept_needs_direct_evidence",
+      "priority": 0.85,
+      "status": "open"
+    },
+    {
+      "question_id": "question_045a2ee90230",
+      "question": "Fruit 是什么意思？它和刚才的新概念是什么关系？",
+      "reason": "relation_target_concept_is_not_mature",
+      "priority": 0.8,
+      "status": "open"
+    },
+    {
+      "question_id": "question_6270d64a6445",
+      "question": "这次观察到的特征是否真的属于 PlasticApple，还是只是这个例子的特征？",
+      "reason": "distinguish_instance_features_from_general_concept",
+      "priority": 0.75,
+      "status": "open"
+    }
+  ],
+  "active_concepts": [
+    {
+      "name": "PlasticApple",
+      "status": "forming",
+      "confidence": 0.25,
+      "evidence_refs": []
+    }
+  ],
+  "conflict_set": [],
+  "curiosity_queue": [
+    {
+      "topic": "Fruit",
+      "reason": "relation_target_concept_is_not_mature",
+      "priority": 0.8
+    },
+    {
+      "topic": "visual_generalization",
+      "reason": "5 perceptual features are available but not generalized",
+      "priority": 0.7
+    }
+  ],
+  "identity_focus": [
+    "learn_from_evidence",
+    "avoid_encyclopedia_copying",
+    "ask_when_uncertain"
+  ],
+  "sleep_status": {
+    "state": "idle"
+  },
+  "state_id": "internal_state_2088af0a7f92",
+  "timestamp": "2026-06-28T21:32:28.643049+00:00"
+}

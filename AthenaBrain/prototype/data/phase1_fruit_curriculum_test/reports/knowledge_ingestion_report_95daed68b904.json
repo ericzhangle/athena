@@ -1,0 +1,431 @@
+{
+  "report_id": "knowledge_ingestion_report_95daed68b904",
+  "text_ref": "knowledge_text_9201b8a5a3fe",
+  "experience_id": "experience_c1da8e14a9d4",
+  "claim_count": 11,
+  "evidence_count": 11,
+  "updated_concepts": [
+    "Digestion",
+    "Energy",
+    "Fruit",
+    "Health",
+    "Immunity",
+    "Nutrient"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_62f5361f5f6c",
+      "concept": "Energy",
+      "question": "Energy 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health）。Energy 会不会也是一种 Nutrient？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_225b83f99ad6",
+      "concept": "Immunity",
+      "question": "Immunity 和一些已知 Nutrient 例子有相似特征（rel:related-to, rel:related-to:Health, rel:supports）。Immunity 会不会也是一种 Nutrient？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_c32e48a78098",
+      "concept": "Health",
+      "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_1a728a4ea2cc",
+      "concept": "Health",
+      "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "priority": 0.86,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "relation_mechanism_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.8,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.2
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_8203ad3879a8",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_8203ad3879a8",
+    "timestamp": "2026-06-29T00:16:36.494767+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Nutrient",
+        "examples": [
+          "Mineral",
+          "Digestion",
+          "Vitamin",
+          "DietaryFiber",
+          "Potassium",
+          "VitaminC"
+        ],
+        "counterexamples": [],
+        "example_count": 6,
+        "counterexample_count": 0
+      },
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Banana",
+          "Pear",
+          "Apple",
+          "Orange",
+          "Tomato",
+          "Peach",
+          "Grape"
+        ],
+        "counterexamples": [
+          "PlasticApple",
+          "Nutrient",
+          "Allergy",
+          "Health",
+          "Energy",
+          "Digestion",
+          "VitaminC"
+        ],
+        "example_count": 7,
+        "counterexample_count": 7
+      }
+    ],
+    "question_resolution": [
+      {
+        "concept": "Immunity",
+        "question": "Immunity related-to Health 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "related-to",
+        "target": "Health"
+      },
+      {
+        "concept": "Nutrient",
+        "question": "Nutrient related-to Health 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "related-to",
+        "target": "Health"
+      },
+      {
+        "concept": "Energy",
+        "question": "Energy related-to Health 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "related-to",
+        "target": "Health"
+      }
+    ],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Health",
+      "predicate": "is-not-a",
+      "object": "Fruit",
+      "relation_type": "is-not-a",
+      "target": "Fruit",
+      "statement": "Health is not a fruit",
+      "questions": [
+        {
+          "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Fruit 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Health",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Health is not a fruit",
+      "questions": [
+        {
+          "question": "Health 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Health is not a fruit",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Nutrient",
+      "predicate": "related-to",
+      "object": "Health",
+      "relation_type": "related-to",
+      "target": "Health",
+      "statement": "Nutrient is related to Health",
+      "questions": [
+        {
+          "question": "Nutrient related-to Health 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Health 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Nutrient",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Nutrient is related to Health",
+      "questions": [
+        {
+          "question": "Nutrient 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Digestion",
+      "predicate": "related-to",
+      "object": "Health",
+      "relation_type": "related-to",
+      "target": "Health",
+      "statement": "Digestion is related to Health",
+      "questions": [
+        {
+          "question": "Digestion related-to Health 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Health 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Digestion",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Digestion is related to Health",
+      "questions": [
+        {
+          "question": "Digestion 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Immunity",
+      "predicate": "related-to",
+      "object": "Health",
+      "relation_type": "related-to",
+      "target": "Health",
+      "statement": "Immunity is related to Health",
+      "questions": [
+        {
+          "question": "Immunity related-to Health 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Health 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Immunity",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Immunity is related to Health",
+      "questions": [
+        {
+          "question": "Immunity 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Energy",
+      "predicate": "related-to",
+      "object": "Health",
+      "relation_type": "related-to",
+      "target": "Health",
+      "statement": "Energy is related to Health",
+      "questions": [
+        {
+          "question": "Energy related-to Health 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Health 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Energy",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Energy is related to Health",
+      "questions": [
+        {
+          "question": "Energy 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

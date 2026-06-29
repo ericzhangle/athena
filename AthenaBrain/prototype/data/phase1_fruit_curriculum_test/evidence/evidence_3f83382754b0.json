@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "PlasticApple observed origin: The user says it is made of plastic.",
+    "subject": "PlasticApple",
+    "predicate": "observed_origin",
+    "object": "The user says it is made of plastic."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_bd276ad939c1",
+    "sample:curriculum_plastic_apple_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.8,
+  "evidence_id": "evidence_3f83382754b0",
+  "timestamp": "2026-06-28T21:32:28.651752+00:00",
+  "sample_id": "curriculum_plastic_apple_001",
+  "validation_events": []
+}

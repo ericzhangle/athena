@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Banana observed shape: The observed object is long and curved.",
+    "subject": "Banana",
+    "predicate": "observed_shape",
+    "object": "The observed object is long and curved."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_e42bc4616dd7",
+    "sample:curriculum_banana_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.8,
+  "evidence_id": "evidence_72d553b04f7f",
+  "timestamp": "2026-06-28T21:32:28.434427+00:00",
+  "sample_id": "curriculum_banana_001",
+  "validation_events": []
+}

@@ -1,0 +1,152 @@
+{
+  "integration_report_id": "cognitive_integration_report_1c68fe4d88a2",
+  "timestamp": "2026-06-29T00:17:54.903446+00:00",
+  "trigger": "manual_cleanup_after_english_pivot",
+  "membership": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Orange",
+        "Tomato",
+        "Peach",
+        "Grape"
+      ],
+      "counterexamples": [
+        "PlasticApple",
+        "Nutrient",
+        "Allergy",
+        "Health",
+        "Energy",
+        "Digestion",
+        "VitaminC"
+      ],
+      "example_count": 7,
+      "counterexample_count": 7
+    },
+    {
+      "parent": "Nutrient",
+      "examples": [
+        "Mineral",
+        "Digestion",
+        "Vitamin",
+        "DietaryFiber",
+        "Potassium",
+        "VitaminC"
+      ],
+      "counterexamples": [],
+      "example_count": 6,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [
+    {
+      "concept": "PlasticApple",
+      "question": "PlasticApple is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Nutrient",
+      "question": "Nutrient is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Orange",
+      "question": "Orange is-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Allergy",
+      "question": "Allergy is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Health",
+      "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Energy",
+      "question": "Energy is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Mineral",
+      "question": "Mineral is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "Digestion",
+      "question": "Digestion is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Digestion",
+      "question": "Digestion is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "Vitamin",
+      "question": "Vitamin is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "Potassium",
+      "question": "Potassium is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "VitaminC",
+      "question": "VitaminC is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Nutrient"
+    },
+    {
+      "concept": "VitaminC",
+      "question": "VitaminC is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Grape",
+      "question": "Grape is-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    }
+  ],
+  "boundary_questions": []
+}

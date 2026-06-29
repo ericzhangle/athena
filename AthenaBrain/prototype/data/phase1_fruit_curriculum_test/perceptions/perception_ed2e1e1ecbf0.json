@@ -1,0 +1,47 @@
+{
+  "input_ref": "../experiments/phase1_apple_test/inputs/peach_001.jpg",
+  "features": [
+    {
+      "category": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.78,
+      "evidence": "image observation"
+    },
+    {
+      "category": "color",
+      "value": "The observed object has a pink or orange surface.",
+      "confidence": 0.74,
+      "evidence": "image observation"
+    },
+    {
+      "category": "surface",
+      "value": "The observed object may have a fuzzy surface.",
+      "confidence": 0.62,
+      "evidence": "image observation"
+    },
+    {
+      "category": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.75,
+      "evidence": "image observation"
+    },
+    {
+      "category": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.68,
+      "evidence": "image observation"
+    }
+  ],
+  "sample_id": "curriculum_peach_001",
+  "source_model": "manual_or_mock_interface",
+  "perception_id": "perception_ed2e1e1ecbf0",
+  "timestamp": "2026-06-28T21:32:28.242892+00:00",
+  "unverified_hypotheses": [
+    {
+      "hypothesis": "Peach",
+      "source": "user_statement_or_vision_label",
+      "confidence": 0.3,
+      "status": "unverified"
+    }
+  ]
+}

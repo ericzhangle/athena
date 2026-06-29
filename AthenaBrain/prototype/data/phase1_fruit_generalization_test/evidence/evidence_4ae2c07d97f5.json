@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "梨是一种水果。",
+    "subject": "Pear",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_4c4d6e792588"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_4ae2c07d97f5",
+  "timestamp": "2026-06-28T21:25:22.351570+00:00",
+  "sample_id": "fruit_test_pear_001",
+  "validation_events": []
+}

@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "桃子是一种水果。",
+    "subject": "Peach",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_9ebb97f431b7"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_e9608c13e8c2",
+  "timestamp": "2026-06-28T21:25:22.266085+00:00",
+  "sample_id": "fruit_test_peach_001",
+  "validation_events": []
+}

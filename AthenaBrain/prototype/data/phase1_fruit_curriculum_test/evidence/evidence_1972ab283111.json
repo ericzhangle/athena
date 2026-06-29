@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Potassium is a nutrient",
+    "subject": "Potassium",
+    "predicate": "is-a",
+    "object": "Nutrient"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_87fc4c8e6429",
+    "experience_542ff256a019"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_1972ab283111",
+  "timestamp": "2026-06-29T00:18:13.535049+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

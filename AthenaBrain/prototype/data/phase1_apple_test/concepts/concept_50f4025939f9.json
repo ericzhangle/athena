@@ -1,0 +1,180 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_50f4025939f9",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.6300000000000001,
+  "created_at": "2026-06-28T20:39:47.962573+00:00",
+  "updated_at": "2026-06-28T21:02:08.963826+00:00",
+  "description": "An early concept for Apple, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "perception_2945fcbd0760:shape",
+        "perception_0ea6f480a914:shape",
+        "perception_72c4a5426788:shape",
+        "perception_1b6556ed229b:shape",
+        "perception_68eb29a81c59:shape",
+        "perception_6d2081e25de9:shape",
+        "perception_5c11b8ace03d:shape",
+        "perception_5418a0f8bc57:shape"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "perception_2945fcbd0760:color"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth and slightly reflective.",
+      "confidence": 0.5249999999999999,
+      "evidence_refs": [
+        "perception_2945fcbd0760:surface"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "local_structure",
+      "value": "The top area may contain a stem or indentation.",
+      "confidence": 0.41250000000000003,
+      "evidence_refs": [
+        "perception_2945fcbd0760:local_structure"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly green surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "perception_0ea6f480a914:color",
+        "perception_72c4a5426788:color",
+        "perception_1b6556ed229b:color",
+        "perception_68eb29a81c59:color",
+        "perception_6d2081e25de9:color",
+        "perception_5c11b8ace03d:color",
+        "perception_5418a0f8bc57:color"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "perception_0ea6f480a914:surface",
+        "perception_72c4a5426788:surface",
+        "perception_1b6556ed229b:surface",
+        "perception_68eb29a81c59:surface",
+        "perception_6d2081e25de9:surface",
+        "perception_5c11b8ace03d:surface",
+        "perception_5418a0f8bc57:surface"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color_variation",
+      "value": "color can vary: green / red",
+      "confidence": 0.7000000000000001,
+      "evidence_refs": [
+        "perception_2945fcbd0760:color",
+        "perception_0ea6f480a914:color",
+        "perception_72c4a5426788:color",
+        "perception_1b6556ed229b:color",
+        "perception_68eb29a81c59:color",
+        "perception_6d2081e25de9:color",
+        "perception_5c11b8ace03d:color",
+        "perception_5418a0f8bc57:color"
+      ],
+      "scope": "concept_level",
+      "generalization_status": "generalized_attribute"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "experience_1567bf308b84",
+        "experience_d763373fb7ac",
+        "experience_ebb052a2c10a",
+        "experience_1883abf74a1b",
+        "experience_44e9db70e7ee",
+        "experience_4d598570f06a",
+        "experience_66b8866efdb1",
+        "experience_e2bc569b1d48"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "perception_2945fcbd0760:shape",
+    "perception_2945fcbd0760:color",
+    "perception_2945fcbd0760:surface",
+    "perception_2945fcbd0760:local_structure",
+    "experience_1567bf308b84",
+    "perception_0ea6f480a914:shape",
+    "perception_0ea6f480a914:color",
+    "perception_0ea6f480a914:surface",
+    "experience_d763373fb7ac",
+    "perception_72c4a5426788:shape",
+    "perception_72c4a5426788:color",
+    "perception_72c4a5426788:surface",
+    "experience_ebb052a2c10a",
+    "perception_1b6556ed229b:shape",
+    "perception_1b6556ed229b:color",
+    "perception_1b6556ed229b:surface",
+    "experience_1883abf74a1b",
+    "perception_68eb29a81c59:shape",
+    "perception_68eb29a81c59:color",
+    "perception_68eb29a81c59:surface",
+    "experience_44e9db70e7ee",
+    "perception_6d2081e25de9:shape",
+    "perception_6d2081e25de9:color",
+    "perception_6d2081e25de9:surface",
+    "experience_4d598570f06a",
+    "perception_5c11b8ace03d:shape",
+    "perception_5c11b8ace03d:color",
+    "perception_5c11b8ace03d:surface",
+    "experience_66b8866efdb1",
+    "perception_5418a0f8bc57:shape",
+    "perception_5418a0f8bc57:color",
+    "perception_5418a0f8bc57:surface",
+    "experience_e2bc569b1d48"
+  ],
+  "open_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    },
+    {
+      "question": "Apple 的 color 是否允许多种表现？",
+      "reason": "new_observation_differs_from_existing_attribute"
+    },
+    {
+      "question": "Apple 的 surface 是否允许多种表现？",
+      "reason": "new_observation_differs_from_existing_attribute"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "name": "Health",
+  "display_name": null,
+  "concept_id": "concept_70602a02fe74",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-29T00:14:26.075798+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Health.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_8110c5024385"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_8110c5024385"
+  ],
+  "open_questions": [
+    {
+      "question": "Health 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Health 被 Allergy 等概念通过“can_affect”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "answer_evidence_refs": [
+        "experience_47efe937df4d"
+      ]
+    },
+    {
+      "question": "Health 被 Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Digestion is not a fruit. Digestion is a body process for handling food and nutrients. DietaryFiber supports Digestion. Digestion is related to Health.",
+      "answer_evidence_refs": [
+        "experience_b60752519a09"
+      ]
+    },
+    {
+      "question": "Health 被 Immunity, Nutrient, VitaminC 等概念通过“supports”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "VitaminC is a nutrient, not a fruit. Many fruits contain VitaminC. VitaminC supports Immunity and helps maintain Health.",
+      "answer_evidence_refs": [
+        "experience_d3fd1cf59ad8"
+      ]
+    },
+    {
+      "question": "Health is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_8110c5024385"
+      ],
+      "inferred_answer": "Health is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Health 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Health is not a fruit. Health is a condition of the body. Nutrient is related to Health. Digestion is related to Health. Immunity is related to Health. Energy is related to Health.",
+      "answer_evidence_refs": [
+        "experience_c1da8e14a9d4"
+      ]
+    },
+    {
+      "question": "Health 被 Energy, Digestion 等概念通过“related-to”联系起来。这说明 Health 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Digestion is not a fruit. Digestion is a body process for handling food and nutrients. DietaryFiber supports Digestion. Digestion is related to Health.",
+      "answer_evidence_refs": [
+        "experience_c8660096d7f3"
+      ]
+    },
+    {
+      "question": "Health 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "answer_evidence_refs": [
+        "experience_261bdfc58ae9"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,488 @@
+{
+  "report_id": "knowledge_ingestion_report_e5f8b10dd629",
+  "text_ref": "knowledge_text_9b4b06c91048",
+  "experience_id": "experience_bda5965a1d47",
+  "claim_count": 6,
+  "evidence_count": 6,
+  "updated_concepts": [
+    "Allergy",
+    "Fruit",
+    "Mango"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_fcea73a19d6f",
+      "concept": "Mango",
+      "question": "Mango 和一些已知 Fruit 例子有相似特征（attr:taste）。Mango 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2a08da8d611b",
+      "concept": "Mineral",
+      "question": "Mineral 被 Fruit 通过“contains”联系起来。这说明 Mineral 和 Fruit 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2dbf739f47f1",
+      "concept": "Plastic",
+      "question": "Plastic 被 PlasticApple 通过“made-of”联系起来。这说明 Plastic 和 PlasticApple 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ac3418d8a066",
+      "concept": "Digestion",
+      "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_c0280e4180b5",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_c0280e4180b5",
+    "timestamp": "2026-06-29T00:08:08.958797+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Banana",
+          "Pear",
+          "Apple",
+          "Orange",
+          "Tomato",
+          "Peach",
+          "Grape"
+        ],
+        "counterexamples": [
+          "PlasticApple",
+          "Allergy"
+        ],
+        "example_count": 7,
+        "counterexample_count": 2
+      }
+    ],
+    "question_resolution": [
+      {
+        "concept": "Banana",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "answered_by_relation",
+        "relation": "is-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "Banana",
+        "question": "Banana contains Potassium 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Potassium"
+      },
+      {
+        "concept": "Pear",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "answered_by_relation",
+        "relation": "is-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "PlasticApple",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "rejected_by_relation",
+        "relation": "is-not-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "PlasticApple",
+        "question": "我从你的回答里发现了一个新概念 Plastic。它和 Plasticapple 的关系是什么？",
+        "status": "answered_by_relation",
+        "relation": "made-of",
+        "target": "Plastic"
+      },
+      {
+        "concept": "PlasticApple",
+        "question": "PlasticApple made-of Plastic 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "made-of",
+        "target": "Plastic"
+      },
+      {
+        "concept": "PlasticApple",
+        "question": "PlasticApple 是什么？它和当前学习主题有什么关系？",
+        "status": "answered_by_relation",
+        "relation": "made-of",
+        "target": "Plastic"
+      },
+      {
+        "concept": "Apple",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "answered_by_relation",
+        "relation": "is-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "Apple",
+        "question": "Apple contains VitaminC 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "VitaminC"
+      },
+      {
+        "concept": "Apple",
+        "question": "Apple contains Vitamin 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Apple",
+        "question": "Apple contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Apple",
+        "question": "Apple contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "DietaryFiber"
+      },
+      {
+        "concept": "Orange",
+        "question": "Orange contains VitaminC 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "VitaminC"
+      },
+      {
+        "concept": "Orange",
+        "question": "Orange contains Vitamin 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Orange",
+        "question": "Orange contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Tomato",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "answered_by_relation",
+        "relation": "is-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "DietaryFiber",
+        "question": "DietaryFiber supports Digestion 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "supports",
+        "target": "Digestion"
+      },
+      {
+        "concept": "Fruit",
+        "question": "Fruit contains Vitamin 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Fruit",
+        "question": "Fruit contains VitaminC 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Fruit",
+        "question": "Fruit contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "DietaryFiber"
+      },
+      {
+        "concept": "Fruit",
+        "question": "Fruit contains Mineral 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Mineral"
+      },
+      {
+        "concept": "Fruit",
+        "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "may_trigger",
+        "target": "Allergy"
+      },
+      {
+        "concept": "Peach",
+        "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+        "status": "answered_by_relation",
+        "relation": "is-a",
+        "target": "Fruit"
+      },
+      {
+        "concept": "VitaminC",
+        "question": "VitaminC supports Immunity 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "supports",
+        "target": "Immunity"
+      },
+      {
+        "concept": "Grape",
+        "question": "Grape contains Vitamin 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      }
+    ],
+    "boundary_questions": [
+      {
+        "concept": "Fruit",
+        "question": "为什么 Apple, Banana, Grape 属于 Fruit，但 Allergy, PlasticApple 不属于？这个边界由什么决定？",
+        "reason": "positive_negative_boundary_unclear"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Allergy",
+      "predicate": "is-not-a",
+      "object": "Fruit",
+      "relation_type": "is-not-a",
+      "target": "Fruit",
+      "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+      "questions": [
+        {
+          "question": "Allergy is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Fruit 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "caution",
+      "object": "Some people may be allergic to some fruits.",
+      "attribute_name": "caution",
+      "attribute_value": "Some people may be allergic to some fruits.",
+      "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+      "questions": [
+        {
+          "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+          "reason": "safety_claim_needs_condition"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "may_trigger",
+      "object": "Allergy",
+      "relation_type": "may_trigger",
+      "target": "Allergy",
+      "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+      "questions": [
+        {
+          "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Allergy 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Allergy",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+      "questions": [
+        {
+          "question": "Allergy 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Mango",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "有些人可能会对芒果、花粉、药物或其他食物过敏",
+      "questions": [
+        {
+          "question": "Mango 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

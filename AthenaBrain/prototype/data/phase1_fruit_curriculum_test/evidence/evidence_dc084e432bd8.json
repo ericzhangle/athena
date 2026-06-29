@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+    "subject": "Apple",
+    "predicate": "contains",
+    "object": "Vitamin"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_c59b32716fe4",
+    "experience_df1fdea651f5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_dc084e432bd8",
+  "timestamp": "2026-06-28T22:42:25.802088+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

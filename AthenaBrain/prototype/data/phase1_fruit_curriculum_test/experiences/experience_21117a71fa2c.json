@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "ref": "knowledge_text_ec772fa7dc67"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_21117a71fa2c",
+  "timestamp": "2026-06-29T00:14:36.233222+00:00",
+  "processed": false,
+  "immutable": true
+}

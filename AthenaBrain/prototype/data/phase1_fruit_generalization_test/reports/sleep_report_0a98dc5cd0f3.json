@@ -1,0 +1,45 @@
+{
+  "sleep_report_id": "sleep_report_0a98dc5cd0f3",
+  "timestamp": "2026-06-28T21:25:22.267114+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_9ebb97f431b7",
+    "perception_324533452643"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 4,
+      "source": "perception_324533452643"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Peach is-a Fruit",
+      "confidence": 0.55,
+      "source": "evidence_e9608c13e8c2"
+    }
+  ],
+  "conflicts_or_variations": [],
+  "generalized_attributes": [],
+  "parent_generalizations": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Apple",
+        "Peach"
+      ],
+      "example_count": 2
+    }
+  ],
+  "generated_questions": [
+    {
+      "question": "Peach 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

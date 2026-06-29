@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple observed color: The observed object has a mostly red surface.",
+    "subject": "Apple",
+    "predicate": "observed_color",
+    "object": "The observed object has a mostly red surface."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_badb4964f364",
+    "sample:fruit_test_apple_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.78,
+  "evidence_id": "evidence_cd490d6c2c05",
+  "timestamp": "2026-06-28T21:25:22.177623+00:00",
+  "sample_id": "fruit_test_apple_001",
+  "validation_events": []
+}

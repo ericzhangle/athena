@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "NaturalSugar can affect Energy",
+    "subject": "NaturalSugar",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_929d5f3ac420",
+    "experience_01355f2c8892"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_d287a04099c5",
+  "timestamp": "2026-06-29T00:14:36.148646+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

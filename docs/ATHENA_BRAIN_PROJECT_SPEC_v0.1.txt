@@ -1,0 +1,299 @@
+ATHENA_BRAIN_PROJECT_SPEC_v0.1
+Version: 0.1
+Project: Athena Brain
+Author: Zhang Le (Draft with ChatGPT)
+
+Project Goal
+Athena Brain is NOT another Large Language Model.
+Athena Brain is an experimental cognitive architecture.
+The goal is to verify whether an artificial intelligence can gradually grow its cognition throughout its lifetime, instead of obtaining all knowledge through one-time pretraining.
+LLM is only used as the language interface.
+The real intelligence should continuously grow from experiences.
+
+Design Philosophy
+Current LLMs have several fundamental limitations.
+* Knowledge is stored inside parameters.
+* Models are mostly static after training.
+* Long-term learning is difficult.
+* Concepts are implicit.
+* Personal experiences are difficult to preserve.
+* New knowledge often requires fine-tuning or retraining.
+Athena Brain attempts another path.
+Instead of building a larger model, we attempt to build a growing brain.
+
+Core Philosophy
+The AI should be born almost empty.
+It should not know what dogs, apples, trees or mathematics are.
+Everything should gradually emerge from interaction.
+Knowledge should originate from experiences.
+Concepts should emerge from many experiences.
+Reasoning should emerge from concepts.
+Creativity should emerge from accumulated understanding.
+
+Overall Architecture
+LLM ¡ý Language Interface
+Vision System
+Working Memory
+Short-term Memory
+Long-term Memory
+Experience Database
+Concept Graph
+Reasoning Engine
+Sleep Engine
+Curiosity Engine
+Planning Engine
+
+LLM Position
+LLM is NOT the brain.
+LLM only provides
+* language understanding
+* language generation
+* basic reasoning ability
+The real brain exists outside the LLM.
+
+Cognitive Pipeline
+Observe
+¡ý
+Interact
+¡ý
+Experience
+¡ý
+Working Memory
+¡ý
+Sleep Consolidation
+¡ý
+Concept
+¡ý
+Relation
+¡ý
+Reasoning
+¡ý
+Planning
+¡ý
+New Experience
+This loop never ends.
+
+Three Core Objects
+Everything inside Athena Brain is built upon three objects.
+Experience
+Concept
+Relation
+Everything else is derived from them.
+
+Experience
+Experience represents one real interaction with the world.
+Examples:
+User uploads a dog image.
+User says:
+"This is a dog."
+Athena asks questions.
+User answers.
+This entire interaction becomes one Experience.
+Experience fields
+* id
+* timestamp
+* source
+* input type
+* image
+* text
+* audio
+* conversation
+* Athena response
+* user feedback
+* confidence
+* tags
+* processed flag
+Experience is immutable.
+Experiences represent Athena's life.
+
+Concept
+Concept is NOT given.
+Concept gradually emerges from multiple Experiences.
+Example
+Experience 1
+Dog A
+Experience 2
+Dog B
+Experience 3
+Dog C
+Sleep Engine discovers
+All have four legs.
+All have fur.
+All bark.
+A new Concept appears.
+Dog
+Concept fields
+* id
+* name
+* description
+* creation time
+* update time
+* confidence
+* maturity
+* attributes
+* behaviors
+* examples
+* related memories
+* parent concepts
+* child concepts
+Concepts continuously evolve.
+
+Relation
+Relation connects Concepts.
+Examples
+Dog
+is-a
+Animal
+Dog
+has-part
+Tail
+Dog
+similar-to
+Cat
+Dog
+different-from
+Car
+Relation fields
+* source concept
+* target concept
+* relation type
+* confidence
+* evidence
+* creation time
+* update time
+Relations continuously change.
+
+Memory System
+Working Memory
+Current conversation.
+Short-term Memory
+Today's experiences.
+Long-term Memory
+Stable concepts.
+Experience Memory
+Raw life events.
+Semantic Memory
+Concept Graph.
+Procedural Memory (future)
+Skills.
+
+Commit Strategy
+New information should NOT directly become knowledge.
+Pipeline
+Experience
+¡ý
+Working Memory
+¡ý
+Short Memory
+¡ý
+Sleep
+¡ý
+Concept
+¡ý
+Long-term Memory
+Knowledge must be earned.
+
+Sleep Engine
+Sleep is one of the core innovations.
+Every night Athena performs:
+Replay today's experiences
+Remove duplicated information
+Merge repeated observations
+Detect conflicts
+Increase confidence
+Decrease confidence
+Generate abstractions
+Generate new concepts
+Generate questions
+Compress memory
+Update Concept Graph
+Sleep is NOT idle time.
+Sleep is cognition.
+
+Curiosity Engine
+Athena should actively ask questions.
+Example
+Known
+Dog
+Cat
+Cow
+Horse
+Unknown
+Whale
+Athena should ask
+"Is whale an animal?"
+Curiosity drives learning.
+
+Concept Growth
+Knowledge should grow like a tree.
+Life
+¡ý
+Animal
+¡ý
+Dog
+¡ý
+Golden Retriever
+Concepts become increasingly abstract.
+New concepts can modify higher-level concepts.
+Knowledge is never frozen.
+
+Future Dynamic Modules
+When one domain becomes large enough, Athena may create new expert modules.
+Examples
+Animal Cortex
+Math Cortex
+Physics Cortex
+Language Cortex
+Programming Cortex
+These modules are NOT manually predefined.
+They emerge as knowledge grows.
+
+Version Roadmap
+Version 0.1
+Architecture only.
+Version 0.2
+Experience Database.
+Version 0.3
+Concept Graph.
+Version 0.4
+Sleep Engine.
+Version 0.5
+Curiosity Engine.
+Version 0.6
+Growing Brain Prototype.
+Version 1.0
+Self-growing Cognitive Architecture.
+
+Immediate TODO
+Before writing any code, define the following.
+Definition 1
+What is Experience?
+How should every interaction be stored?
+Definition 2
+What is Concept?
+How is a Concept born?
+How does a Concept mature?
+How is a Concept modified?
+Definition 3
+What is Relation?
+What relation types exist?
+When are relations created?
+How are they updated?
+Definition 4
+Sleep Engine
+How does replay work?
+How are concepts merged?
+How are conflicts detected?
+How are new abstractions generated?
+Definition 5
+Commit Rules
+When should information become knowledge?
+How much evidence is required?
+Can knowledge be forgotten?
+Can confidence decrease?
+
+Guiding Principle
+Athena Brain is not attempting to build a larger language model.
+Athena Brain attempts to build a mind that grows.
+The success criterion is NOT benchmark scores.
+The success criterion is whether cognition continuously develops through life.

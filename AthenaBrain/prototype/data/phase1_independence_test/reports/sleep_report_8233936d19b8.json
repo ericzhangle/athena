@@ -1,0 +1,66 @@
+{
+  "sleep_report_id": "sleep_report_8233936d19b8",
+  "timestamp": "2026-06-28T21:05:33.762019+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_327471c434bd",
+    "perception_b9927ffb93c3"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 3,
+      "source": "perception_b9927ffb93c3"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Apple is-a Fruit",
+      "confidence": 0.55,
+      "source": "experience_327471c434bd"
+    }
+  ],
+  "conflicts_or_variations": [
+    {
+      "type": "attribute_variation",
+      "concept": "Apple",
+      "attribute": "color",
+      "existing_values": [
+        "The observed object has a mostly red surface."
+      ],
+      "new_value": "The observed object has a mostly green surface.",
+      "normalized_existing_values": [
+        "red"
+      ],
+      "normalized_new_values": [
+        "green"
+      ],
+      "interpretation": "This may be a true variation rather than an error."
+    }
+  ],
+  "generalized_attributes": [
+    {
+      "attribute": "color",
+      "values": [
+        "green",
+        "red"
+      ],
+      "confidence": 0.7000000000000001,
+      "status": "generalized_attribute",
+      "reason": "multiple_values_supported_by_independent_samples",
+      "evidence_count": 2,
+      "independent_sample_count": 2,
+      "interpretation": "Multiple observations suggest this may be a variable property of the concept."
+    }
+  ],
+  "generated_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

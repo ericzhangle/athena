@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Orange is a fruit",
+    "subject": "Fruit",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_8122bdda9f19",
+    "experience_b85632081abb"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_8e488fb8951a",
+  "timestamp": "2026-06-29T00:19:05.672286+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

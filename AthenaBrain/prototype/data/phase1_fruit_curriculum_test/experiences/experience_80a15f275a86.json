@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Grape is a fruit. Grapes can usually be eaten directly. Grape can be made into juice, raisins, and wine. Grape contains water and some vitamins.",
+      "ref": "knowledge_text_69a47db1b045"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_80a15f275a86",
+  "timestamp": "2026-06-29T00:19:02.172479+00:00",
+  "processed": false,
+  "immutable": true
+}

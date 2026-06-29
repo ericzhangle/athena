@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Peach observed shape: The observed object looks roughly round.",
+    "subject": "Peach",
+    "predicate": "observed_shape",
+    "object": "The observed object looks roughly round."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_ed2e1e1ecbf0",
+    "sample:curriculum_peach_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.78,
+  "evidence_id": "evidence_39b304d86f5c",
+  "timestamp": "2026-06-28T21:32:28.243934+00:00",
+  "sample_id": "curriculum_peach_001",
+  "validation_events": []
+}

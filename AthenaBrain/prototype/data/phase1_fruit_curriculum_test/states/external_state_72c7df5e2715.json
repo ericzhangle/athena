@@ -1,0 +1,20 @@
+{
+  "current_task": "learn_plasticapple_from_guided_example",
+  "visible_inputs": [
+    {
+      "input_id": "input_220ca9abba77",
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/plastic_apple_001.jpg",
+      "status": "available"
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_8872b9de87f6",
+      "speaker": "user",
+      "text": "塑料苹果不是一种水果。"
+    }
+  ],
+  "state_id": "external_state_72c7df5e2715",
+  "timestamp": "2026-06-28T21:32:28.641865+00:00"
+}

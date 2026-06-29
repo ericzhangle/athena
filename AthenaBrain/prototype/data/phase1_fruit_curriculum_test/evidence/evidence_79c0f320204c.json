@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "不同水果成熟的季节不同，例如西瓜多在夏季成熟，橘子和橙子常在秋冬季成熟",
+    "subject": "Tangerine",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_c59b32716fe4",
+    "experience_df1fdea651f5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_79c0f320204c",
+  "timestamp": "2026-06-28T22:42:25.829197+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,99 @@
+{
+  "concept_id": "concept_apple_001",
+  "name": "Apple",
+  "display_name": "苹果",
+  "status": "active",
+  "maturity": "early",
+  "confidence": 0.48,
+  "created_at": "2026-06-29T00:10:00Z",
+  "updated_at": "2026-06-29T00:10:00Z",
+  "description": "A currently immature concept formed from one user statement, one image-based perception record, and one user confirmation. Athena understands this as a visible object called apple, and the user says it is a kind of fruit.",
+  "attributes": [
+    {
+      "attribute_id": "apple_attr_001",
+      "name": "roughly_round_shape",
+      "value": "The observed example looks roughly round.",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "perception_apple_image_001:feature_shape_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "attribute_id": "apple_attr_002",
+      "name": "red_surface",
+      "value": "The observed example has a mostly red surface with possible yellow highlight.",
+      "confidence": 0.58,
+      "evidence_refs": [
+        "perception_apple_image_001:feature_color_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "attribute_id": "apple_attr_003",
+      "name": "smooth_surface",
+      "value": "The observed example appears smooth and slightly reflective.",
+      "confidence": 0.52,
+      "evidence_refs": [
+        "perception_apple_image_001:feature_surface_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "attribute_id": "apple_attr_004",
+      "name": "possibly_has_top_stem_or_indentation",
+      "value": "The observed example may have a darker top area, possibly a stem or indentation.",
+      "confidence": 0.42,
+      "evidence_refs": [
+        "perception_apple_image_001:feature_local_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "uncertain"
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "relation_apple_is_a_fruit_001",
+      "type": "is-a",
+      "source_concept": "Apple",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "experience_phase1_apple_001:raw_inputs[0]",
+        "experience_phase1_apple_001:user_feedback.feedback_002"
+      ],
+      "source_priority": "Priority 1: Direct user-guided experience",
+      "status": "candidate_relation"
+    }
+  ],
+  "examples": [
+    {
+      "example_id": "apple_example_001",
+      "type": "image",
+      "input_ref": "inputs/apple_001.jpg",
+      "experience_ref": "experience_phase1_apple_001",
+      "perception_ref": "perception_apple_image_001"
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "苹果是否总是红色的，还是也可能有其他颜色？",
+      "reason": "single_image_color_may_not_generalize"
+    },
+    {
+      "question": "水果除了可以吃，还需要满足什么条件？",
+      "reason": "fruit_concept_is_still_immature"
+    },
+    {
+      "question": "苹果内部是什么样的？有没有籽？",
+      "reason": "visual_observation_only_covers_exterior"
+    }
+  ],
+  "anti_wikipedia_guard": {
+    "rule": "Do not replace this concept with external encyclopedia text.",
+    "external_knowledge_allowed": "Only as verified evidence with explicit source and lower initial confidence."
+  }
+}

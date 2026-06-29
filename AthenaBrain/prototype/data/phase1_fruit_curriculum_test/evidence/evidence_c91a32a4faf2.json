@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Orange contains VitaminC",
+    "subject": "Orange",
+    "predicate": "contains",
+    "object": "VitaminC"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_8122bdda9f19",
+    "experience_b85632081abb"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_c91a32a4faf2",
+  "timestamp": "2026-06-29T00:19:05.673390+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

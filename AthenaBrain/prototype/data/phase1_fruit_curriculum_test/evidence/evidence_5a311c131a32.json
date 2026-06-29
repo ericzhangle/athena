@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "VitaminC supports Immunity and helps maintain Health",
+    "subject": "Immunity",
+    "predicate": "supports",
+    "object": "Health"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_02ae3b9777bd",
+    "experience_d3fd1cf59ad8"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_5a311c131a32",
+  "timestamp": "2026-06-29T00:16:33.674064+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

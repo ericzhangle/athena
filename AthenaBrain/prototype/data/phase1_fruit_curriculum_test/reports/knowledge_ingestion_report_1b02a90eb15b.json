@@ -1,0 +1,226 @@
+{
+  "report_id": "knowledge_ingestion_report_1b02a90eb15b",
+  "text_ref": "knowledge_text_7d0f19bc5b0c",
+  "experience_id": "experience_34eb317c2292",
+  "claim_count": 3,
+  "evidence_count": 3,
+  "updated_concepts": [
+    "Apple",
+    "Fruit"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_975c4c40b452",
+      "concept": "Fruit",
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear",
+      "priority": 0.98,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "positive_negative_boundary_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_7f08218d0e6d",
+      "concept": "Grape",
+      "question": "Grape 和一些已知 Fruit 例子有相似特征（value:edible）。Grape 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_b1dc37df6abe",
+      "concept": "Orange",
+      "question": "Orange 和一些已知 Fruit 例子有相似特征（rel:contains, rel:contains:Vitamin, rel:contains:VitaminC）。Orange 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e22c2314d2aa",
+      "concept": "PlasticApple",
+      "question": "为什么 PlasticApple 不能吃？这个原因和我已经知道的哪些概念有关？",
+      "reason": "mechanism_gap",
+      "priority": 0.98,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "mechanism_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1e20e7e3c476",
+      "concept": "Allergy",
+      "question": "Allergy 被 Fruit 通过“may_trigger”联系起来。这说明 Allergy 和 Fruit 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8af2dd2e88e0",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple 通过“contains”联系起来。这说明 DietaryFiber 和 Apple 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.9,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    }
+  ],
+  "claims": [
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Apple",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体",
+      "questions": [
+        {
+          "question": "Apple 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Apple",
+      "predicate": "edibility",
+      "object": "Apple can be eaten according to the text.",
+      "attribute_name": "edibility",
+      "attribute_value": "Apple can be eaten according to the text.",
+      "statement": "它可能在颜色或形状上像苹果，但不能作为食物食用",
+      "questions": [
+        {
+          "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    }
+  ]
+}

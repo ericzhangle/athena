@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "葡萄可以直接食用，也可以制作成果汁或葡萄干",
+    "subject": "Grape",
+    "predicate": "edibility",
+    "object": "Grape can be eaten according to the text."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_370ac5ed5564",
+    "experience_be7509ff34bc"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_c4df25aa9623",
+  "timestamp": "2026-06-28T23:33:33.871858+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

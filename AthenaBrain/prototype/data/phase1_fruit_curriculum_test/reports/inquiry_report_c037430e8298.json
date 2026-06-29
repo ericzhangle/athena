@@ -1,0 +1,1369 @@
+{
+  "inquiry_report_id": "inquiry_report_c037430e8298",
+  "timestamp": "2026-06-29T00:19:11.915083+00:00",
+  "provider": "MockInquiryProvider",
+  "requested_steps": 10,
+  "completed_steps": 10,
+  "steps": [
+    {
+      "step": 1,
+      "question": {
+        "question_id": "curiosity_713ebc2b6cd9",
+        "concept": "Allergy",
+        "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.84,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.12
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "claim_count": 8,
+      "updated_concepts": [
+        "Allergy",
+        "Fruit",
+        "Health",
+        "Mango"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_713ebc2b6cd9",
+          "concept": "Allergy",
+          "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2366aa30b14c",
+          "concept": "Grape",
+          "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "question": {
+        "question_id": "curiosity_da587c3b2bb4",
+        "concept": "DietaryFiber",
+        "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.84,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.12
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Mango is a fruit. Mango can usually be eaten directly. Mango contains Vitamin and DietaryFiber. Mango may trigger Allergy for some people.",
+      "claim_count": 11,
+      "updated_concepts": [
+        "Allergy",
+        "DietaryFiber",
+        "Fruit",
+        "Mango",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_da587c3b2bb4",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.84,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.12
+          }
+        },
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2366aa30b14c",
+          "concept": "Grape",
+          "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "question": {
+        "question_id": "curiosity_1a61082383b4",
+        "concept": "Plastic",
+        "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+        "reason": "new_concept_from_curiosity_answer",
+        "priority": 0.8,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "new_concept_from_curiosity_answer",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.2
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "claim_count": 2,
+      "updated_concepts": [
+        "Fruit",
+        "Plastic"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_1a61082383b4",
+          "concept": "Plastic",
+          "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+          "reason": "new_concept_from_curiosity_answer",
+          "priority": 0.8,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "new_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.2
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2366aa30b14c",
+          "concept": "Grape",
+          "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "question": {
+        "question_id": "curiosity_06ed4dfe8f36",
+        "concept": "Plastic",
+        "question": "为什么 Plastic 不能吃？这个原因和我已经知道的哪些概念有关？",
+        "reason": "mechanism_gap",
+        "priority": 0.98,
+        "domain": "mechanism",
+        "status": "open",
+        "score_factors": {
+          "base": "mechanism_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "claim_count": 2,
+      "updated_concepts": [
+        "Fruit",
+        "Plastic"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_06ed4dfe8f36",
+          "concept": "Plastic",
+          "question": "为什么 Plastic 不能吃？这个原因和我已经知道的哪些概念有关？",
+          "reason": "mechanism_gap",
+          "priority": 0.98,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "mechanism_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "question": {
+        "question_id": "curiosity_c933901534bd",
+        "concept": "Fruit",
+        "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+        "reason": "condition_gap",
+        "priority": 0.78,
+        "domain": "mechanism",
+        "status": "open",
+        "score_factors": {
+          "base": "condition_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_c933901534bd",
+          "concept": "Fruit",
+          "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2366aa30b14c",
+          "concept": "Grape",
+          "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "question": {
+        "question_id": "curiosity_2366aa30b14c",
+        "concept": "Grape",
+        "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+        "reason": "condition_gap",
+        "priority": 0.78,
+        "domain": "mechanism",
+        "status": "open",
+        "score_factors": {
+          "base": "condition_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Grape is a fruit. Grapes can usually be eaten directly. Grape can be made into juice, raisins, and wine. Grape contains water and some vitamins.",
+      "claim_count": 7,
+      "updated_concepts": [
+        "Fruit",
+        "Grape",
+        "Vitamin",
+        "Water"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_ba05ce0705c1",
+          "concept": "Water",
+          "question": "Water 被 Grape 等概念通过“contains”联系起来。这说明 Water 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_2366aa30b14c",
+          "concept": "Grape",
+          "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c86a70d19f92",
+          "concept": "Orange",
+          "question": "Orange 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "question": {
+        "question_id": "curiosity_ba05ce0705c1",
+        "concept": "Water",
+        "question": "Water 被 Grape 等概念通过“contains”联系起来。这说明 Water 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Grape is a fruit. Grapes can usually be eaten directly. Grape can be made into juice, raisins, and wine. Grape contains water and some vitamins.",
+      "claim_count": 7,
+      "updated_concepts": [
+        "Fruit",
+        "Grape",
+        "Vitamin",
+        "Water"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_ba05ce0705c1",
+          "concept": "Water",
+          "question": "Water 被 Grape 等概念通过“contains”联系起来。这说明 Water 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_c86a70d19f92",
+          "concept": "Orange",
+          "question": "Orange 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "question": {
+        "question_id": "curiosity_c86a70d19f92",
+        "concept": "Orange",
+        "question": "Orange 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+        "reason": "condition_gap",
+        "priority": 0.78,
+        "domain": "mechanism",
+        "status": "open",
+        "score_factors": {
+          "base": "condition_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Orange is a fruit. Orange belongs to the citrus group. Orange can usually be eaten directly or made into juice. Orange contains VitaminC.",
+      "claim_count": 5,
+      "updated_concepts": [
+        "Fruit",
+        "Orange",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_c86a70d19f92",
+          "concept": "Orange",
+          "question": "Orange 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+          "reason": "condition_gap",
+          "priority": 0.78,
+          "domain": "mechanism",
+          "status": "open",
+          "score_factors": {
+            "base": "condition_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_962323ccae2a",
+          "concept": "Banana",
+          "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "question": {
+        "question_id": "curiosity_7a8ce8177fd1",
+        "concept": "Allergy",
+        "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.76,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "claim_count": 8,
+      "updated_concepts": [
+        "Allergy",
+        "Fruit",
+        "Health",
+        "Mango"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_7a8ce8177fd1",
+          "concept": "Allergy",
+          "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_962323ccae2a",
+          "concept": "Banana",
+          "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_ec2dc705fad8",
+          "concept": "FoodSafety",
+          "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity",
+          "priority": 0.74,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "mentioned_concept_needs_identity",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "question": {
+        "question_id": "curiosity_8af299b37a5a",
+        "concept": "Fruit",
+        "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.76,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.0,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "claim_count": 13,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Fruit",
+        "Health",
+        "Mineral",
+        "Nutrient",
+        "Potassium",
+        "Vitamin"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_8af299b37a5a",
+          "concept": "Fruit",
+          "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ae7906a65aae",
+          "concept": "Immunity",
+          "question": "Immunity 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.76,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ecbcae220483",
+          "concept": "Apple",
+          "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_962323ccae2a",
+          "concept": "Banana",
+          "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+          "reason": "single_example_cannot_support_generalization",
+          "priority": 0.74,
+          "domain": "boundary",
+          "status": "open",
+          "score_factors": {
+            "base": "single_example_cannot_support_generalization",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.16
+          }
+        },
+        {
+          "question_id": "curiosity_ec2dc705fad8",
+          "concept": "FoodSafety",
+          "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity",
+          "priority": 0.74,
+          "domain": "identity",
+          "status": "open",
+          "score_factors": {
+            "base": "mentioned_concept_needs_identity",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    }
+  ],
+  "final_top_questions": [
+    {
+      "question_id": "curiosity_ae7906a65aae",
+      "concept": "Immunity",
+      "question": "Immunity 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.76,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_59de6f4588d6",
+      "concept": "Immunity",
+      "question": "Immunity 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.76,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ec2dc705fad8",
+      "concept": "FoodSafety",
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_74b40fee1ddf",
+      "concept": "Tangerine",
+      "question": "Tangerine 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ce92488afa24",
+      "concept": "Allergy",
+      "question": "Allergy 和 Health 之间的“can_affect”关系，在我已有知识里意味着什么？",
+      "reason": "relation_meaning_gap",
+      "priority": 0.7,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "relation_meaning_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_85bd3909d2bf",
+      "concept": "Banana",
+      "question": "Banana 和 Potassium 之间的“contains”关系，在我已有知识里意味着什么？",
+      "reason": "relation_meaning_gap",
+      "priority": 0.7,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "relation_meaning_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_3682b38b5921",
+      "concept": "Apple",
+      "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.66,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_cf7cc8d65b40",
+      "concept": "Fruit",
+      "question": "Fruit 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.66,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_f8da14897ec3",
+      "concept": "Peach",
+      "question": "Peach 的 color 会怎样变化？哪些变化仍然属于它，哪些变化会改变它的类别？",
+      "reason": "color_variation_gap",
+      "priority": 0.64,
+      "domain": "variation",
+      "status": "open",
+      "score_factors": {
+        "base": "color_variation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_d414f197bcb0",
+      "concept": "Peach",
+      "question": "Peach 的 shape 会怎样变化？哪些变化仍然属于它，哪些变化会改变它的类别？",
+      "reason": "shape_variation_gap",
+      "priority": 0.64,
+      "domain": "variation",
+      "status": "open",
+      "score_factors": {
+        "base": "shape_variation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "膳食纤维有助于消化和肠道健康",
+    "subject": "DietaryFiber",
+    "predicate": "supports",
+    "object": "Digestion"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "refs": [
+    "knowledge_text_67e1b6d4a94e",
+    "experience_827adbb4672e"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_6c0f935dfed6",
+  "timestamp": "2026-06-29T00:00:28.707071+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

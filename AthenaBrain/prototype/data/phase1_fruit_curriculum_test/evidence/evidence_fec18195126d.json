@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple observed origin: The user says it grows from a plant.",
+    "subject": "Apple",
+    "predicate": "observed_origin",
+    "object": "The user says it grows from a plant."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_6506d3bb2610",
+    "sample:curriculum_apple_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.68,
+  "evidence_id": "evidence_fec18195126d",
+  "timestamp": "2026-06-28T21:32:28.160672+00:00",
+  "sample_id": "curriculum_apple_001",
+  "validation_events": []
+}

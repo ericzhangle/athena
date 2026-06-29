@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+    "subject": "Energy",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_c59b32716fe4",
+    "experience_df1fdea651f5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_b7d1996a73f7",
+  "timestamp": "2026-06-28T22:42:25.814640+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

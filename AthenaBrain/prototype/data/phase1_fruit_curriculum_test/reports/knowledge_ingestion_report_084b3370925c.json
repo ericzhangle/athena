@@ -1,0 +1,398 @@
+{
+  "report_id": "knowledge_ingestion_report_084b3370925c",
+  "text_ref": "knowledge_text_1b9a6015c87c",
+  "experience_id": "experience_f5446c38edfd",
+  "claim_count": 13,
+  "evidence_count": 13,
+  "updated_concepts": [
+    "DietaryFiber",
+    "Fruit",
+    "Health",
+    "Mineral",
+    "Nutrient",
+    "Potassium",
+    "Vitamin"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_d17f98ed8c78",
+      "concept": "Plastic",
+      "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e22279336f8c",
+      "concept": "Tangerine",
+      "question": "Tangerine 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_713ebc2b6cd9",
+      "concept": "Allergy",
+      "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_da587c3b2bb4",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ec2dc705fad8",
+      "concept": "FoodSafety",
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_c14f67db2e4c",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_c14f67db2e4c",
+    "timestamp": "2026-06-29T00:18:03.942713+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Banana",
+          "Pear",
+          "Apple",
+          "Orange",
+          "Tomato",
+          "Mango",
+          "Peach",
+          "Grape"
+        ],
+        "counterexamples": [
+          "PlasticApple",
+          "Nutrient",
+          "Allergy",
+          "Health",
+          "Energy",
+          "Digestion",
+          "VitaminC"
+        ],
+        "example_count": 8,
+        "counterexample_count": 7
+      },
+      {
+        "parent": "Nutrient",
+        "examples": [
+          "Mineral",
+          "Digestion",
+          "Vitamin",
+          "DietaryFiber",
+          "Potassium",
+          "VitaminC"
+        ],
+        "counterexamples": [],
+        "example_count": 6,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Nutrient",
+      "predicate": "is-not-a",
+      "object": "Fruit",
+      "relation_type": "is-not-a",
+      "target": "Fruit",
+      "statement": "Nutrient is not a fruit",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Nutrient",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Nutrient is not a fruit",
+      "questions": [
+        {
+          "question": "Nutrient 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Nutrient is not a fruit",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Nutrient",
+      "predicate": "supports",
+      "object": "Health",
+      "relation_type": "supports",
+      "target": "Health",
+      "statement": "Nutrient is a general category for substances that support BodyFunction and Health",
+      "questions": [
+        {
+          "question": "Nutrient supports Health 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Health 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Health",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Nutrient is a general category for substances that support BodyFunction and Health",
+      "questions": [
+        {
+          "question": "Health 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Vitamin",
+      "predicate": "is-a",
+      "object": "Nutrient",
+      "relation_type": "is-a",
+      "target": "Nutrient",
+      "statement": "Vitamin is a nutrient",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Vitamin",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Vitamin is a nutrient",
+      "questions": [
+        {
+          "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Mineral",
+      "predicate": "is-a",
+      "object": "Nutrient",
+      "relation_type": "is-a",
+      "target": "Nutrient",
+      "statement": "Mineral is a nutrient",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Mineral",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mineral is a nutrient",
+      "questions": [
+        {
+          "question": "Mineral 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "DietaryFiber",
+      "predicate": "is-a",
+      "object": "Nutrient",
+      "relation_type": "is-a",
+      "target": "Nutrient",
+      "statement": "DietaryFiber is a nutrient",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "DietaryFiber",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "DietaryFiber is a nutrient",
+      "questions": [
+        {
+          "question": "DietaryFiber 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Potassium",
+      "predicate": "is-a",
+      "object": "Nutrient",
+      "relation_type": "is-a",
+      "target": "Nutrient",
+      "statement": "Potassium is a nutrient",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Potassium",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Potassium is a nutrient",
+      "questions": [
+        {
+          "question": "Potassium 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

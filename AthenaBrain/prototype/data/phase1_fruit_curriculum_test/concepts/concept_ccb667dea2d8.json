@@ -1,0 +1,188 @@
+{
+  "name": "Mango",
+  "display_name": null,
+  "concept_id": "concept_ccb667dea2d8",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.828182+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Mango.",
+  "attributes": [
+    {
+      "name": "taste",
+      "value": "Mango has a described taste in the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_ec2989dd0050"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_bdc670d42b29",
+        "evidence_4f5c3b563f91"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Vitamin",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_df0d3c112c9a",
+        "evidence_8105da72c9ee"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "DietaryFiber",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_dde612df8979",
+        "evidence_0ca0c77a15b5"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "may_trigger",
+      "target_concept": "Allergy",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_4ac3b263b8a1",
+        "evidence_d4aeac3bbc3f"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "knowledge_ingestion_backfill_fruit_example",
+    "evidence_ec2989dd0050",
+    "evidence_bdc670d42b29",
+    "evidence_df0d3c112c9a",
+    "evidence_dde612df8979",
+    "evidence_4ac3b263b8a1",
+    "evidence_4f5c3b563f91",
+    "evidence_8105da72c9ee",
+    "evidence_0ca0c77a15b5",
+    "evidence_d4aeac3bbc3f"
+  ],
+  "open_questions": [
+    {
+      "question": "Mango 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Mango 和一些已知 Fruit 例子有相似特征（attr:taste）。Mango 会不会也是一种 Fruit？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_c58cc8c1d16f"
+      ]
+    },
+    {
+      "question": "Mango 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "answer_evidence_refs": [
+        "experience_7b91e7204521"
+      ]
+    },
+    {
+      "question": "Mango contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_df0d3c112c9a"
+      ]
+    },
+    {
+      "question": "Vitamin 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Mango contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_dde612df8979"
+      ]
+    },
+    {
+      "question": "DietaryFiber 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Mango may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "may_trigger",
+      "relation_target": "Allergy",
+      "relation_evidence_refs": [
+        "evidence_4ac3b263b8a1"
+      ]
+    },
+    {
+      "question": "Allergy 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Mango contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_df0d3c112c9a"
+      ]
+    },
+    {
+      "question": "Mango contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_dde612df8979"
+      ]
+    },
+    {
+      "question": "Mango may_trigger Allergy 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "may_trigger",
+      "relation_target": "Allergy",
+      "relation_evidence_refs": [
+        "evidence_4ac3b263b8a1"
+      ]
+    },
+    {
+      "question": "Mango 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Mango is a fruit. Mango can usually be eaten directly. Mango contains Vitamin and DietaryFiber. Mango may trigger Allergy for some people.",
+      "answer_evidence_refs": [
+        "experience_1e106d7a898e"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

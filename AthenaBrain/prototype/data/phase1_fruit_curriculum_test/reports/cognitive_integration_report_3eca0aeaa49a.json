@@ -1,0 +1,69 @@
+{
+  "integration_report_id": "cognitive_integration_report_3eca0aeaa49a",
+  "timestamp": "2026-06-29T00:17:58.744504+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Orange",
+        "Tomato",
+        "Mango",
+        "Peach",
+        "Grape"
+      ],
+      "counterexamples": [
+        "PlasticApple",
+        "Nutrient",
+        "Allergy",
+        "Health",
+        "Energy",
+        "Digestion",
+        "VitaminC"
+      ],
+      "example_count": 8,
+      "counterexample_count": 7
+    },
+    {
+      "parent": "Nutrient",
+      "examples": [
+        "Mineral",
+        "Digestion",
+        "Vitamin",
+        "DietaryFiber",
+        "Potassium",
+        "VitaminC"
+      ],
+      "counterexamples": [],
+      "example_count": 6,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [
+    {
+      "concept": "Mango",
+      "question": "Mango contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Mango",
+      "question": "Mango contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "DietaryFiber"
+    },
+    {
+      "concept": "Mango",
+      "question": "Mango may_trigger Allergy 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "may_trigger",
+      "target": "Allergy"
+    }
+  ],
+  "boundary_questions": []
+}

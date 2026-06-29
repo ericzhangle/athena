@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "维生素C是一种营养物质，不是水果",
+    "subject": "VitaminC",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_0270e3fc2599",
+    "experience_18cad3d3c859"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_a16242d4136f",
+  "timestamp": "2026-06-29T00:08:10.364381+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

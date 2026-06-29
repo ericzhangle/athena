@@ -1,0 +1,375 @@
+Athena Brain
+State-Based Cognitive Architecture
+Version 0.1
+
+Introduction
+This document proposes one of the most important ideas inside Athena Brain.
+Current LLMs are mostly parameter-based intelligence.
+Knowledge is encoded into billions of parameters.
+Learning means changing parameters.
+Athena Brain follows another philosophy.
+Intelligence is represented by continuously evolving cognitive states.
+Parameters are only one implementation detail.
+The brain itself is a continuously changing state machine.
+
+Parameter-based Intelligence
+Current LLM
+Training
+¡ý
+Parameters
+¡ý
+Inference
+¡ý
+Output
+Knowledge mainly exists inside parameters.
+After training, the model changes very little.
+
+State-based Intelligence
+Athena
+Observation
+¡ý
+Attention
+¡ý
+Perception
+¡ý
+Experience
+¡ý
+Memory
+¡ý
+Concept
+¡ý
+Mental Model
+¡ý
+Theory
+¡ý
+Action
+¡ý
+New Observation
+Every stage is a cognitive state.
+The intelligence of Athena comes from the evolution of these states.
+
+Core Principle
+Knowledge is not stored.
+Knowledge is continuously reconstructed.
+Every new experience changes the internal state.
+The brain is never static.
+
+Cognitive State Hierarchy
+Level 0
+Raw Observation
+¡ý
+Level 1
+Perception
+¡ý
+Level 2
+Attention
+¡ý
+Level 3
+Experience
+¡ý
+Level 4
+Working Memory
+¡ý
+Level 5
+Long-term Memory
+¡ý
+Level 6
+Concept
+¡ý
+Level 7
+Mental Model
+¡ý
+Level 8
+Theory
+¡ý
+Level 9
+Planning
+¡ý
+Level 10
+Action
+¡ý
+Back to Observation
+This loop never stops.
+
+State 0
+Raw Observation
+Raw Observation contains only sensor data.
+Examples
+Pixels
+Audio waveform
+Touch
+Temperature
+Motion
+No semantic meaning exists here.
+The brain has not yet interpreted anything.
+
+State 1
+Perception
+Perception transforms raw observations into recognizable features.
+Examples
+Red
+Round
+Soft
+Moving
+Four legs
+Tail
+Still no meaning.
+Perception only describes what is observed.
+
+State 2
+Attention
+Attention determines what deserves cognition.
+Thousands of observations occur every second.
+Only a very small number become experiences.
+Attention may depend on
+Novelty
+Conflict
+Importance
+Danger
+Reward
+Curiosity
+Emotion (future)
+Goal (future)
+Without attention,
+nothing enters memory.
+
+State 3
+Experience
+An Experience is a meaningful event.
+Example
+Today
+User pointed to an object.
+User said
+"This is an apple."
+Athena asked
+"What can apples do?"
+The user answered
+"They can be eaten."
+This entire interaction becomes one Experience.
+Experience never changes.
+Experiences represent Athena's life history.
+
+State 4
+Working Memory
+Working Memory contains
+Today's conversations
+Temporary hypotheses
+Pending questions
+Unverified observations
+Working Memory is volatile.
+
+State 5
+Long-term Memory
+Sleep Engine transfers selected experiences into long-term memory.
+Long-term memory stores
+Stable knowledge
+Stable experiences
+Frequently reused information
+
+State 6
+Concept
+Concepts emerge from many Experiences.
+Example
+Many dog experiences
+¡ý
+Dog
+Many dog, cat and horse concepts
+¡ý
+Animal
+Concepts continuously evolve.
+They may merge.
+Split.
+Expand.
+Shrink.
+Disappear.
+
+State 7
+Mental Model
+Mental Models describe how Athena believes the world works.
+Examples
+Dogs usually bark.
+Objects fall downward.
+Fire is dangerous.
+People answer questions.
+Mental Models are predictive.
+They are not absolute truth.
+They continuously evolve.
+
+State 8
+Theory
+Theory is a collection of Mental Models.
+Examples
+Physics
+Biology
+Language
+Mathematics
+A Theory is Athena's highest level of abstraction.
+Theories explain
+why
+instead of
+what.
+
+State 9
+Planning
+Planning predicts future actions.
+Examples
+If I ask another question,
+I may improve my understanding.
+If confidence is low,
+I should collect more evidence.
+Planning transforms cognition into behavior.
+
+State 10
+Action
+Athena performs actions.
+Ask questions.
+Observe.
+Speak.
+Move.
+Search.
+Actions generate new observations.
+The loop begins again.
+
+State Transition
+State transitions are more important than state definitions.
+Every transition requires explicit rules.
+Example
+Observation
+¡ý
+Perception
+Condition
+Vision Interface successfully extracts features.
+
+Perception
+¡ý
+Attention
+Condition
+Interesting enough.
+
+Attention
+¡ý
+Experience
+Condition
+Meaningful interaction occurred.
+
+Experience
+¡ý
+Working Memory
+Condition
+Interaction completed.
+
+Working Memory
+¡ý
+Long-term Memory
+Condition
+Sleep Engine selected it.
+
+Long-term Memory
+¡ý
+Concept
+Condition
+Enough supporting evidence.
+
+Concept
+¡ý
+Mental Model
+Condition
+Relationships become predictive.
+
+Mental Model
+¡ý
+Theory
+Condition
+Multiple Mental Models explain a larger domain.
+
+Evidence System
+Every state should maintain evidence.
+Example
+Concept
+Apple
+Evidence
+Experience #1
+Experience #4
+Experience #8
+Vision Observation #15
+External Knowledge #2
+Nothing exists without evidence.
+Evidence supports cognition.
+
+Confidence
+Every state has confidence.
+Confidence changes continuously.
+High confidence
+¡ý
+More stable
+Low confidence
+¡ý
+More likely to change
+Knowledge is probabilistic.
+Not binary.
+
+Conflict Detection
+Every state may conflict.
+Examples
+Apple is red.
+Apple is green.
+Both may be true.
+The brain should preserve conflicts.
+Conflicts trigger curiosity.
+Curiosity generates new observations.
+New observations resolve conflicts.
+
+Curiosity
+Curiosity is generated automatically.
+Examples
+Unknown relation.
+Conflicting evidence.
+Low confidence.
+Incomplete concept.
+Prediction failure.
+Curiosity drives learning.
+
+Forgetting
+Athena should not remember everything forever.
+Forgetting is necessary.
+Possible forgetting
+Unused memories
+Low-confidence hypotheses
+Duplicate observations
+Temporary working memory
+Concepts should almost never disappear.
+Experiences should almost never be deleted.
+Only attention changes.
+
+Identity
+Athena should maintain an internal identity.
+Identity contains
+Goals
+Preferences
+Learning progress
+Current interests
+Current attention
+Current projects
+Identity influences attention.
+Attention influences learning.
+Learning changes identity.
+Identity evolves continuously.
+
+Why State-Based Intelligence
+Traditional AI
+Knowledge
+¡Ö Parameters
+Athena Brain
+Knowledge
+¡Ö Dynamic Cognitive State
+This is the fundamental difference.
+The objective is not to create a larger model.
+The objective is to create a mind that continuously changes.
+
+Phase-1 Goal
+BabyBrain should not attempt AGI.
+BabyBrain validates one hypothesis.
+Can continuous state transitions gradually produce cognition?
+If the answer is yes,
+Athena Brain becomes more than an AI application.
+It becomes a new cognitive architecture.

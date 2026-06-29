@@ -1,0 +1,130 @@
+{
+  "name": "Tomato",
+  "display_name": null,
+  "concept_id": "concept_5959cbb71f37",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.543362+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Tomato, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_afaaac68d8aa"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.5700000000000001,
+      "evidence_refs": [
+        "evidence_440631fcd195"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.5249999999999999,
+      "evidence_refs": [
+        "evidence_69daa948f481"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_d4bb4c9ccb26"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_b0b1abf8b37c"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "boundary_note",
+      "value": "The user says people may debate whether it is fruit or vegetable.",
+      "confidence": 0.44999999999999996,
+      "evidence_refs": [
+        "evidence_651aa3e63c85"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "Inferred from rule rule_e703e8ae6e75: Tomato is a Fruit, and Fruit is usually edible unless it matches Plastic, PlasticFruit.",
+      "confidence": 0.49299999999999994,
+      "evidence_refs": [
+        "rule_e703e8ae6e75"
+      ],
+      "scope": "inferred",
+      "generalization_status": "inferred_from_rule"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_fd288d14a48e"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_afaaac68d8aa",
+    "evidence_440631fcd195",
+    "evidence_69daa948f481",
+    "evidence_d4bb4c9ccb26",
+    "evidence_b0b1abf8b37c",
+    "evidence_651aa3e63c85",
+    "evidence_fd288d14a48e",
+    "rule_e703e8ae6e75"
+  ],
+  "open_questions": [
+    {
+      "question": "Tomato 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_fd288d14a48e"
+      ],
+      "inferred_answer": "Tomato is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Tomato 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_by_reasoning_rule",
+      "status": "answered_by_inference",
+      "inference_ref": "rule_e703e8ae6e75",
+      "inferred_answer": "根据规则推断：Tomato 通常可以吃，但仍要注意例外。"
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

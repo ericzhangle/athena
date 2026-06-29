@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "过敏不是水果，而是身体对某些物质产生的异常反应。有些人可能会对芒果、花粉、药物或其他食物过敏。过敏可能引起皮肤瘙痒、肿胀、呼吸不适等影响，但严重程度因人而异。",
+      "ref": "knowledge_text_699c2ac60f35"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_05bfcfc8d444",
+  "timestamp": "2026-06-29T00:00:28.540303+00:00",
+  "processed": false,
+  "immutable": true
+}

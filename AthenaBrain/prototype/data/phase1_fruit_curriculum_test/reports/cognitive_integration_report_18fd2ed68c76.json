@@ -1,0 +1,47 @@
+{
+  "integration_report_id": "cognitive_integration_report_18fd2ed68c76",
+  "timestamp": "2026-06-29T00:18:13.537362+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Orange",
+        "Tomato",
+        "Mango",
+        "Peach",
+        "Grape"
+      ],
+      "counterexamples": [
+        "PlasticApple",
+        "Nutrient",
+        "Allergy",
+        "Health",
+        "Energy",
+        "Digestion",
+        "VitaminC"
+      ],
+      "example_count": 8,
+      "counterexample_count": 7
+    },
+    {
+      "parent": "Nutrient",
+      "examples": [
+        "Mineral",
+        "Digestion",
+        "Vitamin",
+        "DietaryFiber",
+        "Potassium",
+        "VitaminC"
+      ],
+      "counterexamples": [],
+      "example_count": 6,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [],
+  "boundary_questions": []
+}

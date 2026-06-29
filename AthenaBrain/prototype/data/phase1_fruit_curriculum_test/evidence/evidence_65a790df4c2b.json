@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Mango may trigger Allergy for some people",
+    "subject": "Fruit",
+    "predicate": "caution",
+    "object": "Some people may be allergic to some fruits."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_4f66e76e26d4",
+    "experience_1e106d7a898e"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_65a790df4c2b",
+  "timestamp": "2026-06-29T00:17:57.643255+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

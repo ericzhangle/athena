@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "user answered Athena's question: Peach 是不是都能吃？有没有不能吃或不应该吃的情况？ -> peach 是能吃的",
+    "subject": "Peach",
+    "predicate": "curiosity_answer:curiosity_8344844188d0",
+    "object": "peach 是能吃的"
+  },
+  "source_type": "user_curiosity_answer",
+  "source_identity": "user",
+  "refs": [
+    "curiosity_8344844188d0"
+  ],
+  "status": "provisional",
+  "confidence": 0.65,
+  "evidence_id": "evidence_162b05a4d50d",
+  "timestamp": "2026-06-28T22:08:37.339919+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

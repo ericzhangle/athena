@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Vitamin is a nutrient",
+    "subject": "Vitamin",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_0a755b23c2a4",
+    "experience_4511ab0ccea5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_80f182952705",
+  "timestamp": "2026-06-29T00:16:28.267477+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

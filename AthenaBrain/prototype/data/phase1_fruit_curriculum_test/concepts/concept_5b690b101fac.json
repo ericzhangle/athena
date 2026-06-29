@@ -1,0 +1,150 @@
+{
+  "name": "Allergy",
+  "display_name": null,
+  "concept_id": "concept_5b690b101fac",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.826848+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Allergy.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_8e1e282962d9",
+        "evidence_dd4c6863cf0a",
+        "evidence_68ee4e54da37",
+        "evidence_8f2f0656af89",
+        "evidence_da36e92be953",
+        "evidence_56ffb241589a",
+        "evidence_fe5bb4b6066a"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "can_affect",
+      "target_concept": "Health",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_3971b8f90e64",
+        "evidence_2e3be6835d97",
+        "evidence_41f8f793089c",
+        "evidence_4e4b988c7007"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_8e1e282962d9",
+    "evidence_dd4c6863cf0a",
+    "evidence_68ee4e54da37",
+    "evidence_8f2f0656af89",
+    "evidence_3971b8f90e64",
+    "evidence_da36e92be953",
+    "evidence_2e3be6835d97",
+    "evidence_56ffb241589a",
+    "evidence_41f8f793089c",
+    "evidence_fe5bb4b6066a",
+    "evidence_4e4b988c7007"
+  ],
+  "open_questions": [
+    {
+      "question": "Allergy 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Allergy 被 Fruit 通过“may_trigger”联系起来。这说明 Allergy 和 Fruit 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "过敏不是水果，而是身体对某些物质产生的异常反应。有些人可能会对芒果、花粉、药物或其他食物过敏。过敏可能引起皮肤瘙痒、肿胀、呼吸不适等影响，但严重程度因人而异。",
+      "answer_evidence_refs": [
+        "experience_8837c91a3498"
+      ]
+    },
+    {
+      "question": "Allergy is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_8e1e282962d9",
+        "evidence_dd4c6863cf0a",
+        "evidence_68ee4e54da37",
+        "evidence_8f2f0656af89",
+        "evidence_da36e92be953"
+      ],
+      "inferred_answer": "Allergy is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Allergy 被 Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "过敏不是水果，而是身体对某些物质产生的异常反应。有些人可能会对芒果、花粉、药物或其他食物过敏。过敏可能引起皮肤瘙痒、肿胀、呼吸不适等影响，但严重程度因人而异。",
+      "answer_evidence_refs": [
+        "experience_09855e685763"
+      ]
+    },
+    {
+      "question": "Allergy can_affect Health 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "can_affect",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_3971b8f90e64"
+      ]
+    },
+    {
+      "question": "Health 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Allergy can_affect Health 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "can_affect",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_3971b8f90e64"
+      ]
+    },
+    {
+      "question": "Allergy 和一些已知 Nutrient 例子有相似特征（rel:is-not-a, rel:is-not-a:Fruit）。Allergy 会不会也是一种 Nutrient？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "answer_evidence_refs": [
+        "experience_3b40d59f005d"
+      ]
+    },
+    {
+      "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "answer_evidence_refs": [
+        "experience_c01b63158a68"
+      ]
+    },
+    {
+      "question": "Allergy 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "answer_evidence_refs": [
+        "experience_181117f98f2b"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

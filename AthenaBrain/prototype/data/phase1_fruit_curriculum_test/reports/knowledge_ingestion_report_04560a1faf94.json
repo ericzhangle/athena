@@ -1,0 +1,322 @@
+{
+  "report_id": "knowledge_ingestion_report_04560a1faf94",
+  "text_ref": "knowledge_text_3d5174e2ad05",
+  "experience_id": "experience_628418027c37",
+  "claim_count": 9,
+  "evidence_count": 9,
+  "updated_concepts": [
+    "Fruit",
+    "Orange",
+    "Vitamin",
+    "VitaminC"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_975c4c40b452",
+      "concept": "Fruit",
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear",
+      "priority": 0.98,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "positive_negative_boundary_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_b1dc37df6abe",
+      "concept": "Orange",
+      "question": "Orange 和一些已知 Fruit 例子有相似特征（rel:contains, rel:contains:Vitamin, rel:contains:VitaminC）。Orange 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e22c2314d2aa",
+      "concept": "PlasticApple",
+      "question": "为什么 PlasticApple 不能吃？这个原因和我已经知道的哪些概念有关？",
+      "reason": "mechanism_gap",
+      "priority": 0.98,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "mechanism_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1e20e7e3c476",
+      "concept": "Allergy",
+      "question": "Allergy 被 Fruit 通过“may_trigger”联系起来。这说明 Allergy 和 Fruit 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8af2dd2e88e0",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple 通过“contains”联系起来。这说明 DietaryFiber 和 Apple 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_c439f1361f3e",
+      "concept": "Allergy",
+      "question": "Allergy 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    }
+  ],
+  "claims": [
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "edibility",
+      "object": "Many fruits can be eaten directly.",
+      "attribute_name": "edibility",
+      "attribute_value": "Many fruits can be eaten directly.",
+      "statement": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁",
+      "questions": [
+        {
+          "question": "Fruit 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Orange",
+      "predicate": "edibility",
+      "object": "Orange can be eaten according to the text.",
+      "attribute_name": "edibility",
+      "attribute_value": "Orange can be eaten according to the text.",
+      "statement": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁",
+      "questions": [
+        {
+          "question": "Orange 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Orange",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁",
+      "questions": [
+        {
+          "question": "Orange 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Orange",
+      "predicate": "taste",
+      "object": "Orange has a described taste in the text.",
+      "attribute_name": "taste",
+      "attribute_value": "Orange has a described taste in the text.",
+      "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+      "questions": [
+        {
+          "question": "Orange 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Orange",
+      "predicate": "contains",
+      "object": "VitaminC",
+      "relation_type": "contains",
+      "target": "VitaminC",
+      "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+      "questions": [
+        {
+          "question": "Orange contains VitaminC 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "VitaminC 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Orange",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+      "questions": [
+        {
+          "question": "Orange contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "VitaminC",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+      "questions": [
+        {
+          "question": "VitaminC 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Vitamin",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用",
+      "questions": [
+        {
+          "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

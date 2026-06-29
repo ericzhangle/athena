@@ -1,0 +1,35 @@
+{
+  "sleep_report_id": "sleep_report_419203944298",
+  "timestamp": "2026-06-28T21:05:33.924896+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_a00d21e0def0",
+    "perception_0b099a878a75"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 3,
+      "source": "perception_0b099a878a75"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Apple is-a Fruit",
+      "confidence": 0.55,
+      "source": "experience_a00d21e0def0"
+    }
+  ],
+  "conflicts_or_variations": [],
+  "generalized_attributes": [],
+  "generated_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

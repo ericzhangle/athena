@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Allergy is not a fruit",
+    "subject": "Fruit",
+    "predicate": "caution",
+    "object": "Some people may be allergic to some fruits."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_4567d2cebceb",
+    "experience_c01b63158a68"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_e437446de4aa",
+  "timestamp": "2026-06-29T00:18:55.866625+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

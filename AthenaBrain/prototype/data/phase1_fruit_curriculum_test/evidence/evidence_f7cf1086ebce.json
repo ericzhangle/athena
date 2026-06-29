@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Grape is a fruit",
+    "subject": "Grape",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_69a47db1b045",
+    "experience_80a15f275a86"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_f7cf1086ebce",
+  "timestamp": "2026-06-29T00:19:02.173871+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

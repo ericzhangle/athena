@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Mango contains Vitamin and DietaryFiber",
+    "subject": "DietaryFiber",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_4f66e76e26d4",
+    "experience_1e106d7a898e"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_0c56f4a28425",
+  "timestamp": "2026-06-29T00:17:57.641256+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

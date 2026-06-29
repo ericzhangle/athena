@@ -1,0 +1,82 @@
+{
+  "name": "Pear",
+  "display_name": null,
+  "concept_id": "concept_856b64fd0f5a",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:25:22.352584+00:00",
+  "updated_at": "2026-06-28T21:25:22.353588+00:00",
+  "description": "An early concept for Pear, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object has a pear-like shape.",
+      "confidence": 0.5700000000000001,
+      "evidence_refs": [
+        "evidence_873a4b9c29b9"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a green or yellow surface.",
+      "confidence": 0.54,
+      "evidence_refs": [
+        "evidence_2037e167ac28"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_8271a6416766"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_fc1fc17eb83b"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_4ae2c07d97f5"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_873a4b9c29b9",
+    "evidence_2037e167ac28",
+    "evidence_8271a6416766",
+    "evidence_fc1fc17eb83b",
+    "evidence_4ae2c07d97f5"
+  ],
+  "open_questions": [
+    {
+      "question": "Pear 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "examples": []
+}

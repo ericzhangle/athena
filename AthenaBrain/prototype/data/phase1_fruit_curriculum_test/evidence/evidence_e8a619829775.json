@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Energy is not a fruit",
+    "subject": "Energy",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_c30d081a43b3",
+    "experience_bf086451b68f"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_e8a619829775",
+  "timestamp": "2026-06-29T00:14:35.073497+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

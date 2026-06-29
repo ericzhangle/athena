@@ -1,0 +1,72 @@
+{
+  "name": "Fruit",
+  "display_name": null,
+  "concept_id": "concept_bee84a2e1581",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.1,
+  "created_at": "2026-06-28T21:25:22.184451+00:00",
+  "updated_at": "2026-06-28T21:25:22.352584+00:00",
+  "description": "An early parent concept for Fruit, abstracted from examples: Apple, Peach, Pear.",
+  "attributes": [
+    {
+      "name": "common_shape",
+      "value": "Many Fruit examples share shape: The observed object looks roughly round.",
+      "confidence": 0.65,
+      "evidence_refs": [
+        "evidence_8867cb76757d",
+        "evidence_6c9794d95a22"
+      ],
+      "scope": "concept_level",
+      "generalization_status": "generalized_candidate"
+    },
+    {
+      "name": "common_use",
+      "value": "Many Fruit examples share use: The user says it can be eaten.",
+      "confidence": 0.75,
+      "evidence_refs": [
+        "evidence_655fae3c06bc",
+        "evidence_90b076e86a13",
+        "evidence_fc1fc17eb83b"
+      ],
+      "scope": "concept_level",
+      "generalization_status": "generalized_candidate"
+    },
+    {
+      "name": "common_surface",
+      "value": "Many Fruit examples share surface: The observed object appears smooth.",
+      "confidence": 0.65,
+      "evidence_refs": [
+        "evidence_7f9fc80ebf6d",
+        "evidence_8271a6416766"
+      ],
+      "scope": "concept_level",
+      "generalization_status": "generalized_candidate"
+    }
+  ],
+  "relations": [],
+  "evidence_refs": [],
+  "open_questions": [
+    {
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes"
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Apple",
+      "concept_id": "concept_fa39520c0daf",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Peach",
+      "concept_id": "concept_e7ef15f74b62",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Pear",
+      "concept_id": "concept_856b64fd0f5a",
+      "relation": "is-a"
+    }
+  ]
+}

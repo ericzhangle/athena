@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Allergy is not a fruit. Allergy is a body reaction to some substances. Mango, pollen, medicine, or other foods may trigger Allergy. Allergy can affect health, but severity varies by person.",
+      "ref": "knowledge_text_4567d2cebceb"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_c01b63158a68",
+  "timestamp": "2026-06-29T00:18:55.864363+00:00",
+  "processed": false,
+  "immutable": true
+}

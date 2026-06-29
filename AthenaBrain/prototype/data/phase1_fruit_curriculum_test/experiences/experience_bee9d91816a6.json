@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁。橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用。",
+      "ref": "knowledge_text_e89efa3b89f4"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_bee9d91816a6",
+  "timestamp": "2026-06-29T00:00:28.173160+00:00",
+  "processed": false,
+  "immutable": true
+}

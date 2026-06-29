@@ -1,0 +1,89 @@
+{
+  "sleep_report_id": "sleep_report_phase1_apple_001",
+  "timestamp": "2026-06-29T00:10:00Z",
+  "session_id": "phase1_apple_test_001",
+  "mode": "manual_mock_consolidation",
+  "input_refs": [
+    "external_state_phase1_apple_001",
+    "internal_state_phase1_apple_002",
+    "perception_apple_image_001",
+    "experience_phase1_apple_001"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "result": [
+        {
+          "concept": "Apple",
+          "attribute": "roughly round",
+          "source": "perception_apple_image_001:feature_shape_001",
+          "confidence": 0.62,
+          "note": "This is based on one image, so it is not yet a mature general property."
+        },
+        {
+          "concept": "Apple",
+          "attribute": "red surface",
+          "source": "perception_apple_image_001:feature_color_001",
+          "confidence": 0.58,
+          "note": "This may describe the shown example rather than all apples."
+        },
+        {
+          "concept": "Apple",
+          "attribute": "smooth surface",
+          "source": "perception_apple_image_001:feature_surface_001",
+          "confidence": 0.52,
+          "note": "Needs repeated evidence."
+        }
+      ]
+    },
+    {
+      "operation": "create_candidate_relation",
+      "result": {
+        "relation": "Apple is-a Fruit",
+        "source": "experience_phase1_apple_001:user_feedback.feedback_002",
+        "confidence": 0.55,
+        "note": "The relation is based on user explanation, not preloaded encyclopedia knowledge."
+      }
+    },
+    {
+      "operation": "detect_conflicts",
+      "result": [],
+      "note": "No conflict detected in this first Experience."
+    },
+    {
+      "operation": "generate_questions",
+      "result": [
+        {
+          "question": "苹果是否总是红色的，还是也可能有其他颜色？",
+          "reason": "single_image_color_may_not_generalize"
+        },
+        {
+          "question": "水果除了可以吃，还需要满足什么条件？",
+          "reason": "fruit_concept_is_still_immature"
+        },
+        {
+          "question": "苹果内部是什么样的？有没有籽？",
+          "reason": "visual_observation_only_covers_exterior"
+        }
+      ]
+    }
+  ],
+  "confidence_updates": [
+    {
+      "target": "Concept:Apple",
+      "from": 0.35,
+      "to": 0.48,
+      "reason": "user_confirmed_image_object_is_apple"
+    },
+    {
+      "target": "Relation:Apple is-a Fruit",
+      "from": 0.0,
+      "to": 0.55,
+      "reason": "user_provided_category_statement_and_explanation"
+    }
+  ],
+  "output_refs": [
+    "07_concept_apple.json"
+  ],
+  "summary": "Sleep consolidation created an early Apple concept from one user-guided Experience. The concept is useful but immature."
+}

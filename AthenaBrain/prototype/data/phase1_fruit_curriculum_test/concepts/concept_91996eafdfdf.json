@@ -1,0 +1,87 @@
+{
+  "name": "Mineral",
+  "display_name": null,
+  "concept_id": "concept_91996eafdfdf",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.797602+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Mineral.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Nutrient",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_1f2fe408f59f",
+        "evidence_111985ab4dd1",
+        "evidence_142b334fc007",
+        "evidence_fe36eeae64e3",
+        "evidence_51f5f6825a4b",
+        "evidence_7675e690547d",
+        "evidence_1c09075828be",
+        "evidence_9f245bb0a0af",
+        "evidence_e0624540fe69"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_1f2fe408f59f",
+    "evidence_111985ab4dd1",
+    "evidence_142b334fc007",
+    "evidence_fe36eeae64e3",
+    "evidence_51f5f6825a4b",
+    "evidence_7675e690547d",
+    "evidence_1c09075828be",
+    "evidence_9f245bb0a0af",
+    "evidence_e0624540fe69"
+  ],
+  "open_questions": [
+    {
+      "question": "Mineral 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Mineral 被 Fruit 通过“contains”联系起来。这说明 Mineral 和 Fruit 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_7aa1111e2c94"
+      ]
+    },
+    {
+      "question": "Mineral 被 Fruit 等概念通过“contains”联系起来。这说明 Mineral 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_b3025aaf2703"
+      ]
+    },
+    {
+      "question": "Mineral is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Nutrient",
+      "relation_evidence_refs": [
+        "evidence_1f2fe408f59f",
+        "evidence_111985ab4dd1",
+        "evidence_142b334fc007",
+        "evidence_fe36eeae64e3",
+        "evidence_51f5f6825a4b"
+      ],
+      "inferred_answer": "Mineral is-a Nutrient 已由关系证据回答。"
+    },
+    {
+      "question": "Nutrient 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

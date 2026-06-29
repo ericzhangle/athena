@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Plastic is a material, not a fruit",
+    "subject": "Plastic",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_5cc674ba0fe1",
+    "experience_898f737224df"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_9ce24d1d0932",
+  "timestamp": "2026-06-29T00:18:59.569972+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

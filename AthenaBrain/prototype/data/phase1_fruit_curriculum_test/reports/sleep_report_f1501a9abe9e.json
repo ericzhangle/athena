@@ -1,0 +1,49 @@
+{
+  "sleep_report_id": "sleep_report_f1501a9abe9e",
+  "timestamp": "2026-06-28T21:32:28.443201+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_44e52cbf7ed1",
+    "perception_e42bc4616dd7"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 5,
+      "source": "perception_e42bc4616dd7"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Banana is-a Fruit",
+      "confidence": 0.55,
+      "source": "evidence_c516c54af528"
+    }
+  ],
+  "conflicts_or_variations": [],
+  "generalized_attributes": [],
+  "parent_generalizations": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Pear",
+        "Apple",
+        "Peach",
+        "Banana"
+      ],
+      "counterexamples": [],
+      "example_count": 4,
+      "counterexample_count": 0
+    }
+  ],
+  "generated_questions": [
+    {
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

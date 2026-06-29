@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "ref": "knowledge_text_8510bb193236"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_6354501c8907",
+  "timestamp": "2026-06-29T00:08:35.487331+00:00",
+  "processed": false,
+  "immutable": true
+}

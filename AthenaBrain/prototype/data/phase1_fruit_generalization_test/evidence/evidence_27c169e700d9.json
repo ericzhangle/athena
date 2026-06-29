@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Peach observed surface: The observed object may have a fuzzy surface.",
+    "subject": "Peach",
+    "predicate": "observed_surface",
+    "object": "The observed object may have a fuzzy surface."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_324533452643",
+    "sample:fruit_test_peach_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.62,
+  "evidence_id": "evidence_27c169e700d9",
+  "timestamp": "2026-06-28T21:25:22.261640+00:00",
+  "sample_id": "fruit_test_peach_001",
+  "validation_events": []
+}

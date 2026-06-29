@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体",
+    "subject": "Fruit",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_559134226950",
+    "experience_64ccd57152ef"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_18cf005ee287",
+  "timestamp": "2026-06-29T00:08:35.160299+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

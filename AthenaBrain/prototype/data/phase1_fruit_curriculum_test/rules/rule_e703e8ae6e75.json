@@ -1,0 +1,19 @@
+{
+  "rule_type": "default_property_with_exception",
+  "subject_concept": "Fruit",
+  "predicate": "edibility",
+  "object_value": "usually_edible",
+  "condition": {
+    "relation": "is-a",
+    "target": "Fruit"
+  },
+  "exceptions": [
+    "Plastic",
+    "PlasticFruit"
+  ],
+  "source_evidence_id": "evidence_c4d47a7cbd8c",
+  "confidence": 0.58,
+  "status": "provisional",
+  "rule_id": "rule_e703e8ae6e75",
+  "created_at": "2026-06-28T22:21:02.074856+00:00"
+}

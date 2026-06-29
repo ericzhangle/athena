@@ -1,0 +1,128 @@
+Athena Brain White Paper v0.1
+-- A Growing Cognitive Architecture
+作者：（暂定）
+版本：0.1
+
+1. 项目愿景（Vision）
+目前的大语言模型（LLM）通过海量数据进行集中训练，在训练结束后形成一个相对固定的参数模型。
+虽然可以完成复杂的语言任务，但仍然存在几个根本问题：
+* 无法像人类一样持续成长；
+* 新知识主要依赖重新训练或微调；
+* 知识隐藏在参数中，缺乏可解释的概念结构；
+* 缺乏真正意义上的长期记忆和经验积累；
+* 不具备主动探索和形成新理论的能力。
+Athena Brain 希望探索一种新的人工智能架构：
+AI 不是一次性训练出来，而是在一生中不断成长。
+模型出生时几乎没有知识，通过观察世界、与人交流、不断思考和整理经验，逐渐形成自己的概念体系。
+
+2. 核心思想
+Athena Brain 并不把 LLM 当作真正的大脑。
+LLM 仅承担：
+* 语言理解
+* 语言表达
+* 基础推理接口
+真正的大脑由另一套不断生长的认知系统组成。
+整个系统不是一个固定神经网络，而是一个能够持续扩展的概念网络（Concept Network）。
+每一次学习都会改变这个网络。
+每一次经历都会影响未来的理解。
+每一次错误都会促使认知修正。
+
+3. 核心原则
+Principle 1
+AI 应该持续成长，而不是一次训练完成。
+
+Principle 2
+知识应该保存为概念（Concept），而不仅仅存在于神经网络参数中。
+
+Principle 3
+每一个概念都来源于真实经历。
+
+Principle 4
+新的知识应该能够不断修改旧知识。
+
+Principle 5
+学习速度可以很慢，但成长必须持续。
+
+4. 整体架构
+Athena Brain 由多个相互协作的模块组成：
+Language Interface（语言接口）
+Vision System（视觉系统）
+Working Memory（工作记忆）
+Short-term Memory（短期记忆）
+Long-term Memory（长期记忆）
+Concept Graph（概念网络）
+Reasoning Engine（推理引擎）
+Sleep Engine（睡眠整理）
+Curiosity Engine（主动探索）
+Planning Engine（规划系统）
+这些模块共同组成真正意义上的"认知系统"。
+
+5. Concept（概念）
+Athena Brain 的基本单位不是 Token，而是 Concept。
+一个 Concept 可以代表：
+一个物体
+一种动物
+一个人
+一个动作
+一个数学概念
+一个物理规律
+一个事件
+一个情绪
+每一个 Concept 都包含：
+唯一 ID
+名称
+描述
+形成时间
+最近更新时间
+来源经历
+关联图片
+关联声音
+关联文字
+可信度
+与其他 Concept 的关系
+Concept 可以不断修改。
+Concept 可以不断扩展。
+Concept 可以不断抽象。
+
+6. 学习过程
+学习不是 Gradient Update。
+学习流程如下：
+观察（Observe）
+↓
+提出问题（Question）
+↓
+获得反馈（Feedback）
+↓
+形成经历（Experience）
+↓
+建立 Concept
+↓
+建立关系
+↓
+进入短期记忆
+↓
+睡眠整理
+↓
+形成长期知识
+整个过程不断循环。
+
+7. 长期目标
+Athena Brain 希望验证一种新的 AGI 路径：
+不是依赖越来越大的模型。
+而是依赖越来越成熟的认知结构。
+最终目标不是拥有最多参数。
+而是拥有能够持续成长、持续抽象、持续修正、持续创造新知识的人工智能。
+
+Version Roadmap
+v0.1
+完成理论设计。
+v0.2
+完成 BabyBrain 原型。
+v0.3
+实现 Concept Growth。
+v0.4
+实现长期记忆。
+v0.5
+实现睡眠整理。
+v1.0
+实现持续成长认知系统。

@@ -1,0 +1,27 @@
+{
+  "claim": {
+    "statement": "苹果是一种水果。",
+    "subject": "Apple",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_d2d1bbe20a91"
+  ],
+  "status": "invalidated",
+  "confidence": 0.7,
+  "evidence_id": "evidence_52dee98cebb1",
+  "timestamp": "2026-06-28T21:16:29.340323+00:00",
+  "sample_id": "apple_red_sample_001",
+  "validation_events": [
+    {
+      "event_type": "invalidate",
+      "reason": "User said the image should not be used as an apple sample.",
+      "previous_status": "provisional",
+      "new_status": "invalidated",
+      "timestamp": "2026-06-28T21:16:29.344995+00:00"
+    }
+  ]
+}

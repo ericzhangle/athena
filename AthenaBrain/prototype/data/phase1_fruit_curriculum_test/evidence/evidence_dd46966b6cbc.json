@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "user answered Athena's question: PlasticApple 是不是都能吃？有没有不能吃或不应该吃的情况？ -> Plastic Apple 一般不能吃，因为是塑料做的，塑料是不能吃的",
+    "subject": "Plasticapple",
+    "predicate": "curiosity_answer:curiosity_3e13a03fe5ca",
+    "object": "plastic apple 一般不能吃，因为是塑料做的，塑料是不能吃的"
+  },
+  "source_type": "user_curiosity_answer",
+  "source_identity": "user",
+  "refs": [
+    "curiosity_3e13a03fe5ca"
+  ],
+  "status": "provisional",
+  "confidence": 0.65,
+  "evidence_id": "evidence_dd46966b6cbc",
+  "timestamp": "2026-06-28T22:07:42.589380+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

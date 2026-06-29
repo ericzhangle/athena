@@ -1,0 +1,870 @@
+{
+  "report_id": "knowledge_ingestion_report_55153c345cb8",
+  "text_ref": "knowledge_text_370ac5ed5564",
+  "experience_id": "experience_be7509ff34bc",
+  "claim_count": 44,
+  "evidence_count": 44,
+  "updated_concepts": [
+    "Allergy",
+    "Apple",
+    "Banana",
+    "DietaryFiber",
+    "Digestion",
+    "Energy",
+    "FoodSafety",
+    "Fruit",
+    "Grape",
+    "Immunity",
+    "Mango",
+    "Mineral",
+    "NaturalSugar",
+    "Orange",
+    "Potassium",
+    "Tangerine",
+    "Vitamin",
+    "VitaminC",
+    "Water",
+    "Watermelon"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_975c4c40b452",
+      "concept": "Fruit",
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear",
+      "priority": 0.98,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "positive_negative_boundary_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_3490b51780ed",
+      "concept": "Fruit",
+      "question": "Fruit 和一些已知 Fruit 例子有相似特征（attr:edibility, attr:origin, rel:contains）。Fruit 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_51eca5a410f2",
+      "concept": "Grape",
+      "question": "Grape 和一些已知 Fruit 例子有相似特征（attr:edibility, value:can be eaten）。Grape 会不会也是一种 Fruit？",
+      "reason": "similarity_based_candidate_category",
+      "priority": 0.98,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "similarity_based_candidate_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e22c2314d2aa",
+      "concept": "PlasticApple",
+      "question": "为什么 PlasticApple 不能吃？这个原因和我已经知道的哪些概念有关？",
+      "reason": "mechanism_gap",
+      "priority": 0.98,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "mechanism_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1e20e7e3c476",
+      "concept": "Allergy",
+      "question": "Allergy 被 Fruit 通过“may_trigger”联系起来。这说明 Allergy 和 Fruit 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8af2dd2e88e0",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple 通过“contains”联系起来。这说明 DietaryFiber 和 Apple 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.9,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    }
+  ],
+  "claims": [
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "identity",
+      "object": "Fruit is a plant-produced fruit body.",
+      "attribute_name": "identity",
+      "attribute_value": "Fruit is a plant-produced fruit body.",
+      "statement": "水果是植物结出的果实，很多水果可以直接食用",
+      "questions": [
+        {
+          "question": "Fruit 的这个身份或来源在所有情况下都成立吗？有没有例外？",
+          "reason": "knowledge_claim_needs_boundary"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "origin",
+      "object": "Fruit grows from plants.",
+      "attribute_name": "origin",
+      "attribute_value": "Fruit grows from plants.",
+      "statement": "水果是植物结出的果实，很多水果可以直接食用",
+      "questions": [
+        {
+          "question": "Fruit 的这个身份或来源在所有情况下都成立吗？有没有例外？",
+          "reason": "knowledge_claim_needs_boundary"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "edibility",
+      "object": "Many fruits can be eaten directly.",
+      "attribute_name": "edibility",
+      "attribute_value": "Many fruits can be eaten directly.",
+      "statement": "水果是植物结出的果实，很多水果可以直接食用",
+      "questions": [
+        {
+          "question": "Fruit 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "水果是植物结出的果实，很多水果可以直接食用",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "taste",
+      "object": "Many fruits taste sweet or pleasant.",
+      "attribute_name": "taste",
+      "attribute_value": "Many fruits taste sweet or pleasant.",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Fruit 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Fruit contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "contains",
+      "object": "DietaryFiber",
+      "relation_type": "contains",
+      "target": "DietaryFiber",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Fruit contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "DietaryFiber 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "contains",
+      "object": "Mineral",
+      "relation_type": "contains",
+      "target": "Mineral",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Fruit contains Mineral 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Mineral 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Vitamin",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "DietaryFiber",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "DietaryFiber 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Mineral",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+      "questions": [
+        {
+          "question": "Mineral 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "contains",
+      "object": "VitaminC",
+      "relation_type": "contains",
+      "target": "VitaminC",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "Apple contains VitaminC 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "VitaminC 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "Apple contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "contains",
+      "object": "DietaryFiber",
+      "relation_type": "contains",
+      "target": "DietaryFiber",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "Apple contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "DietaryFiber 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "DietaryFiber",
+      "predicate": "supports",
+      "object": "Digestion",
+      "relation_type": "supports",
+      "target": "Digestion",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "DietaryFiber supports Digestion 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Digestion 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Apple",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "Apple 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "VitaminC",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "VitaminC 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Digestion",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "苹果富含维生素C和膳食纤维，有助于消化",
+      "questions": [
+        {
+          "question": "Digestion 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Banana",
+      "predicate": "contains",
+      "object": "Potassium",
+      "relation_type": "contains",
+      "target": "Potassium",
+      "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+      "questions": [
+        {
+          "question": "Banana contains Potassium 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Potassium 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Potassium",
+      "predicate": "role",
+      "object": "Potassium can support body function.",
+      "attribute_name": "role",
+      "attribute_value": "Potassium can support body function.",
+      "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Banana",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+      "questions": [
+        {
+          "question": "Banana 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Potassium",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+      "questions": [
+        {
+          "question": "Potassium 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Energy",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "香蕉含有丰富的钾元素，可以为身体提供能量",
+      "questions": [
+        {
+          "question": "Energy 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Orange",
+      "predicate": "contains",
+      "object": "VitaminC",
+      "relation_type": "contains",
+      "target": "VitaminC",
+      "statement": "橙子和柠檬富含维生素C，有助于增强免疫力",
+      "questions": [
+        {
+          "question": "Orange contains VitaminC 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "VitaminC 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Orange",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "橙子和柠檬富含维生素C，有助于增强免疫力",
+      "questions": [
+        {
+          "question": "Orange contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "VitaminC",
+      "predicate": "supports",
+      "object": "Immunity",
+      "relation_type": "supports",
+      "target": "Immunity",
+      "statement": "橙子和柠檬富含维生素C，有助于增强免疫力",
+      "questions": [
+        {
+          "question": "VitaminC supports Immunity 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Immunity 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Orange",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子和柠檬富含维生素C，有助于增强免疫力",
+      "questions": [
+        {
+          "question": "Orange 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Immunity",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "橙子和柠檬富含维生素C，有助于增强免疫力",
+      "questions": [
+        {
+          "question": "Immunity 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Watermelon",
+      "predicate": "water_content",
+      "object": "Watermelon contains a lot of water.",
+      "attribute_name": "water_content",
+      "attribute_value": "Watermelon contains a lot of water.",
+      "statement": "西瓜水分很多，夏天吃可以帮助补充水分",
+      "questions": [
+        {
+          "question": "Watermelon 的 water_content 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Watermelon",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "西瓜水分很多，夏天吃可以帮助补充水分",
+      "questions": [
+        {
+          "question": "Watermelon 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Water",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "西瓜水分很多，夏天吃可以帮助补充水分",
+      "questions": [
+        {
+          "question": "Water 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Grape",
+      "predicate": "edibility",
+      "object": "Grape can be eaten according to the text.",
+      "attribute_name": "edibility",
+      "attribute_value": "Grape can be eaten according to the text.",
+      "statement": "葡萄可以直接食用，也可以制作成果汁或葡萄干",
+      "questions": [
+        {
+          "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Grape",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "葡萄可以直接食用，也可以制作成果汁或葡萄干",
+      "questions": [
+        {
+          "question": "Grape 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Mango",
+      "predicate": "taste",
+      "object": "Mango has a described taste in the text.",
+      "attribute_name": "taste",
+      "attribute_value": "Mango has a described taste in the text.",
+      "statement": "芒果果肉柔软香甜，但有些人可能会对芒果过敏",
+      "questions": [
+        {
+          "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "caution",
+      "object": "Some people may be allergic to some fruits.",
+      "attribute_name": "caution",
+      "attribute_value": "Some people may be allergic to some fruits.",
+      "statement": "芒果果肉柔软香甜，但有些人可能会对芒果过敏",
+      "questions": [
+        {
+          "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+          "reason": "safety_claim_needs_condition"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "may_trigger",
+      "object": "Allergy",
+      "relation_type": "may_trigger",
+      "target": "Allergy",
+      "statement": "芒果果肉柔软香甜，但有些人可能会对芒果过敏",
+      "questions": [
+        {
+          "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Allergy 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Mango",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "芒果果肉柔软香甜，但有些人可能会对芒果过敏",
+      "questions": [
+        {
+          "question": "Mango 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Allergy",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "芒果果肉柔软香甜，但有些人可能会对芒果过敏",
+      "questions": [
+        {
+          "question": "Allergy 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Tangerine",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "不同水果成熟的季节不同，例如西瓜多在夏季成熟，橘子和橙子常在秋冬季成熟",
+      "questions": [
+        {
+          "question": "Tangerine 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "caution",
+      "object": "Fruit may contain natural sugar, so overeating can be harmful.",
+      "attribute_name": "caution",
+      "attribute_value": "Fruit may contain natural sugar, so overeating can be harmful.",
+      "statement": "不过，水果虽然健康，也含有天然糖分，因此不能一次吃得太多",
+      "questions": [
+        {
+          "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+          "reason": "safety_claim_needs_condition"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "NaturalSugar",
+      "predicate": "can_affect",
+      "object": "Energy",
+      "relation_type": "can_affect",
+      "target": "Energy",
+      "statement": "不过，水果虽然健康，也含有天然糖分，因此不能一次吃得太多",
+      "questions": [
+        {
+          "question": "NaturalSugar can_affect Energy 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Energy 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "NaturalSugar",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "不过，水果虽然健康，也含有天然糖分，因此不能一次吃得太多",
+      "questions": [
+        {
+          "question": "NaturalSugar 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "safety_practice",
+      "object": "Fruit should be washed before eating.",
+      "attribute_name": "safety_practice",
+      "attribute_value": "Fruit should be washed before eating.",
+      "statement": "食用水果前应先清洗干净，必要时削皮，以保证饮食卫生和安全",
+      "questions": [
+        {
+          "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+          "reason": "safety_claim_needs_condition"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "FoodSafety",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "食用水果前应先清洗干净，必要时削皮，以保证饮食卫生和安全",
+      "questions": [
+        {
+          "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

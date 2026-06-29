@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "ref": "knowledge_text_13b2ae0645bb"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_410449cc0e86",
+  "timestamp": "2026-06-29T00:16:41.093420+00:00",
+  "processed": false,
+  "immutable": true
+}

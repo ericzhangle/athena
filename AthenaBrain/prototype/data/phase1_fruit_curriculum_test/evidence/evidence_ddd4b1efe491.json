@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "水果是植物结出的果实，很多水果可以直接食用",
+    "subject": "Fruit",
+    "predicate": "identity",
+    "object": "Fruit is a plant-produced fruit body."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_370ac5ed5564",
+    "experience_be7509ff34bc"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_ddd4b1efe491",
+  "timestamp": "2026-06-28T23:33:33.839597+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

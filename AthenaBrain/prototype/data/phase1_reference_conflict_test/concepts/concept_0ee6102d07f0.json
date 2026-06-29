@@ -1,0 +1,52 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_0ee6102d07f0",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:16:29.373207+00:00",
+  "updated_at": "2026-06-28T21:16:29.376796+00:00",
+  "description": "An early concept for Apple, formed from direct interaction, perception evidence, and a candidate relation to 车辆.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "evidence_03ea5c2e7bf6"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_aa7e58b7122b"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [],
+  "evidence_refs": [
+    "evidence_03ea5c2e7bf6",
+    "evidence_aa7e58b7122b"
+  ],
+  "open_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "车辆 的边界是什么？还有哪些东西属于 车辆？",
+      "reason": "relation_target_concept_needs_definition"
+    },
+    {
+      "question": "Apple 的 is-a 关系存在冲突：reference 说是 Fruit，但已有证据给出不同说法。",
+      "reason": "reference_conflicts_with_existing_evidence"
+    }
+  ]
+}

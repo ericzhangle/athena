@@ -1,0 +1,40 @@
+{
+  "name": "FoodSafety",
+  "display_name": null,
+  "concept_id": "concept_d02c3719d56c",
+  "status": "forming",
+  "maturity": "seed",
+  "confidence": 0.1,
+  "created_at": "2026-06-28T22:42:25.836426+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: FoodSafety.",
+  "attributes": [],
+  "relations": [],
+  "evidence_refs": [],
+  "open_questions": [
+    {
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "FoodSafety 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "answer_evidence_refs": [
+        "experience_21117a71fa2c"
+      ]
+    },
+    {
+      "question": "FoodSafety 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "answer_evidence_refs": [
+        "experience_fa22184bafba"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

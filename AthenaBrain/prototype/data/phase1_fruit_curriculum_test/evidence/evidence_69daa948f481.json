@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Tomato observed surface: The observed object appears smooth.",
+    "subject": "Tomato",
+    "predicate": "observed_surface",
+    "object": "The observed object appears smooth."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_adba6228d424",
+    "sample:curriculum_tomato_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_69daa948f481",
+  "timestamp": "2026-06-28T21:32:28.535758+00:00",
+  "sample_id": "curriculum_tomato_001",
+  "validation_events": []
+}

@@ -1,0 +1,20 @@
+{
+  "current_task": "learn_apple_from_guided_example",
+  "visible_inputs": [
+    {
+      "input_id": "input_0b2172174025",
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/apple_red_001.jpg",
+      "status": "available"
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_9ecdc2beebdd",
+      "speaker": "user",
+      "text": "苹果是一种水果。"
+    }
+  ],
+  "state_id": "external_state_2b23d78664a6",
+  "timestamp": "2026-06-28T21:25:22.172274+00:00"
+}

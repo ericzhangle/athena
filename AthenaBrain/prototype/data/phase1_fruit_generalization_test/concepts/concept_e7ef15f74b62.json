@@ -1,0 +1,82 @@
+{
+  "name": "Peach",
+  "display_name": null,
+  "concept_id": "concept_e7ef15f74b62",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:25:22.267114+00:00",
+  "updated_at": "2026-06-28T21:25:22.267114+00:00",
+  "description": "An early concept for Peach, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_6c9794d95a22"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a pink or orange surface.",
+      "confidence": 0.5549999999999999,
+      "evidence_refs": [
+        "evidence_53596ef90e6a"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object may have a fuzzy surface.",
+      "confidence": 0.46499999999999997,
+      "evidence_refs": [
+        "evidence_27c169e700d9"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_90b076e86a13"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_e9608c13e8c2"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_6c9794d95a22",
+    "evidence_53596ef90e6a",
+    "evidence_27c169e700d9",
+    "evidence_90b076e86a13",
+    "evidence_e9608c13e8c2"
+  ],
+  "open_questions": [
+    {
+      "question": "Peach 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "examples": []
+}

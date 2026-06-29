@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Energy is not a fruit. Energy is needed for body activity. NaturalSugar can affect Energy. Energy is related to BodyFunction.",
+      "ref": "knowledge_text_929d5f3ac420"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_01355f2c8892",
+  "timestamp": "2026-06-29T00:14:36.140946+00:00",
+  "processed": false,
+  "immutable": true
+}

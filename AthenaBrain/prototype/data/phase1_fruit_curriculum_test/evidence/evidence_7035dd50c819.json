@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Digestion is related to Health",
+    "subject": "Digestion",
+    "predicate": "related-to",
+    "object": "Health"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_9201b8a5a3fe",
+    "experience_c1da8e14a9d4"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_7035dd50c819",
+  "timestamp": "2026-06-29T00:16:36.486826+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

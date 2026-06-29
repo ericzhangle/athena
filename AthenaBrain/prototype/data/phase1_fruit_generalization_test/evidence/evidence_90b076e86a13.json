@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Peach observed use: The user says it can be eaten.",
+    "subject": "Peach",
+    "predicate": "observed_use",
+    "object": "The user says it can be eaten."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_324533452643",
+    "sample:fruit_test_peach_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.75,
+  "evidence_id": "evidence_90b076e86a13",
+  "timestamp": "2026-06-28T21:25:22.262643+00:00",
+  "sample_id": "fruit_test_peach_001",
+  "validation_events": []
+}

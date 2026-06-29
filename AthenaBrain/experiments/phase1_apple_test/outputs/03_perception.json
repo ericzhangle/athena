@@ -1,0 +1,51 @@
+{
+  "perception_id": "perception_apple_image_001",
+  "timestamp": "2026-06-29T00:01:00Z",
+  "session_id": "phase1_apple_test_001",
+  "source": {
+    "type": "vision_interface",
+    "source_model": "manual_mock_v0",
+    "input_ref": "inputs/apple_001.jpg",
+    "note": "This is a mocked perception output. Replace with real vision model output in implementation."
+  },
+  "observed_features": [
+    {
+      "feature_id": "feature_shape_001",
+      "category": "shape",
+      "value": "roughly round object",
+      "confidence": 0.82,
+      "evidence": "image observation"
+    },
+    {
+      "feature_id": "feature_color_001",
+      "category": "color",
+      "value": "dominant red surface with possible yellow highlight",
+      "confidence": 0.78,
+      "evidence": "image observation"
+    },
+    {
+      "feature_id": "feature_surface_001",
+      "category": "surface",
+      "value": "smooth and slightly reflective surface",
+      "confidence": 0.7,
+      "evidence": "image observation"
+    },
+    {
+      "feature_id": "feature_local_001",
+      "category": "local_structure",
+      "value": "small darker area near the top, possibly a stem or top indentation",
+      "confidence": 0.55,
+      "evidence": "image observation"
+    }
+  ],
+  "unverified_hypotheses": [
+    {
+      "hypothesis": "apple",
+      "source": "possible vision label or user context",
+      "confidence": 0.3,
+      "status": "unverified",
+      "rule": "Do not commit this label as knowledge until user confirmation creates an Experience."
+    }
+  ],
+  "non_semantic_constraint": "Perception describes observed features only. It does not decide what the object is."
+}

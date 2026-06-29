@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Allergy is not a fruit",
+    "subject": "Allergy",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_860cb2d3ce2d",
+    "experience_47efe937df4d"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_583411ee9c5c",
+  "timestamp": "2026-06-29T00:14:30.000370+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Banana observed use: The user says it can be eaten.",
+    "subject": "Banana",
+    "predicate": "observed_use",
+    "object": "The user says it can be eaten."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_e42bc4616dd7",
+    "sample:curriculum_banana_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.75,
+  "evidence_id": "evidence_0d86961a18e9",
+  "timestamp": "2026-06-28T21:32:28.438004+00:00",
+  "sample_id": "curriculum_banana_001",
+  "validation_events": []
+}

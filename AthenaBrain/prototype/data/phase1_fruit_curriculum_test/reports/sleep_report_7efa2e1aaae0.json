@@ -1,0 +1,50 @@
+{
+  "sleep_report_id": "sleep_report_7efa2e1aaae0",
+  "timestamp": "2026-06-28T21:32:28.544359+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_2f7a4c0947cb",
+    "perception_adba6228d424"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 6,
+      "source": "perception_adba6228d424"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Tomato is-a Fruit",
+      "confidence": 0.55,
+      "source": "evidence_fd288d14a48e"
+    }
+  ],
+  "conflicts_or_variations": [],
+  "generalized_attributes": [],
+  "parent_generalizations": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Peach",
+        "Tomato"
+      ],
+      "counterexamples": [],
+      "example_count": 5,
+      "counterexample_count": 0
+    }
+  ],
+  "generated_questions": [
+    {
+      "question": "Tomato 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

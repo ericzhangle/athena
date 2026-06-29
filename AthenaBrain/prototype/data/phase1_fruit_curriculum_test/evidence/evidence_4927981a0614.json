@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "有些人可能会对芒果、花粉、药物或其他食物过敏",
+    "subject": "Mango",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_9f1dc27c0708",
+    "experience_8837c91a3498"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_4927981a0614",
+  "timestamp": "2026-06-28T23:53:23.824420+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

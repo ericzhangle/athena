@@ -1,0 +1,20 @@
+{
+  "current_task": "learn_tomato_from_guided_example",
+  "visible_inputs": [
+    {
+      "input_id": "input_04f9d0fe86ec",
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/tomato_001.jpg",
+      "status": "available"
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_fedaaa37b5f8",
+      "speaker": "user",
+      "text": "番茄是一种水果。"
+    }
+  ],
+  "state_id": "external_state_dba00fbf4e83",
+  "timestamp": "2026-06-28T21:32:28.530214+00:00"
+}

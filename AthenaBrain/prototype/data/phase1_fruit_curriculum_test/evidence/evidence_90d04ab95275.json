@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "过敏不是水果，而是身体对某些物质产生的异常反应",
+    "subject": "Fruit",
+    "predicate": "caution",
+    "object": "Some people may be allergic to some fruits."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "refs": [
+    "knowledge_text_699c2ac60f35",
+    "experience_05bfcfc8d444"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_90d04ab95275",
+  "timestamp": "2026-06-29T00:00:28.542810+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

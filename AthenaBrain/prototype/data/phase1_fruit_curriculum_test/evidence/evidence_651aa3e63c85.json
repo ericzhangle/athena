@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Tomato observed boundary_note: The user says people may debate whether it is fruit or vegetable.",
+    "subject": "Tomato",
+    "predicate": "observed_boundary_note",
+    "object": "The user says people may debate whether it is fruit or vegetable."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_adba6228d424",
+    "sample:curriculum_tomato_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.6,
+  "evidence_id": "evidence_651aa3e63c85",
+  "timestamp": "2026-06-28T21:32:28.538827+00:00",
+  "sample_id": "curriculum_tomato_001",
+  "validation_events": []
+}

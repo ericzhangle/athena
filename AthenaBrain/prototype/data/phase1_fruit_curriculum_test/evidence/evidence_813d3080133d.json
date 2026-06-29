@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "DietaryFiber supports Digestion",
+    "subject": "DietaryFiber",
+    "predicate": "supports",
+    "object": "Digestion"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_a486d4d6de73",
+    "experience_b60752519a09"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_813d3080133d",
+  "timestamp": "2026-06-29T00:14:32.279357+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,263 @@
+{
+  "report_id": "knowledge_ingestion_report_5540ded0244b",
+  "text_ref": "knowledge_text_ef2d95c53fc2",
+  "experience_id": "experience_b2d31b5bc41b",
+  "claim_count": 5,
+  "evidence_count": 5,
+  "updated_concepts": [
+    "Fruit",
+    "Vitamin",
+    "VitaminC"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_975c4c40b452",
+      "concept": "Fruit",
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear",
+      "priority": 0.98,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "positive_negative_boundary_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_2a08da8d611b",
+      "concept": "Mineral",
+      "question": "Mineral 被 Fruit 通过“contains”联系起来。这说明 Mineral 和 Fruit 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2dbf739f47f1",
+      "concept": "Plastic",
+      "question": "Plastic 被 PlasticApple 通过“made-of”联系起来。这说明 Plastic 和 PlasticApple 有什么关系？",
+      "reason": "incoming_relation_gap",
+      "priority": 0.98,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_c439f1361f3e",
+      "concept": "Allergy",
+      "question": "Allergy 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ac3418d8a066",
+      "concept": "Digestion",
+      "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "contains",
+      "object": "VitaminC",
+      "relation_type": "contains",
+      "target": "VitaminC",
+      "statement": "维生素C是一种营养物质，不是水果",
+      "questions": [
+        {
+          "question": "Fruit contains VitaminC 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "VitaminC 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "VitaminC",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "维生素C是一种营养物质，不是水果",
+      "questions": [
+        {
+          "question": "VitaminC 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "维生素C是一种营养物质，不是水果",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关",
+      "questions": [
+        {
+          "question": "Fruit contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Vitamin",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关",
+      "questions": [
+        {
+          "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

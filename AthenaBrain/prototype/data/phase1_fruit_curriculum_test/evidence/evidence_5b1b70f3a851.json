@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "膳食纤维是一种食物中的营养成分，不是水果",
+    "subject": "DietaryFiber",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "refs": [
+    "knowledge_text_549692c412de",
+    "experience_b7cfc7181aec"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_5b1b70f3a851",
+  "timestamp": "2026-06-29T00:00:28.664064+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

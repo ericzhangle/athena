@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "VitaminC is a nutrient, not a fruit. Many fruits contain VitaminC. VitaminC supports Immunity and helps maintain Health.",
+      "ref": "knowledge_text_6722741e9292"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_65903aa9a857",
+  "timestamp": "2026-06-29T00:16:23.649230+00:00",
+  "processed": false,
+  "immutable": true
+}

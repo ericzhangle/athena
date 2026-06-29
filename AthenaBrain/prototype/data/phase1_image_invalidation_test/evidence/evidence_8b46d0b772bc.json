@@ -1,0 +1,28 @@
+{
+  "claim": {
+    "statement": "Apple observed shape: The observed object looks roughly round.",
+    "subject": "Apple",
+    "predicate": "observed_shape",
+    "object": "The observed object looks roughly round."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_d23b933e8d04",
+    "sample:apple_red_sample_001"
+  ],
+  "status": "invalidated",
+  "confidence": 0.8,
+  "evidence_id": "evidence_8b46d0b772bc",
+  "timestamp": "2026-06-28T21:16:29.335936+00:00",
+  "sample_id": "apple_red_sample_001",
+  "validation_events": [
+    {
+      "event_type": "invalidate",
+      "reason": "User said the image should not be used as an apple sample.",
+      "previous_status": "provisional",
+      "new_status": "invalidated",
+      "timestamp": "2026-06-28T21:16:29.343612+00:00"
+    }
+  ]
+}

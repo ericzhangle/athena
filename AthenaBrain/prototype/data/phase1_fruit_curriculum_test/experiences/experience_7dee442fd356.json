@@ -1,0 +1,59 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "苹果是一种水果。"
+    },
+    {
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/apple_red_001.jpg",
+      "sample_id": "curriculum_apple_001"
+    }
+  ],
+  "perception_refs": [
+    "perception_6506d3bb2610"
+  ],
+  "athena_questions": [
+    {
+      "question_id": "question_5241c375d8b4",
+      "question": "Apple 是什么？你能给我一个具体例子吗？",
+      "reason": "new_concept_needs_direct_evidence",
+      "priority": 0.85,
+      "status": "open"
+    },
+    {
+      "question_id": "question_95b451a997af",
+      "question": "Fruit 是什么意思？它和刚才的新概念是什么关系？",
+      "reason": "relation_target_concept_is_not_mature",
+      "priority": 0.8,
+      "status": "open"
+    },
+    {
+      "question_id": "question_431d3b5a7fd3",
+      "question": "这次观察到的特征是否真的属于 Apple，还是只是这个例子的特征？",
+      "reason": "distinguish_instance_features_from_general_concept",
+      "priority": 0.75,
+      "status": "open"
+    }
+  ],
+  "user_feedback": [
+    {
+      "type": "lesson_feedback",
+      "content": "这是苹果，可以吃，来自植物。"
+    }
+  ],
+  "tags": [
+    "phase1",
+    "apple",
+    "guided_learning"
+  ],
+  "sample_id": "curriculum_apple_001",
+  "source_identity": "user",
+  "source_diversity": "single_user",
+  "independence_score": 0.8,
+  "experience_id": "experience_7dee442fd356",
+  "timestamp": "2026-06-28T21:32:28.164051+00:00",
+  "processed": false,
+  "immutable": true
+}

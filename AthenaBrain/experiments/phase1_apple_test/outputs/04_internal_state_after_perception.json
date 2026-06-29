@@ -1,0 +1,91 @@
+{
+  "state_id": "internal_state_phase1_apple_002",
+  "timestamp": "2026-06-29T00:02:00Z",
+  "session_id": "phase1_apple_test_001",
+  "previous_state_id": "internal_state_phase1_apple_001",
+  "trigger": "perception_created",
+  "attention_focus": [
+    {
+      "target": "visual_features_of_candidate_apple",
+      "reason": "new_perception_contains_features_related_to_active_concept",
+      "strength": 0.9
+    },
+    {
+      "target": "Apple",
+      "reason": "user_introduced_concept_and_image_is_available",
+      "strength": 0.88
+    }
+  ],
+  "pending_questions": [
+    {
+      "question_id": "question_001",
+      "question": "你说苹果是一种水果，那么水果是什么意思？",
+      "reason": "relation_target_concept_is_undefined",
+      "priority": 0.85,
+      "status": "open"
+    },
+    {
+      "question_id": "question_002",
+      "question": "这张图片里的物体就是你说的苹果吗？",
+      "reason": "need_user_confirmation_before_committing_label",
+      "priority": 0.95,
+      "status": "open"
+    },
+    {
+      "question_id": "question_003",
+      "question": "苹果通常都是这种近似圆形、红色、表面光滑的样子吗？",
+      "reason": "need_to_distinguish_instance_features_from_general_concept_features",
+      "priority": 0.75,
+      "status": "open"
+    }
+  ],
+  "active_concepts": [
+    {
+      "concept_id": "concept_candidate_apple",
+      "name": "Apple",
+      "status": "forming",
+      "confidence": 0.35,
+      "maturity": "seed",
+      "evidence_refs": [
+        "external_state_phase1_apple_001:conversation_context.turn_001",
+        "perception_apple_image_001"
+      ]
+    },
+    {
+      "concept_id": "concept_candidate_fruit",
+      "name": "Fruit",
+      "status": "undefined",
+      "confidence": 0.1,
+      "maturity": "seed",
+      "evidence_refs": [
+        "external_state_phase1_apple_001:conversation_context.turn_001"
+      ]
+    }
+  ],
+  "conflict_set": [],
+  "curiosity_queue": [
+    {
+      "topic": "Apple visual variation",
+      "reason": "one image is insufficient to know general apple appearance",
+      "priority": 0.8
+    },
+    {
+      "topic": "Fruit definition",
+      "reason": "fruit is used as a category but not yet understood",
+      "priority": 0.85
+    }
+  ],
+  "state_transition_events": [
+    {
+      "transition_id": "transition_001",
+      "from": "perception_apple_image_001",
+      "to": "internal_state_phase1_apple_002",
+      "trigger": "new_visual_features",
+      "result": [
+        "attention_focus_updated",
+        "confirmation_question_created",
+        "apple_concept_candidate_confidence_increased_slightly"
+      ]
+    }
+  ]
+}

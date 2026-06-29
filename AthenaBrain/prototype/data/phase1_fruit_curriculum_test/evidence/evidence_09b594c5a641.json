@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Mango, pollen, medicine, or other foods may trigger Allergy",
+    "subject": "Mango",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_edbfa1987e49",
+    "experience_181117f98f2b"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_09b594c5a641",
+  "timestamp": "2026-06-29T00:19:07.260979+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

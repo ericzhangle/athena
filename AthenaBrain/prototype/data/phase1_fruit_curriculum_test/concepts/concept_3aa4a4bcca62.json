@@ -1,0 +1,161 @@
+{
+  "name": "Banana",
+  "display_name": null,
+  "concept_id": "concept_3aa4a4bcca62",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.443201+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Banana, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object is long and curved.",
+      "confidence": 0.6000000000000001,
+      "evidence_refs": [
+        "evidence_72d553b04f7f"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly yellow surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_fd8ff988575a"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object has a peel.",
+      "confidence": 0.54,
+      "evidence_refs": [
+        "evidence_f4a92aba164a"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_0d86961a18e9"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_5ff1777410b5"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "Inferred from rule rule_e703e8ae6e75: Banana is a Fruit, and Fruit is usually edible unless it matches Plastic, PlasticFruit.",
+      "confidence": 0.49299999999999994,
+      "evidence_refs": [
+        "rule_e703e8ae6e75"
+      ],
+      "scope": "inferred",
+      "generalization_status": "inferred_from_rule"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_c516c54af528"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Potassium",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_5c7da4882080",
+        "evidence_fd3c8d99bd46"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_72d553b04f7f",
+    "evidence_fd8ff988575a",
+    "evidence_f4a92aba164a",
+    "evidence_0d86961a18e9",
+    "evidence_5ff1777410b5",
+    "evidence_c516c54af528",
+    "rule_e703e8ae6e75",
+    "evidence_5c7da4882080",
+    "evidence_fd3c8d99bd46"
+  ],
+  "open_questions": [
+    {
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_c516c54af528"
+      ],
+      "inferred_answer": "Banana is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Banana 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_by_reasoning_rule",
+      "status": "answered_by_inference",
+      "inference_ref": "rule_e703e8ae6e75",
+      "inferred_answer": "根据规则推断：Banana 通常可以吃，但仍要注意例外。"
+    },
+    {
+      "question": "Banana contains Potassium 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Potassium",
+      "relation_evidence_refs": [
+        "evidence_5c7da4882080",
+        "evidence_fd3c8d99bd46"
+      ]
+    },
+    {
+      "question": "Potassium 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Banana 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Banana contains Potassium 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Potassium",
+      "relation_evidence_refs": [
+        "evidence_5c7da4882080",
+        "evidence_fd3c8d99bd46"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Mango is a fruit. Mango can usually be eaten directly. Mango contains Vitamin and DietaryFiber. Mango may trigger Allergy for some people.",
+      "ref": "knowledge_text_4f66e76e26d4"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_1e106d7a898e",
+  "timestamp": "2026-06-29T00:17:57.632737+00:00",
+  "processed": false,
+  "immutable": true
+}

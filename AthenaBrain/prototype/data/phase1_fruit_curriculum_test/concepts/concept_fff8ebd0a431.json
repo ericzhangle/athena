@@ -1,0 +1,234 @@
+{
+  "name": "Grape",
+  "display_name": null,
+  "concept_id": "concept_fff8ebd0a431",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.824667+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Grape.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "Grape can be eaten according to the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_c4df25aa9623",
+        "evidence_e870eb310a64",
+        "evidence_7f73b51d1bb6",
+        "evidence_4d05251e1812",
+        "evidence_2e792eb0b1fd",
+        "evidence_fffc928f847a",
+        "evidence_8d095b83521a"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "taste",
+      "value": "Grape has a described taste in the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_0c1d6d2e69a3",
+        "evidence_fe88eb3cfc7a",
+        "evidence_80f863fcb7ce",
+        "evidence_f3e66df49eee",
+        "evidence_6021468d92c2",
+        "evidence_443e742122aa"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "contains",
+      "target_concept": "Vitamin",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_869c19b54ff1",
+        "evidence_b6652904a016",
+        "evidence_61a509d3df16",
+        "evidence_1b28e3f74817",
+        "evidence_427ef9659dab",
+        "evidence_457db662215a",
+        "evidence_425746937180",
+        "evidence_7d0ca456d1a1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_0bd7cf951867",
+        "evidence_63ac193bd65e",
+        "evidence_a80d150be5d6",
+        "evidence_edaf82642867",
+        "evidence_f7cf1086ebce",
+        "evidence_ce602edb9278"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Water",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_e53988e53e8b",
+        "evidence_ca7abd3a4818"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "knowledge_ingestion_backfill_fruit_example",
+    "evidence_c4df25aa9623",
+    "evidence_e870eb310a64",
+    "evidence_0c1d6d2e69a3",
+    "evidence_869c19b54ff1",
+    "evidence_7f73b51d1bb6",
+    "evidence_fe88eb3cfc7a",
+    "evidence_b6652904a016",
+    "evidence_0bd7cf951867",
+    "evidence_4d05251e1812",
+    "evidence_80f863fcb7ce",
+    "evidence_61a509d3df16",
+    "evidence_63ac193bd65e",
+    "evidence_2e792eb0b1fd",
+    "evidence_f3e66df49eee",
+    "evidence_1b28e3f74817",
+    "evidence_a80d150be5d6",
+    "evidence_fffc928f847a",
+    "evidence_6021468d92c2",
+    "evidence_427ef9659dab",
+    "evidence_edaf82642867",
+    "evidence_8d095b83521a",
+    "evidence_443e742122aa",
+    "evidence_457db662215a",
+    "evidence_f7cf1086ebce",
+    "evidence_e53988e53e8b",
+    "evidence_425746937180",
+    "evidence_ce602edb9278",
+    "evidence_ca7abd3a4818",
+    "evidence_7d0ca456d1a1"
+  ],
+  "open_questions": [
+    {
+      "question": "Grape 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Grape 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Grape contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_869c19b54ff1",
+        "evidence_b6652904a016",
+        "evidence_61a509d3df16",
+        "evidence_1b28e3f74817"
+      ]
+    },
+    {
+      "question": "Vitamin 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Grape 和一些已知 Fruit 例子有相似特征（value:edible）。Grape 会不会也是一种 Fruit？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "answer_evidence_refs": [
+        "experience_c082ca43e4bc"
+      ]
+    },
+    {
+      "question": "Grape 和一些已知 Fruit 例子有相似特征（rel:contains, rel:contains:Vitamin, value:edible）。Grape 会不会也是一种 Fruit？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "answer_evidence_refs": [
+        "experience_1d3281ef187f"
+      ]
+    },
+    {
+      "question": "Grape is-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_0bd7cf951867",
+        "evidence_63ac193bd65e",
+        "evidence_a80d150be5d6",
+        "evidence_edaf82642867"
+      ],
+      "inferred_answer": "Grape is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Grape contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_869c19b54ff1",
+        "evidence_b6652904a016",
+        "evidence_61a509d3df16",
+        "evidence_1b28e3f74817"
+      ]
+    },
+    {
+      "question": "Grape contains Water 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Water",
+      "relation_evidence_refs": [
+        "evidence_e53988e53e8b"
+      ]
+    },
+    {
+      "question": "Water 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Grape contains Water 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Water",
+      "relation_evidence_refs": [
+        "evidence_e53988e53e8b",
+        "evidence_ca7abd3a4818"
+      ]
+    },
+    {
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Grape is a fruit. Grapes can usually be eaten directly. Grape can be made into juice, raisins, and wine. Grape contains water and some vitamins.",
+      "answer_evidence_refs": [
+        "experience_80a15f275a86"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

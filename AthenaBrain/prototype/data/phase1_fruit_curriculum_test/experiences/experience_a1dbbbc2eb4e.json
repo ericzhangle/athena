@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "PlasticApple is not a fruit. PlasticApple is made of Plastic. PlasticApple can look like Apple, but it is not food.",
+      "ref": "knowledge_text_038843f1f746"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_a1dbbbc2eb4e",
+  "timestamp": "2026-06-29T00:14:29.019147+00:00",
+  "processed": false,
+  "immutable": true
+}

@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Mango is a fruit",
+    "subject": "Mango",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_3c545b3b0679",
+    "experience_5465add0500d"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_7b3f348ce9b0",
+  "timestamp": "2026-06-29T00:18:58.700442+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

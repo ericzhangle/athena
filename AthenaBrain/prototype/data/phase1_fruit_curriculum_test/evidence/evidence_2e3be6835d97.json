@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Allergy can affect health, but severity varies by person",
+    "subject": "Allergy",
+    "predicate": "can_affect",
+    "object": "Health"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_860cb2d3ce2d",
+    "experience_47efe937df4d"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_2e3be6835d97",
+  "timestamp": "2026-06-29T00:14:30.005220+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

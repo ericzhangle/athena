@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Pear observed shape: The observed object has a pear-like shape.",
+    "subject": "Pear",
+    "predicate": "observed_shape",
+    "object": "The observed object has a pear-like shape."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_137db2131463",
+    "sample:curriculum_pear_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.76,
+  "evidence_id": "evidence_07aec2d35511",
+  "timestamp": "2026-06-28T21:32:28.332706+00:00",
+  "sample_id": "curriculum_pear_001",
+  "validation_events": []
+}

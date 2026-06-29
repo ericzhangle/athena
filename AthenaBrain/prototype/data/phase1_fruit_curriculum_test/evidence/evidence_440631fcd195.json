@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Tomato observed color: The observed object has a mostly red surface.",
+    "subject": "Tomato",
+    "predicate": "observed_color",
+    "object": "The observed object has a mostly red surface."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_adba6228d424",
+    "sample:curriculum_tomato_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.76,
+  "evidence_id": "evidence_440631fcd195",
+  "timestamp": "2026-06-28T21:32:28.534755+00:00",
+  "sample_id": "curriculum_tomato_001",
+  "validation_events": []
+}

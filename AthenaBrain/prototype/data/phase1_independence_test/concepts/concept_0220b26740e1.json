@@ -1,0 +1,102 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_0220b26740e1",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.6300000000000001,
+  "created_at": "2026-06-28T21:05:33.742049+00:00",
+  "updated_at": "2026-06-28T21:05:33.763022+00:00",
+  "description": "An early concept for Apple, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "perception_6f1816bca21c:shape:sample=apple_red_sample_001",
+        "perception_b9927ffb93c3:shape:sample=apple_green_sample_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "perception_6f1816bca21c:color:sample=apple_red_sample_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "perception_6f1816bca21c:surface:sample=apple_red_sample_001",
+        "perception_b9927ffb93c3:surface:sample=apple_green_sample_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly green surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "perception_b9927ffb93c3:color:sample=apple_green_sample_001"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color_variation",
+      "value": "color can vary: green / red",
+      "confidence": 0.7000000000000001,
+      "evidence_refs": [
+        "perception_6f1816bca21c:color:sample=apple_red_sample_001",
+        "perception_b9927ffb93c3:color:sample=apple_green_sample_001"
+      ],
+      "scope": "concept_level",
+      "generalization_status": "generalized_attribute"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "experience_4cf96715fd1c",
+        "experience_327471c434bd"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "perception_6f1816bca21c:shape:sample=apple_red_sample_001",
+    "perception_6f1816bca21c:color:sample=apple_red_sample_001",
+    "perception_6f1816bca21c:surface:sample=apple_red_sample_001",
+    "experience_4cf96715fd1c",
+    "perception_b9927ffb93c3:shape:sample=apple_green_sample_001",
+    "perception_b9927ffb93c3:color:sample=apple_green_sample_001",
+    "perception_b9927ffb93c3:surface:sample=apple_green_sample_001",
+    "experience_327471c434bd"
+  ],
+  "open_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition"
+    },
+    {
+      "question": "Apple 的 color 是否允许多种表现？",
+      "reason": "new_observation_differs_from_existing_attribute"
+    }
+  ]
+}

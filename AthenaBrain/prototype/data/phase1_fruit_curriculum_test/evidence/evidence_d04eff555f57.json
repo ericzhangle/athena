@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Nutrient is not a fruit",
+    "subject": "Fruit",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_0108967e3ddd",
+    "experience_fa22184bafba"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_d04eff555f57",
+  "timestamp": "2026-06-29T00:16:18.310158+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,262 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_45dc3e8fce63",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.166187+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Apple, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "evidence_1b3e206de86a"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_caefbddb9b76"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.5249999999999999,
+      "evidence_refs": [
+        "evidence_dad715130142"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_403a350ba753"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_fec18195126d"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "Inferred from rule rule_e703e8ae6e75: Apple is a Fruit, and Fruit is usually edible unless it matches Plastic, PlasticFruit.",
+      "confidence": 0.49299999999999994,
+      "evidence_refs": [
+        "rule_e703e8ae6e75"
+      ],
+      "scope": "inferred",
+      "generalization_status": "inferred_from_rule"
+    },
+    {
+      "name": "edibility",
+      "value": "Apple can be eaten according to the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_ef4c3c6bbf9b",
+        "evidence_4d02050d9de3",
+        "evidence_9bbc15aef792",
+        "evidence_3356c84c280b",
+        "evidence_013165398aa9",
+        "evidence_0dde96fc7f10"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_6e93c4bb2473"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "VitaminC",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_dc51f4c789df",
+        "evidence_d46650afd303"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Vitamin",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_dc084e432bd8",
+        "evidence_178195be6a0f"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "DietaryFiber",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_c427e18604f5",
+        "evidence_aefb406ff315"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_1b3e206de86a",
+    "evidence_caefbddb9b76",
+    "evidence_dad715130142",
+    "evidence_403a350ba753",
+    "evidence_fec18195126d",
+    "evidence_6e93c4bb2473",
+    "rule_e703e8ae6e75",
+    "evidence_dc51f4c789df",
+    "evidence_dc084e432bd8",
+    "evidence_c427e18604f5",
+    "evidence_d46650afd303",
+    "evidence_178195be6a0f",
+    "evidence_aefb406ff315",
+    "evidence_ef4c3c6bbf9b",
+    "evidence_4d02050d9de3",
+    "evidence_9bbc15aef792",
+    "evidence_3356c84c280b",
+    "evidence_013165398aa9",
+    "evidence_0dde96fc7f10"
+  ],
+  "open_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_6e93c4bb2473"
+      ],
+      "inferred_answer": "Apple is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Apple 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_by_reasoning_rule",
+      "status": "answered_by_inference",
+      "inference_ref": "rule_e703e8ae6e75",
+      "inferred_answer": "根据规则推断：Apple 通常可以吃，但仍要注意例外。"
+    },
+    {
+      "question": "Apple contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "VitaminC",
+      "relation_evidence_refs": [
+        "evidence_dc51f4c789df",
+        "evidence_d46650afd303"
+      ]
+    },
+    {
+      "question": "VitaminC 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Apple contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_dc084e432bd8",
+        "evidence_178195be6a0f"
+      ]
+    },
+    {
+      "question": "Vitamin 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Apple contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_c427e18604f5",
+        "evidence_aefb406ff315"
+      ]
+    },
+    {
+      "question": "DietaryFiber 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Apple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Apple contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_dc084e432bd8",
+        "evidence_178195be6a0f"
+      ]
+    },
+    {
+      "question": "Apple contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_dc084e432bd8",
+        "evidence_178195be6a0f"
+      ]
+    },
+    {
+      "question": "Apple contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_c427e18604f5",
+        "evidence_aefb406ff315"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

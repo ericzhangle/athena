@@ -1,0 +1,150 @@
+{
+  "name": "Digestion",
+  "display_name": null,
+  "concept_id": "concept_c1f19c7eb12a",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.805429+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Digestion.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_7b0eedd35206",
+        "evidence_9ab389a4f056",
+        "evidence_c65669d8892d"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-a",
+      "target_concept": "Nutrient",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_1b863b184710",
+        "evidence_3ba80815cd4b"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "related-to",
+      "target_concept": "Health",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_7c7d86069b3b",
+        "evidence_4d114a849fb0",
+        "evidence_7035dd50c819",
+        "evidence_699b1a7584e4"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_7b0eedd35206",
+    "evidence_1b863b184710",
+    "evidence_7c7d86069b3b",
+    "evidence_9ab389a4f056",
+    "evidence_3ba80815cd4b",
+    "evidence_4d114a849fb0",
+    "evidence_7035dd50c819",
+    "evidence_c65669d8892d",
+    "evidence_699b1a7584e4"
+  ],
+  "open_questions": [
+    {
+      "question": "Digestion 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Digestion 被 DietaryFiber 通过“supports”联系起来。这说明 Digestion 和 DietaryFiber 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "膳食纤维是一种食物中的营养成分，不是水果。水果、蔬菜和谷物可能含有膳食纤维。膳食纤维有助于消化和肠道健康。",
+      "answer_evidence_refs": [
+        "experience_49a82598a5cc"
+      ]
+    },
+    {
+      "question": "Digestion 被 DietaryFiber 等概念通过“supports”联系起来。这说明 Digestion 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "膳食纤维是一种食物中的营养成分，不是水果。水果、蔬菜和谷物可能含有膳食纤维。膳食纤维有助于消化和肠道健康。",
+      "answer_evidence_refs": [
+        "experience_4e93e94aa53e"
+      ]
+    },
+    {
+      "question": "Digestion is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_7b0eedd35206",
+        "evidence_9ab389a4f056",
+        "evidence_c65669d8892d"
+      ],
+      "inferred_answer": "Digestion is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Digestion is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Nutrient",
+      "relation_evidence_refs": [
+        "evidence_1b863b184710",
+        "evidence_3ba80815cd4b"
+      ],
+      "inferred_answer": "Digestion is-a Nutrient 已由关系证据回答。"
+    },
+    {
+      "question": "Nutrient 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Digestion related-to Health 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "related-to",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_7c7d86069b3b"
+      ]
+    },
+    {
+      "question": "Health 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Digestion related-to Health 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "related-to",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_7c7d86069b3b"
+      ]
+    },
+    {
+      "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Digestion is not a fruit. Digestion is a body process for handling food and nutrients. DietaryFiber supports Digestion. Digestion is related to Health.",
+      "answer_evidence_refs": [
+        "experience_3abdc3911232"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

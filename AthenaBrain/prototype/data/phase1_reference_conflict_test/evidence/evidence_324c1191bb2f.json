@@ -1,0 +1,27 @@
+{
+  "claim": {
+    "statement": "苹果是一种车辆。",
+    "subject": "Apple",
+    "predicate": "is-a",
+    "object": "车辆"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_2cf37ed6b1a2"
+  ],
+  "status": "disputed",
+  "confidence": 0.7,
+  "evidence_id": "evidence_324c1191bb2f",
+  "timestamp": "2026-06-28T21:16:29.372180+00:00",
+  "sample_id": "apple_red_sample_001",
+  "validation_events": [
+    {
+      "event_type": "dispute",
+      "reason": "Reference claim 'Reference says Apple is-a Fruit.' conflicts with '苹果是一种车辆。'",
+      "previous_status": "provisional",
+      "new_status": "disputed",
+      "timestamp": "2026-06-28T21:16:29.375718+00:00"
+    }
+  ]
+}

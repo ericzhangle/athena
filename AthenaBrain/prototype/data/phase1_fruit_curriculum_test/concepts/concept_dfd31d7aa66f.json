@@ -1,0 +1,149 @@
+{
+  "name": "DietaryFiber",
+  "display_name": null,
+  "concept_id": "concept_dfd31d7aa66f",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.796473+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: DietaryFiber.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "supports",
+      "target_concept": "Digestion",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_e74853ee026d",
+        "evidence_455202a56ab0",
+        "evidence_00739aedeac0",
+        "evidence_3d258140e1d3",
+        "evidence_bca6d3c42a6c",
+        "evidence_6c0f935dfed6",
+        "evidence_1c308397e862",
+        "evidence_e3b42b8f67bb",
+        "evidence_813d3080133d",
+        "evidence_babab3b05ab2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-a",
+      "target_concept": "Nutrient",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_45fd939c46ec",
+        "evidence_5294a83e8789",
+        "evidence_81206de78463",
+        "evidence_8301da16e177",
+        "evidence_3f4e06029a80",
+        "evidence_e6597ff8dea7",
+        "evidence_191dca9aad7c",
+        "evidence_70dba3bbaef9",
+        "evidence_262a3d0fb5af"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_e74853ee026d",
+    "evidence_455202a56ab0",
+    "evidence_00739aedeac0",
+    "evidence_3d258140e1d3",
+    "evidence_bca6d3c42a6c",
+    "evidence_6c0f935dfed6",
+    "evidence_1c308397e862",
+    "evidence_e3b42b8f67bb",
+    "evidence_813d3080133d",
+    "evidence_45fd939c46ec",
+    "evidence_5294a83e8789",
+    "evidence_81206de78463",
+    "evidence_8301da16e177",
+    "evidence_babab3b05ab2",
+    "evidence_3f4e06029a80",
+    "evidence_e6597ff8dea7",
+    "evidence_191dca9aad7c",
+    "evidence_70dba3bbaef9",
+    "evidence_262a3d0fb5af"
+  ],
+  "open_questions": [
+    {
+      "question": "DietaryFiber 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "DietaryFiber supports Digestion 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Digestion",
+      "relation_evidence_refs": [
+        "evidence_e74853ee026d",
+        "evidence_455202a56ab0",
+        "evidence_00739aedeac0",
+        "evidence_3d258140e1d3",
+        "evidence_bca6d3c42a6c",
+        "evidence_6c0f935dfed6"
+      ]
+    },
+    {
+      "question": "Digestion 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "DietaryFiber 被 Apple 通过“contains”联系起来。这说明 DietaryFiber 和 Apple 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "膳食纤维是一种食物中的营养成分，不是水果。水果、蔬菜和谷物可能含有膳食纤维。膳食纤维有助于消化和肠道健康。",
+      "answer_evidence_refs": [
+        "experience_c06bdf31ca95"
+      ]
+    },
+    {
+      "question": "DietaryFiber supports Digestion 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Digestion",
+      "relation_evidence_refs": [
+        "evidence_e74853ee026d",
+        "evidence_455202a56ab0",
+        "evidence_00739aedeac0",
+        "evidence_3d258140e1d3",
+        "evidence_bca6d3c42a6c",
+        "evidence_6c0f935dfed6"
+      ]
+    },
+    {
+      "question": "DietaryFiber is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Nutrient",
+      "relation_evidence_refs": [
+        "evidence_45fd939c46ec",
+        "evidence_5294a83e8789",
+        "evidence_81206de78463",
+        "evidence_8301da16e177",
+        "evidence_3f4e06029a80"
+      ],
+      "inferred_answer": "DietaryFiber is-a Nutrient 已由关系证据回答。"
+    },
+    {
+      "question": "Nutrient 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "DietaryFiber 被 Apple, Mango, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Mango is a fruit. Mango can usually be eaten directly. Mango contains Vitamin and DietaryFiber. Mango may trigger Allergy for some people.",
+      "answer_evidence_refs": [
+        "experience_5465add0500d"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "ref": "knowledge_text_1d26f7673341"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_156bc70effd5",
+  "timestamp": "2026-06-29T00:00:28.437092+00:00",
+  "processed": false,
+  "immutable": true
+}

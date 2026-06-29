@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁",
+    "subject": "Orange",
+    "predicate": "edibility",
+    "object": "Orange can be eaten according to the text."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_f68c3c273961",
+    "experience_bc11161915fb"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_141175b3faa2",
+  "timestamp": "2026-06-29T00:08:35.968080+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,1351 @@
+{
+  "inquiry_report_id": "inquiry_report_029be7bf52ce",
+  "timestamp": "2026-06-29T00:08:36.190960+00:00",
+  "provider": "MockInquiryProvider",
+  "requested_steps": 10,
+  "completed_steps": 10,
+  "steps": [
+    {
+      "step": 1,
+      "question": {
+        "question_id": "curiosity_c587661ec7dc",
+        "concept": "Allergy",
+        "question": "Allergy 被 Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.04
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "过敏不是水果，而是身体对某些物质产生的异常反应。有些人可能会对芒果、花粉、药物或其他食物过敏。过敏可能引起皮肤瘙痒、肿胀、呼吸不适等影响，但严重程度因人而异。",
+      "claim_count": 6,
+      "updated_concepts": [
+        "Allergy",
+        "Fruit",
+        "Mango"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_b26c06550ca2",
+          "concept": "Digestion",
+          "question": "Digestion 被 DietaryFiber 等概念通过“supports”联系起来。这说明 Digestion 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_03f078b05303",
+          "concept": "Energy",
+          "question": "Energy 被 NaturalSugar 等概念通过“can_affect”联系起来。这说明 Energy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "question": {
+        "question_id": "curiosity_b26c06550ca2",
+        "concept": "Digestion",
+        "question": "Digestion 被 DietaryFiber 等概念通过“supports”联系起来。这说明 Digestion 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "膳食纤维是一种食物中的营养成分，不是水果。水果、蔬菜和谷物可能含有膳食纤维。膳食纤维有助于消化和肠道健康。",
+      "claim_count": 5,
+      "updated_concepts": [
+        "DietaryFiber",
+        "Digestion",
+        "Fruit"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_b26c06550ca2",
+          "concept": "Digestion",
+          "question": "Digestion 被 DietaryFiber 等概念通过“supports”联系起来。这说明 Digestion 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_03f078b05303",
+          "concept": "Energy",
+          "question": "Energy 被 NaturalSugar 等概念通过“can_affect”联系起来。这说明 Energy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "question": {
+        "question_id": "curiosity_03f078b05303",
+        "concept": "Energy",
+        "question": "Energy 被 NaturalSugar 等概念通过“can_affect”联系起来。这说明 Energy 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_03f078b05303",
+          "concept": "Energy",
+          "question": "Energy 被 NaturalSugar 等概念通过“can_affect”联系起来。这说明 Energy 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_b8bb4d3d3982",
+          "concept": "Immunity",
+          "question": "Immunity 被 VitaminC 等概念通过“supports”联系起来。这说明 Immunity 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "question": {
+        "question_id": "curiosity_b8bb4d3d3982",
+        "concept": "Immunity",
+        "question": "Immunity 被 VitaminC 等概念通过“supports”联系起来。这说明 Immunity 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "维生素C是一种营养物质，不是水果。许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关。",
+      "claim_count": 5,
+      "updated_concepts": [
+        "Fruit",
+        "Vitamin",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_b8bb4d3d3982",
+          "concept": "Immunity",
+          "question": "Immunity 被 VitaminC 等概念通过“supports”联系起来。这说明 Immunity 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_91ad0ec31167",
+          "concept": "Mineral",
+          "question": "Mineral 被 Fruit 等概念通过“contains”联系起来。这说明 Mineral 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "question": {
+        "question_id": "curiosity_91ad0ec31167",
+        "concept": "Mineral",
+        "question": "Mineral 被 Fruit 等概念通过“contains”联系起来。这说明 Mineral 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_91ad0ec31167",
+          "concept": "Mineral",
+          "question": "Mineral 被 Fruit 等概念通过“contains”联系起来。这说明 Mineral 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_1b89d79b0154",
+          "concept": "Plastic",
+          "question": "Plastic 被 PlasticApple 等概念通过“made-of”联系起来。这说明 Plastic 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "question": {
+        "question_id": "curiosity_1b89d79b0154",
+        "concept": "Plastic",
+        "question": "Plastic 被 PlasticApple 等概念通过“made-of”联系起来。这说明 Plastic 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "claim_count": 7,
+      "updated_concepts": [
+        "Apple",
+        "Fruit",
+        "Plastic",
+        "PlasticApple"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_1b89d79b0154",
+          "concept": "Plastic",
+          "question": "Plastic 被 PlasticApple 等概念通过“made-of”联系起来。这说明 Plastic 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0e0a64c1c907",
+          "concept": "Potassium",
+          "question": "Potassium 被 Banana 等概念通过“contains”联系起来。这说明 Potassium 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "question": {
+        "question_id": "curiosity_0e0a64c1c907",
+        "concept": "Potassium",
+        "question": "Potassium 被 Banana 等概念通过“contains”联系起来。这说明 Potassium 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_0e0a64c1c907",
+          "concept": "Potassium",
+          "question": "Potassium 被 Banana 等概念通过“contains”联系起来。这说明 Potassium 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_1a04dcdfbfdb",
+          "concept": "Vitamin",
+          "question": "Vitamin 被 Apple, Orange, Fruit, Grape 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "question": {
+        "question_id": "curiosity_1a04dcdfbfdb",
+        "concept": "Vitamin",
+        "question": "Vitamin 被 Apple, Orange, Fruit, Grape 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "葡萄是一种水果，通常可以直接食用，也可以制成果汁、葡萄干和葡萄酒。葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素。",
+      "claim_count": 9,
+      "updated_concepts": [
+        "Fruit",
+        "Grape",
+        "Vitamin",
+        "Water"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_1a04dcdfbfdb",
+          "concept": "Vitamin",
+          "question": "Vitamin 被 Apple, Orange, Fruit, Grape 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6f7cc5c03e27",
+          "concept": "VitaminC",
+          "question": "VitaminC 被 Apple, Orange, Fruit 等概念通过“contains”联系起来。这说明 VitaminC 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "question": {
+        "question_id": "curiosity_6f7cc5c03e27",
+        "concept": "VitaminC",
+        "question": "VitaminC 被 Apple, Orange, Fruit 等概念通过“contains”联系起来。这说明 VitaminC 在这些关系里扮演什么角色？",
+        "reason": "incoming_relation_role_gap",
+        "priority": 0.98,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "incoming_relation_role_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.08
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁。橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用。",
+      "claim_count": 8,
+      "updated_concepts": [
+        "Fruit",
+        "Orange",
+        "VitaminC"
+      ],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_6f7cc5c03e27",
+          "concept": "VitaminC",
+          "question": "VitaminC 被 Apple, Orange, Fruit 等概念通过“contains”联系起来。这说明 VitaminC 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.98,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_f8c478fbc095",
+          "concept": "NaturalSugar",
+          "question": "NaturalSugar 和 Energy 之间的“can_affect”关系，在我已有知识里意味着什么？",
+          "reason": "relation_meaning_gap",
+          "priority": 0.9,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_meaning_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "question": {
+        "question_id": "curiosity_f8c478fbc095",
+        "concept": "NaturalSugar",
+        "question": "NaturalSugar 和 Energy 之间的“can_affect”关系，在我已有知识里意味着什么？",
+        "reason": "relation_meaning_gap",
+        "priority": 0.9,
+        "domain": "relation",
+        "status": "open",
+        "score_factors": {
+          "base": "relation_meaning_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.04
+        }
+      },
+      "provider": "mock_reference_provider",
+      "answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "claim_count": 0,
+      "updated_concepts": [],
+      "new_top_questions": [
+        {
+          "question_id": "curiosity_f8c478fbc095",
+          "concept": "NaturalSugar",
+          "question": "NaturalSugar 和 Energy 之间的“can_affect”关系，在我已有知识里意味着什么？",
+          "reason": "relation_meaning_gap",
+          "priority": 0.9,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "relation_meaning_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.04
+          }
+        },
+        {
+          "question_id": "curiosity_ac3418d8a066",
+          "concept": "Digestion",
+          "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_6ce3ecb2e277",
+          "concept": "Energy",
+          "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+          "reason": "classify_against_known_category",
+          "priority": 0.88,
+          "domain": "classification",
+          "status": "open",
+          "score_factors": {
+            "base": "classify_against_known_category",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.0
+          }
+        },
+        {
+          "question_id": "curiosity_862a5e1f3d3e",
+          "concept": "DietaryFiber",
+          "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+          "reason": "incoming_relation_role_gap",
+          "priority": 0.88,
+          "domain": "relation",
+          "status": "open",
+          "score_factors": {
+            "base": "incoming_relation_role_gap",
+            "uncertainty": 0.16,
+            "novelty": 0.0,
+            "conflict": 0.0,
+            "abstraction": 0.16,
+            "redundancy_penalty": 0.08
+          }
+        },
+        {
+          "question_id": "curiosity_0b01d2ef9614",
+          "concept": "Plastic",
+          "question": "Plastic 是什么材料？它有哪些特性？",
+          "reason": "material_concept_from_curiosity_answer",
+          "priority": 0.84,
+          "domain": "composition",
+          "status": "open",
+          "score_factors": {
+            "base": "material_concept_from_curiosity_answer",
+            "uncertainty": 0.16,
+            "novelty": 0.12,
+            "conflict": 0.0,
+            "abstraction": 0.04,
+            "redundancy_penalty": 0.16
+          }
+        }
+      ]
+    }
+  ],
+  "final_top_questions": [
+    {
+      "question_id": "curiosity_ac3418d8a066",
+      "concept": "Digestion",
+      "question": "Digestion 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_6ce3ecb2e277",
+      "concept": "Energy",
+      "question": "Energy 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_862a5e1f3d3e",
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber 被 Apple, Fruit 等概念通过“contains”联系起来。这说明 DietaryFiber 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.88,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.08
+      }
+    },
+    {
+      "question_id": "curiosity_2f954f254651",
+      "concept": "NaturalSugar",
+      "question": "NaturalSugar can_affect Energy 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "priority": 0.86,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "relation_mechanism_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_0b01d2ef9614",
+      "concept": "Plastic",
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "priority": 0.84,
+      "domain": "composition",
+      "status": "open",
+      "score_factors": {
+        "base": "material_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_1a61082383b4",
+      "concept": "Plastic",
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "priority": 0.8,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "new_concept_from_curiosity_answer",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.2
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_7d665ac32dd9",
+      "concept": "Mango",
+      "question": "Mango 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_9893eab7ba68",
+      "concept": "Digestion",
+      "question": "Digestion 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ]
+}

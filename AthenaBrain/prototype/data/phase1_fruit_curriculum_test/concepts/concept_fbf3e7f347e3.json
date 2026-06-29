@@ -1,0 +1,185 @@
+{
+  "name": "VitaminC",
+  "display_name": null,
+  "concept_id": "concept_fbf3e7f347e3",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.802088+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: VitaminC.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "supports",
+      "target_concept": "Immunity",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_2989394a9c0c",
+        "evidence_146d2fa37c32",
+        "evidence_db59bcf1c0f8",
+        "evidence_d684fea07d75"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-a",
+      "target_concept": "Nutrient",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_98c78facb038",
+        "evidence_92b493886da5"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_7a1aae88066c",
+        "evidence_02c9b67ea37a"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "supports",
+      "target_concept": "Health",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_69198a663d8a",
+        "evidence_be272832c56c"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_2989394a9c0c",
+    "evidence_146d2fa37c32",
+    "evidence_98c78facb038",
+    "evidence_7a1aae88066c",
+    "evidence_db59bcf1c0f8",
+    "evidence_69198a663d8a",
+    "evidence_92b493886da5",
+    "evidence_02c9b67ea37a",
+    "evidence_d684fea07d75",
+    "evidence_be272832c56c"
+  ],
+  "open_questions": [
+    {
+      "question": "VitaminC 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "VitaminC supports Immunity 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Immunity",
+      "relation_evidence_refs": [
+        "evidence_2989394a9c0c",
+        "evidence_146d2fa37c32"
+      ]
+    },
+    {
+      "question": "Immunity 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "VitaminC supports Immunity 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Immunity",
+      "relation_evidence_refs": [
+        "evidence_2989394a9c0c",
+        "evidence_146d2fa37c32"
+      ]
+    },
+    {
+      "question": "VitaminC 被 Apple 通过“contains”联系起来。这说明 VitaminC 和 Apple 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "维生素C是一种营养物质，不是水果。许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关。",
+      "answer_evidence_refs": [
+        "experience_18cad3d3c859"
+      ]
+    },
+    {
+      "question": "VitaminC 被 Apple, Orange, Fruit 等概念通过“contains”联系起来。这说明 VitaminC 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁。橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用。",
+      "answer_evidence_refs": [
+        "experience_bc11161915fb"
+      ]
+    },
+    {
+      "question": "VitaminC is-a Nutrient 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Nutrient",
+      "relation_evidence_refs": [
+        "evidence_98c78facb038",
+        "evidence_92b493886da5"
+      ],
+      "inferred_answer": "VitaminC is-a Nutrient 已由关系证据回答。"
+    },
+    {
+      "question": "Nutrient 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "VitaminC is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_7a1aae88066c",
+        "evidence_02c9b67ea37a"
+      ],
+      "inferred_answer": "VitaminC is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "VitaminC supports Health 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_69198a663d8a"
+      ]
+    },
+    {
+      "question": "Health 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "VitaminC supports Health 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_69198a663d8a"
+      ]
+    },
+    {
+      "question": "VitaminC 和一些已知 Nutrient 例子有相似特征（rel:supports）。VitaminC 会不会也是一种 Nutrient？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "VitaminC is a nutrient, not a fruit. Many fruits contain VitaminC. VitaminC supports Immunity and helps maintain Health.",
+      "answer_evidence_refs": [
+        "experience_65903aa9a857"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "Reference says Apple is-a Fruit.",
+    "subject": "Apple",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "reference_evidence",
+  "source_identity": "reference_mock",
+  "refs": [
+    "reference_mock"
+  ],
+  "status": "provisional",
+  "confidence": 0.65,
+  "evidence_id": "evidence_159aba630d86",
+  "timestamp": "2026-06-28T21:16:29.375718+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

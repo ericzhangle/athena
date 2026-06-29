@@ -1,0 +1,73 @@
+{
+  "experience_id": "experience_phase1_apple_001",
+  "timestamp": "2026-06-29T00:03:00Z",
+  "session_id": "phase1_apple_test_001",
+  "type": "user_guided_concept_learning",
+  "immutable": true,
+  "source": "user_interaction",
+  "raw_inputs": [
+    {
+      "input_ref": "external_state_phase1_apple_001:conversation_context.turn_001",
+      "type": "text",
+      "speaker": "user",
+      "content": "苹果是一种水果。"
+    },
+    {
+      "input_ref": "inputs/apple_001.jpg",
+      "type": "image",
+      "content": "Referenced apple image for Phase 1 Apple Test."
+    }
+  ],
+  "perception_refs": [
+    "perception_apple_image_001"
+  ],
+  "athena_questions": [
+    {
+      "question_id": "question_002",
+      "text": "这张图片里的物体就是你说的苹果吗？",
+      "reason": "need_user_confirmation_before_committing_label"
+    },
+    {
+      "question_id": "question_001",
+      "text": "你说苹果是一种水果，那么水果是什么意思？",
+      "reason": "relation_target_concept_is_undefined"
+    }
+  ],
+  "user_feedback": [
+    {
+      "feedback_id": "feedback_001",
+      "type": "confirmation",
+      "content": "是的，这张图片里的是苹果。",
+      "confidence_effect": 0.15
+    },
+    {
+      "feedback_id": "feedback_002",
+      "type": "explanation",
+      "content": "水果是一类可以吃的植物果实，苹果就是其中一种。",
+      "confidence_effect": 0.1
+    }
+  ],
+  "candidate_concepts": [
+    "Apple",
+    "Fruit"
+  ],
+  "candidate_relations": [
+    {
+      "relation": "Apple is-a Fruit",
+      "source": "user_statement",
+      "status": "candidate"
+    }
+  ],
+  "tags": [
+    "phase1",
+    "apple",
+    "fruit",
+    "vision",
+    "concept_formation"
+  ],
+  "processed_flag": false,
+  "notes": [
+    "This Experience records the user's naming and explanation. It should never be overwritten.",
+    "Later corrections should be recorded as new Experience records."
+  ]
+}

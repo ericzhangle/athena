@@ -1,0 +1,237 @@
+{
+  "name": "PlasticApple",
+  "display_name": null,
+  "concept_id": "concept_3e13f9be7db0",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.655484+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for PlasticApple, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.6000000000000001,
+      "evidence_refs": [
+        "evidence_1308d4f10225"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a mostly red surface.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_2dcc1dbbcb2a"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object appears shiny and artificial.",
+      "confidence": 0.54,
+      "evidence_refs": [
+        "evidence_6c98c0e42aef"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it should not be eaten.",
+      "confidence": 0.6000000000000001,
+      "evidence_refs": [
+        "evidence_bef0397bcff9"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it is made of plastic.",
+      "confidence": 0.615,
+      "evidence_refs": [
+        "evidence_3f83382754b0"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "edibility has exceptions: Plastic Apple 一般不能吃，因为是塑料做的，塑料是不能吃的.",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_dd46966b6cbc"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_f01776c5b2f8",
+        "evidence_7e25a41484a7",
+        "evidence_d134bdad8be7",
+        "evidence_46c4e3a256b2",
+        "evidence_7c39313686bd",
+        "evidence_fa9cc94f9715"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "made-of",
+      "target_concept": "Plastic",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_f2be2a615726",
+        "evidence_49d7729d1484",
+        "evidence_4ae33fe62bdf",
+        "evidence_b794f132baf5",
+        "evidence_27d79b10c7d5"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_1308d4f10225",
+    "evidence_2dcc1dbbcb2a",
+    "evidence_6c98c0e42aef",
+    "evidence_bef0397bcff9",
+    "evidence_3f83382754b0",
+    "evidence_f01776c5b2f8",
+    "evidence_dd46966b6cbc",
+    "evidence_7e25a41484a7",
+    "evidence_f2be2a615726",
+    "evidence_d134bdad8be7",
+    "evidence_49d7729d1484",
+    "evidence_46c4e3a256b2",
+    "evidence_4ae33fe62bdf",
+    "evidence_7c39313686bd",
+    "evidence_b794f132baf5",
+    "evidence_fa9cc94f9715",
+    "evidence_27d79b10c7d5"
+  ],
+  "open_questions": [
+    {
+      "question": "PlasticApple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_f01776c5b2f8",
+        "evidence_7e25a41484a7",
+        "evidence_d134bdad8be7"
+      ],
+      "inferred_answer": "PlasticApple is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "我从你的回答里发现了一个新概念 Plastic。它和 Plasticapple 的关系是什么？",
+      "reason": "new_concept_relation_needs_clarification",
+      "status": "answered_by_relation",
+      "relation_type": "made-of",
+      "relation_target": "Plastic",
+      "relation_evidence_refs": [
+        "evidence_f2be2a615726",
+        "evidence_49d7729d1484"
+      ]
+    },
+    {
+      "question": "PlasticApple 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_curiosity_question",
+      "status": "answered",
+      "last_answer": "Plastic Apple 一般不能吃，因为是塑料做的，塑料是不能吃的",
+      "answer_evidence_refs": [
+        "evidence_dd46966b6cbc"
+      ]
+    },
+    {
+      "question": "为什么 PlasticApple 不能吃？这个原因和我已经知道的哪些概念有关？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "answer_evidence_refs": [
+        "experience_b9e2a97c5b5e"
+      ]
+    },
+    {
+      "question": "PlasticApple is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_f01776c5b2f8",
+        "evidence_7e25a41484a7",
+        "evidence_d134bdad8be7",
+        "evidence_46c4e3a256b2",
+        "evidence_7c39313686bd",
+        "evidence_fa9cc94f9715"
+      ],
+      "inferred_answer": "PlasticApple is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "PlasticApple made-of Plastic 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "made-of",
+      "relation_target": "Plastic",
+      "relation_evidence_refs": [
+        "evidence_f2be2a615726",
+        "evidence_49d7729d1484"
+      ]
+    },
+    {
+      "question": "Plastic 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "PlasticApple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "status": "answered_by_relation",
+      "relation_type": "made-of",
+      "relation_target": "Plastic",
+      "relation_evidence_refs": [
+        "evidence_f2be2a615726",
+        "evidence_49d7729d1484"
+      ]
+    },
+    {
+      "question": "PlasticApple made-of Plastic 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "made-of",
+      "relation_target": "Plastic",
+      "relation_evidence_refs": [
+        "evidence_f2be2a615726",
+        "evidence_49d7729d1484"
+      ]
+    },
+    {
+      "question": "PlasticApple 和一些已知 Nutrient 例子有相似特征（rel:is-not-a, rel:is-not-a:Fruit）。PlasticApple 会不会也是一种 Nutrient？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "PlasticApple is not a fruit. PlasticApple is made of Plastic. PlasticApple can look like Apple, but it is not food.",
+      "answer_evidence_refs": [
+        "experience_a1dbbbc2eb4e"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,35 @@
+{
+  "input_ref": "../experiments/phase1_apple_test/inputs/apple_green_001.jpg",
+  "features": [
+    {
+      "category": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.8,
+      "evidence": "image observation"
+    },
+    {
+      "category": "color",
+      "value": "The observed object has a mostly green surface.",
+      "confidence": 0.78,
+      "evidence": "image observation"
+    },
+    {
+      "category": "surface",
+      "value": "The observed object appears smooth.",
+      "confidence": 0.68,
+      "evidence": "image observation"
+    }
+  ],
+  "sample_id": "apple_green_sample_001",
+  "source_model": "manual_or_mock_interface",
+  "perception_id": "perception_b9927ffb93c3",
+  "timestamp": "2026-06-28T21:05:33.756441+00:00",
+  "unverified_hypotheses": [
+    {
+      "hypothesis": "Apple",
+      "source": "user_statement_or_vision_label",
+      "confidence": 0.3,
+      "status": "unverified"
+    }
+  ]
+}

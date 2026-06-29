@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "水果不仅味道香甜，还含有丰富的维生素、矿物质和膳食纤维，对人体健康有帮助",
+    "subject": "Vitamin",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_370ac5ed5564",
+    "experience_be7509ff34bc"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_a2b4da859c43",
+  "timestamp": "2026-06-28T23:33:33.847365+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

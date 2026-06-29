@@ -1,0 +1,58 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "苹果是一种水果。"
+    },
+    {
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/apple_green_001.jpg"
+    }
+  ],
+  "perception_refs": [
+    "perception_5c11b8ace03d"
+  ],
+  "athena_questions": [
+    {
+      "question_id": "question_fa56bc0f7534",
+      "question": "Apple 是什么？你能给我一个具体例子吗？",
+      "reason": "new_concept_needs_direct_evidence",
+      "priority": 0.85,
+      "status": "open"
+    },
+    {
+      "question_id": "question_d0bad2c8cb0e",
+      "question": "Fruit 是什么意思？它和刚才的新概念是什么关系？",
+      "reason": "relation_target_concept_is_not_mature",
+      "priority": 0.8,
+      "status": "open"
+    },
+    {
+      "question_id": "question_f36af90a2230",
+      "question": "这次观察到的特征是否真的属于 Apple，还是只是这个例子的特征？",
+      "reason": "distinguish_instance_features_from_general_concept",
+      "priority": 0.75,
+      "status": "open"
+    }
+  ],
+  "user_feedback": [
+    {
+      "type": "confirmation",
+      "content": "是的，这也是苹果，只是它是绿色的。"
+    },
+    {
+      "type": "correction_or_expansion",
+      "content": "苹果不一定都是红色，有些苹果是绿色或黄色的。"
+    }
+  ],
+  "tags": [
+    "phase1",
+    "apple",
+    "guided_learning"
+  ],
+  "experience_id": "experience_66b8866efdb1",
+  "timestamp": "2026-06-28T20:52:21.318920+00:00",
+  "processed": false,
+  "immutable": true
+}

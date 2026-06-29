@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "ref": "knowledge_text_4fd5bb65b9e2"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_32b6af447489",
+  "timestamp": "2026-06-29T00:17:59.098849+00:00",
+  "processed": false,
+  "immutable": true
+}

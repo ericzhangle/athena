@@ -1,0 +1,209 @@
+{
+  "integration_report_id": "cognitive_integration_report_c0280e4180b5",
+  "timestamp": "2026-06-29T00:08:08.958797+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Banana",
+        "Pear",
+        "Apple",
+        "Orange",
+        "Tomato",
+        "Peach",
+        "Grape"
+      ],
+      "counterexamples": [
+        "PlasticApple",
+        "Allergy"
+      ],
+      "example_count": 7,
+      "counterexample_count": 2
+    }
+  ],
+  "question_resolution": [
+    {
+      "concept": "Banana",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Banana",
+      "question": "Banana contains Potassium 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Potassium"
+    },
+    {
+      "concept": "Pear",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "PlasticApple",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "rejected_by_relation",
+      "relation": "is-not-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "PlasticApple",
+      "question": "我从你的回答里发现了一个新概念 Plastic。它和 Plasticapple 的关系是什么？",
+      "status": "answered_by_relation",
+      "relation": "made-of",
+      "target": "Plastic"
+    },
+    {
+      "concept": "PlasticApple",
+      "question": "PlasticApple made-of Plastic 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "made-of",
+      "target": "Plastic"
+    },
+    {
+      "concept": "PlasticApple",
+      "question": "PlasticApple 是什么？它和当前学习主题有什么关系？",
+      "status": "answered_by_relation",
+      "relation": "made-of",
+      "target": "Plastic"
+    },
+    {
+      "concept": "Apple",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "VitaminC"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Apple",
+      "question": "Apple contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "DietaryFiber"
+    },
+    {
+      "concept": "Orange",
+      "question": "Orange contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "VitaminC"
+    },
+    {
+      "concept": "Orange",
+      "question": "Orange contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Orange",
+      "question": "Orange contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Tomato",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "DietaryFiber",
+      "question": "DietaryFiber supports Digestion 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "supports",
+      "target": "Digestion"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "DietaryFiber"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit contains Mineral 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Mineral"
+    },
+    {
+      "concept": "Fruit",
+      "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "may_trigger",
+      "target": "Allergy"
+    },
+    {
+      "concept": "Peach",
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "status": "answered_by_relation",
+      "relation": "is-a",
+      "target": "Fruit"
+    },
+    {
+      "concept": "VitaminC",
+      "question": "VitaminC supports Immunity 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "supports",
+      "target": "Immunity"
+    },
+    {
+      "concept": "Grape",
+      "question": "Grape contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "status": "answered_by_relation",
+      "relation": "contains",
+      "target": "Vitamin"
+    }
+  ],
+  "boundary_questions": [
+    {
+      "concept": "Fruit",
+      "question": "为什么 Apple, Banana, Grape 属于 Fruit，但 Allergy, PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear"
+    }
+  ]
+}

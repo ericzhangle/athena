@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Nutrient is a general category for substances that support BodyFunction and Health",
+    "subject": "Nutrient",
+    "predicate": "supports",
+    "object": "Health"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_b25dc6c622f9",
+    "experience_d491e3cd01f0"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_6e4ca4eff308",
+  "timestamp": "2026-06-29T00:16:45.667707+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

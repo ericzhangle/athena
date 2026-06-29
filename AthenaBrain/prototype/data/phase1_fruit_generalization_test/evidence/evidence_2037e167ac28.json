@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Pear observed color: The observed object has a green or yellow surface.",
+    "subject": "Pear",
+    "predicate": "observed_color",
+    "object": "The observed object has a green or yellow surface."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_6247ce62e651",
+    "sample:fruit_test_pear_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.72,
+  "evidence_id": "evidence_2037e167ac28",
+  "timestamp": "2026-06-28T21:25:22.345867+00:00",
+  "sample_id": "fruit_test_pear_001",
+  "validation_events": []
+}

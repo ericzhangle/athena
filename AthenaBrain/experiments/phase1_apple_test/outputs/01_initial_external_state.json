@@ -1,0 +1,28 @@
+{
+  "state_id": "external_state_phase1_apple_001",
+  "timestamp": "2026-06-29T00:00:00Z",
+  "session_id": "phase1_apple_test_001",
+  "experiment": "phase1_apple_test",
+  "current_user": "user",
+  "current_task": "learn_apple_from_interaction",
+  "visible_inputs": [
+    {
+      "input_id": "image_apple_001",
+      "type": "image",
+      "path": "inputs/apple_001.jpg",
+      "status": "expected",
+      "note": "The real image should be placed here before running the experiment."
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_001",
+      "speaker": "user",
+      "text": "苹果是一种水果。"
+    }
+  ],
+  "environment_notes": [
+    "Phase 1 does not assume Athena already knows what apple or fruit means.",
+    "The image reference is part of the world state, not knowledge."
+  ]
+}

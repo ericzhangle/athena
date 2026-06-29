@@ -1,0 +1,132 @@
+{
+  "name": "Peach",
+  "display_name": null,
+  "concept_id": "concept_f71ae817ad0e",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.4675,
+  "created_at": "2026-06-28T21:32:28.252590+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Peach, formed from direct interaction, perception evidence, and a candidate relation to Fruit.",
+  "attributes": [
+    {
+      "name": "shape",
+      "value": "The observed object looks roughly round.",
+      "confidence": 0.585,
+      "evidence_refs": [
+        "evidence_39b304d86f5c"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "color",
+      "value": "The observed object has a pink or orange surface.",
+      "confidence": 0.5549999999999999,
+      "evidence_refs": [
+        "evidence_4509dfd63fe0"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "surface",
+      "value": "The observed object may have a fuzzy surface.",
+      "confidence": 0.46499999999999997,
+      "evidence_refs": [
+        "evidence_f82f3f0deacb"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "use",
+      "value": "The user says it can be eaten.",
+      "confidence": 0.5625,
+      "evidence_refs": [
+        "evidence_d5ea97bd5ec9"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "origin",
+      "value": "The user says it grows from a plant.",
+      "confidence": 0.51,
+      "evidence_refs": [
+        "evidence_10527730916b"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "can usually be eaten: peach 是能吃的.",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_162b05a4d50d"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "edibility",
+      "value": "Inferred from rule rule_e703e8ae6e75: Peach is a Fruit, and Fruit is usually edible unless it matches Plastic, PlasticFruit.",
+      "confidence": 0.49299999999999994,
+      "evidence_refs": [
+        "rule_e703e8ae6e75"
+      ],
+      "scope": "inferred",
+      "generalization_status": "inferred_from_rule"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.55,
+      "evidence_refs": [
+        "evidence_38493774ee02"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_39b304d86f5c",
+    "evidence_4509dfd63fe0",
+    "evidence_f82f3f0deacb",
+    "evidence_d5ea97bd5ec9",
+    "evidence_10527730916b",
+    "evidence_38493774ee02",
+    "evidence_162b05a4d50d",
+    "rule_e703e8ae6e75"
+  ],
+  "open_questions": [
+    {
+      "question": "Peach 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "Fruit 的边界是什么？还有哪些东西属于 Fruit？",
+      "reason": "relation_target_concept_needs_definition",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_38493774ee02"
+      ],
+      "inferred_answer": "Peach is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Peach 是不是都能吃？有没有不能吃或不应该吃的情况？",
+      "reason": "answered_curiosity_question",
+      "status": "answered",
+      "last_answer": "peach 是能吃的",
+      "answer_evidence_refs": [
+        "evidence_162b05a4d50d"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

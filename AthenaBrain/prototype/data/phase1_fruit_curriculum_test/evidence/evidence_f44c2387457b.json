@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Pear observed use: The user says it can be eaten.",
+    "subject": "Pear",
+    "predicate": "observed_use",
+    "object": "The user says it can be eaten."
+  },
+  "source_type": "direct_perception",
+  "source_identity": "vision_interface",
+  "refs": [
+    "perception_137db2131463",
+    "sample:curriculum_pear_001"
+  ],
+  "status": "provisional",
+  "confidence": 0.75,
+  "evidence_id": "evidence_f44c2387457b",
+  "timestamp": "2026-06-28T21:32:28.336388+00:00",
+  "sample_id": "curriculum_pear_001",
+  "validation_events": []
+}

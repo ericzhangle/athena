@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "膳食纤维是一种食物中的营养成分，不是水果。水果、蔬菜和谷物可能含有膳食纤维。膳食纤维有助于消化和肠道健康。",
+      "ref": "knowledge_text_67e1b6d4a94e"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_827adbb4672e",
+  "timestamp": "2026-06-29T00:00:28.702778+00:00",
+  "processed": false,
+  "immutable": true
+}

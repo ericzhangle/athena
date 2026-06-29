@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "不过，水果虽然健康，也含有天然糖分，因此不能一次吃得太多",
+    "subject": "Fruit",
+    "predicate": "caution",
+    "object": "Fruit may contain natural sugar, so overeating can be harmful."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "user_knowledge_text",
+  "refs": [
+    "knowledge_text_c59b32716fe4",
+    "experience_df1fdea651f5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_b4fe6412d484",
+  "timestamp": "2026-06-28T22:42:25.830327+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

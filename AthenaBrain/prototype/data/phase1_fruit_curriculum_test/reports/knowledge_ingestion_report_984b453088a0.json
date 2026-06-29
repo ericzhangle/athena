@@ -1,0 +1,424 @@
+{
+  "report_id": "knowledge_ingestion_report_984b453088a0",
+  "text_ref": "knowledge_text_4f66e76e26d4",
+  "experience_id": "experience_1e106d7a898e",
+  "claim_count": 11,
+  "evidence_count": 11,
+  "updated_concepts": [
+    "Allergy",
+    "DietaryFiber",
+    "Fruit",
+    "Mango",
+    "Vitamin"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_8fa6b598ea52",
+      "concept": "Vitamin",
+      "question": "Vitamin 被 Apple, Orange, Mango, Fruit 等概念通过“contains”联系起来。这说明 Vitamin 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.92,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.04
+      }
+    },
+    {
+      "question_id": "curiosity_dc8b1bd37282",
+      "concept": "Plastic",
+      "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_d17f98ed8c78",
+      "concept": "Plastic",
+      "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_713ebc2b6cd9",
+      "concept": "Allergy",
+      "question": "Allergy 被 Mango, Fruit 等概念通过“may_trigger”联系起来。这说明 Allergy 在这些关系里扮演什么角色？",
+      "reason": "incoming_relation_role_gap",
+      "priority": 0.84,
+      "domain": "relation",
+      "status": "open",
+      "score_factors": {
+        "base": "incoming_relation_role_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_c933901534bd",
+      "concept": "Fruit",
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_2366aa30b14c",
+      "concept": "Grape",
+      "question": "Grape 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "condition_gap",
+      "priority": 0.78,
+      "domain": "mechanism",
+      "status": "open",
+      "score_factors": {
+        "base": "condition_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_ecbcae220483",
+      "concept": "Apple",
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_962323ccae2a",
+      "concept": "Banana",
+      "question": "Banana 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization",
+      "priority": 0.74,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "single_example_cannot_support_generalization",
+        "uncertainty": 0.16,
+        "novelty": 0.0,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_ec2dc705fad8",
+      "concept": "FoodSafety",
+      "question": "FoodSafety 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_74b40fee1ddf",
+      "concept": "Tangerine",
+      "question": "Tangerine 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_d82f1f38368b",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_d82f1f38368b",
+    "timestamp": "2026-06-29T00:17:57.649239+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Banana",
+          "Pear",
+          "Apple",
+          "Orange",
+          "Tomato",
+          "Mango",
+          "Peach",
+          "Grape"
+        ],
+        "counterexamples": [
+          "PlasticApple",
+          "Nutrient",
+          "Allergy",
+          "Health",
+          "Energy",
+          "Digestion",
+          "VitaminC"
+        ],
+        "example_count": 8,
+        "counterexample_count": 7
+      },
+      {
+        "parent": "Nutrient",
+        "examples": [
+          "Mineral",
+          "Digestion",
+          "Vitamin",
+          "DietaryFiber",
+          "Potassium",
+          "VitaminC"
+        ],
+        "counterexamples": [],
+        "example_count": 6,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [
+      {
+        "concept": "Mango",
+        "question": "Mango contains Vitamin 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "Vitamin"
+      },
+      {
+        "concept": "Mango",
+        "question": "Mango contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "contains",
+        "target": "DietaryFiber"
+      },
+      {
+        "concept": "Mango",
+        "question": "Mango may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+        "status": "answered_by_relation",
+        "relation": "may_trigger",
+        "target": "Allergy"
+      }
+    ],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Mango",
+      "predicate": "is-a",
+      "object": "Fruit",
+      "relation_type": "is-a",
+      "target": "Fruit",
+      "statement": "Mango is a fruit",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Mango",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mango is a fruit",
+      "questions": [
+        {
+          "question": "Mango 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mango is a fruit",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Mango",
+      "predicate": "contains",
+      "object": "Vitamin",
+      "relation_type": "contains",
+      "target": "Vitamin",
+      "statement": "Mango contains Vitamin and DietaryFiber",
+      "questions": [
+        {
+          "question": "Mango contains Vitamin 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Vitamin 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Mango",
+      "predicate": "contains",
+      "object": "DietaryFiber",
+      "relation_type": "contains",
+      "target": "DietaryFiber",
+      "statement": "Mango contains Vitamin and DietaryFiber",
+      "questions": [
+        {
+          "question": "Mango contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "DietaryFiber 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Vitamin",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mango contains Vitamin and DietaryFiber",
+      "questions": [
+        {
+          "question": "Vitamin 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "DietaryFiber",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mango contains Vitamin and DietaryFiber",
+      "questions": [
+        {
+          "question": "DietaryFiber 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Mango",
+      "predicate": "may_trigger",
+      "object": "Allergy",
+      "relation_type": "may_trigger",
+      "target": "Allergy",
+      "statement": "Mango may trigger Allergy for some people",
+      "questions": [
+        {
+          "question": "Mango may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Allergy 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Fruit",
+      "predicate": "caution",
+      "object": "Some people may be allergic to some fruits.",
+      "attribute_name": "caution",
+      "attribute_value": "Some people may be allergic to some fruits.",
+      "statement": "Mango may trigger Allergy for some people",
+      "questions": [
+        {
+          "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+          "reason": "safety_claim_needs_condition"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "may_trigger",
+      "object": "Allergy",
+      "relation_type": "may_trigger",
+      "target": "Allergy",
+      "statement": "Mango may trigger Allergy for some people",
+      "questions": [
+        {
+          "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+          "reason": "relation_mechanism_unclear"
+        },
+        {
+          "question": "Allergy 是什么？它有哪些关键特性？",
+          "reason": "related_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Allergy",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Mango may trigger Allergy for some people",
+      "questions": [
+        {
+          "question": "Allergy 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ]
+}

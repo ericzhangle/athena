@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "ref": "knowledge_text_5bffc5a1a178"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_9ecd12dc156d",
+  "timestamp": "2026-06-29T00:08:09.487267+00:00",
+  "processed": false,
+  "immutable": true
+}

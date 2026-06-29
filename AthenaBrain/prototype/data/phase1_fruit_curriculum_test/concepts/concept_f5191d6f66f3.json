@@ -1,0 +1,565 @@
+{
+  "name": "Fruit",
+  "display_name": null,
+  "concept_id": "concept_f5191d6f66f3",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T21:32:28.166187+00:00",
+  "updated_at": "2026-06-29T00:19:11.876370+00:00",
+  "description": "An early parent concept for Fruit, abstracted from examples: Apple, Banana, Grape, Mango, Orange, Peach, Pear, Tomato.",
+  "attributes": [
+    {
+      "name": "identity",
+      "value": "Fruit is a plant-produced fruit body.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_6686d47f630a",
+        "evidence_ddd4b1efe491"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "origin",
+      "value": "Fruit grows from plants.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_cfed84e2d655",
+        "evidence_09abb9bdc83a"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "edibility",
+      "value": "Many fruits can be eaten directly.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_e67cca07a1f1",
+        "evidence_ee39a2082e3e",
+        "evidence_d9e9fb5f8e92",
+        "evidence_052fadc1fc00",
+        "evidence_4dfc88a756a9",
+        "evidence_cc3cff59f40f",
+        "evidence_b2bc82e7b2f7",
+        "evidence_6311cbd69c70",
+        "evidence_0578f1966752",
+        "evidence_29031c819fcd",
+        "evidence_3b4fc0446fc2",
+        "evidence_58d5ce888bcb"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "taste",
+      "value": "Many fruits taste sweet or pleasant.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_ab5df2e7864d",
+        "evidence_f265abcda46f"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "caution",
+      "value": "Some people may be allergic to some fruits.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_4ecdf00190d9",
+        "evidence_673d5637bc94",
+        "evidence_2a138853cdbb",
+        "evidence_90d04ab95275",
+        "evidence_ecd679997f04",
+        "evidence_5777a791b682",
+        "evidence_5eeda40f1c8a",
+        "evidence_762e352ab046",
+        "evidence_65a790df4c2b",
+        "evidence_e437446de4aa",
+        "evidence_d1648c56abbf",
+        "evidence_30739a295394"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "caution",
+      "value": "Fruit may contain natural sugar, so overeating can be harmful.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_b4fe6412d484",
+        "evidence_2114db7c2437",
+        "evidence_10a8fb643ffe",
+        "evidence_bb215f3fb84f",
+        "evidence_f3291c1c78c2"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "safety_practice",
+      "value": "Fruit should be washed before eating.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_57c66d4a3d6c",
+        "evidence_1137cc80cd4e"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "contains",
+      "target_concept": "Vitamin",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_368030415357",
+        "evidence_a6ba542df9ca",
+        "evidence_45514dd6bc50",
+        "evidence_3251982c577c",
+        "evidence_49455385f6c4",
+        "evidence_546fee6412d7"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "DietaryFiber",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_0731905c5f6f",
+        "evidence_91812c346358",
+        "evidence_405879af95b2",
+        "evidence_985f2960040b",
+        "evidence_824afa0d16b2",
+        "evidence_13a54c7852f5",
+        "evidence_67032b3a5cee"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Mineral",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_28212cfe49fd",
+        "evidence_379536ce8fd8"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "may_trigger",
+      "target_concept": "Allergy",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_d68f481aa61e",
+        "evidence_47747aea898e",
+        "evidence_7ffe2eba89c1",
+        "evidence_5e288a375190",
+        "evidence_7957f8bbcf1a",
+        "evidence_c6f2450f8eb1",
+        "evidence_76ac9d19fdc2",
+        "evidence_f69df69adb80",
+        "evidence_69d886854d23",
+        "evidence_5b2a48feee7b",
+        "evidence_644ca8c1491b",
+        "evidence_4d976b1c24fe"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "VitaminC",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_2e77721228d3",
+        "evidence_8617dcd5fb83",
+        "evidence_ddf583e8e458",
+        "evidence_9a5a3326de9e",
+        "evidence_a70575ed1280",
+        "evidence_811527ce9c2a"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_6686d47f630a",
+    "evidence_cfed84e2d655",
+    "evidence_e67cca07a1f1",
+    "evidence_ab5df2e7864d",
+    "evidence_368030415357",
+    "evidence_0731905c5f6f",
+    "evidence_28212cfe49fd",
+    "evidence_4ecdf00190d9",
+    "evidence_d68f481aa61e",
+    "evidence_b4fe6412d484",
+    "evidence_57c66d4a3d6c",
+    "evidence_ddd4b1efe491",
+    "evidence_09abb9bdc83a",
+    "evidence_ee39a2082e3e",
+    "evidence_f265abcda46f",
+    "evidence_a6ba542df9ca",
+    "evidence_91812c346358",
+    "evidence_379536ce8fd8",
+    "evidence_673d5637bc94",
+    "evidence_47747aea898e",
+    "evidence_2114db7c2437",
+    "evidence_1137cc80cd4e",
+    "evidence_d9e9fb5f8e92",
+    "evidence_052fadc1fc00",
+    "evidence_4dfc88a756a9",
+    "evidence_2a138853cdbb",
+    "evidence_7ffe2eba89c1",
+    "evidence_405879af95b2",
+    "evidence_985f2960040b",
+    "evidence_2e77721228d3",
+    "evidence_45514dd6bc50",
+    "evidence_cc3cff59f40f",
+    "evidence_b2bc82e7b2f7",
+    "evidence_6311cbd69c70",
+    "evidence_90d04ab95275",
+    "evidence_5e288a375190",
+    "evidence_824afa0d16b2",
+    "evidence_13a54c7852f5",
+    "evidence_8617dcd5fb83",
+    "evidence_3251982c577c",
+    "evidence_ecd679997f04",
+    "evidence_7957f8bbcf1a",
+    "evidence_0578f1966752",
+    "evidence_29031c819fcd",
+    "evidence_ddf583e8e458",
+    "evidence_49455385f6c4",
+    "evidence_5777a791b682",
+    "evidence_c6f2450f8eb1",
+    "evidence_67032b3a5cee",
+    "evidence_9a5a3326de9e",
+    "evidence_546fee6412d7",
+    "evidence_3b4fc0446fc2",
+    "evidence_58d5ce888bcb",
+    "evidence_5eeda40f1c8a",
+    "evidence_76ac9d19fdc2",
+    "evidence_762e352ab046",
+    "evidence_f69df69adb80",
+    "evidence_10a8fb643ffe",
+    "evidence_bb215f3fb84f",
+    "evidence_f3291c1c78c2",
+    "evidence_a70575ed1280",
+    "evidence_811527ce9c2a",
+    "evidence_65a790df4c2b",
+    "evidence_69d886854d23",
+    "evidence_e437446de4aa",
+    "evidence_5b2a48feee7b",
+    "evidence_d1648c56abbf",
+    "evidence_644ca8c1491b",
+    "evidence_30739a295394",
+    "evidence_4d976b1c24fe"
+  ],
+  "open_questions": [
+    {
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes"
+    },
+    {
+      "question": "Fruit 的这个身份或来源在所有情况下都成立吗？有没有例外？",
+      "reason": "knowledge_claim_needs_boundary"
+    },
+    {
+      "question": "Fruit 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Fruit 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Fruit contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_368030415357",
+        "evidence_a6ba542df9ca",
+        "evidence_45514dd6bc50",
+        "evidence_3251982c577c"
+      ]
+    },
+    {
+      "question": "Vitamin 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Fruit contains DietaryFiber 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_0731905c5f6f",
+        "evidence_91812c346358",
+        "evidence_405879af95b2",
+        "evidence_985f2960040b",
+        "evidence_824afa0d16b2",
+        "evidence_13a54c7852f5"
+      ]
+    },
+    {
+      "question": "DietaryFiber 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Fruit contains Mineral 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Mineral",
+      "relation_evidence_refs": [
+        "evidence_28212cfe49fd",
+        "evidence_379536ce8fd8"
+      ]
+    },
+    {
+      "question": "Mineral 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Fruit 的这个注意事项适用于哪些情况？什么时候最重要？",
+      "reason": "safety_claim_needs_condition"
+    },
+    {
+      "question": "Fruit may_trigger Allergy 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "may_trigger",
+      "relation_target": "Allergy",
+      "relation_evidence_refs": [
+        "evidence_d68f481aa61e",
+        "evidence_47747aea898e",
+        "evidence_7ffe2eba89c1",
+        "evidence_5e288a375190",
+        "evidence_7957f8bbcf1a"
+      ]
+    },
+    {
+      "question": "Allergy 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "answer_evidence_refs": [
+        "experience_34eb317c2292"
+      ]
+    },
+    {
+      "question": "Fruit contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_368030415357",
+        "evidence_a6ba542df9ca",
+        "evidence_45514dd6bc50",
+        "evidence_3251982c577c"
+      ]
+    },
+    {
+      "question": "VitaminC 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Fruit contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_368030415357",
+        "evidence_a6ba542df9ca",
+        "evidence_45514dd6bc50",
+        "evidence_3251982c577c"
+      ]
+    },
+    {
+      "question": "Fruit contains DietaryFiber 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "DietaryFiber",
+      "relation_evidence_refs": [
+        "evidence_0731905c5f6f",
+        "evidence_91812c346358",
+        "evidence_405879af95b2",
+        "evidence_985f2960040b",
+        "evidence_824afa0d16b2",
+        "evidence_13a54c7852f5"
+      ]
+    },
+    {
+      "question": "Fruit contains Mineral 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Mineral",
+      "relation_evidence_refs": [
+        "evidence_28212cfe49fd",
+        "evidence_379536ce8fd8"
+      ]
+    },
+    {
+      "question": "Fruit may_trigger Allergy 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "may_trigger",
+      "relation_target": "Allergy",
+      "relation_evidence_refs": [
+        "evidence_d68f481aa61e",
+        "evidence_47747aea898e",
+        "evidence_7ffe2eba89c1",
+        "evidence_5e288a375190",
+        "evidence_7957f8bbcf1a"
+      ]
+    },
+    {
+      "question": "Fruit contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_368030415357",
+        "evidence_a6ba542df9ca",
+        "evidence_45514dd6bc50",
+        "evidence_3251982c577c"
+      ]
+    },
+    {
+      "question": "为什么 Apple, Banana, Grape 属于 Fruit，但 Allergy, PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear"
+    },
+    {
+      "question": "为什么 Apple, Peach, Pear 属于 Fruit，但 PlasticApple, Allergy 不属于？这个边界由什么决定？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "过敏不是水果，而是身体对某些物质产生的异常反应。有些人可能会对芒果、花粉、药物或其他食物过敏。过敏可能引起皮肤瘙痒、肿胀、呼吸不适等影响，但严重程度因人而异。",
+      "answer_evidence_refs": [
+        "experience_bda5965a1d47"
+      ]
+    },
+    {
+      "question": "为什么 Apple, Banana, Grape 属于 Fruit，但 Allergy, Digestion, PlasticApple 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear"
+    },
+    {
+      "question": "为什么 Apple, Banana, Grape 属于 Fruit，但 Allergy, Digestion, Energy 不属于？这个边界由什么决定？",
+      "reason": "positive_negative_boundary_unclear"
+    },
+    {
+      "question": "Fruit 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "answer_evidence_refs": [
+        "experience_857e2cbe6a53"
+      ]
+    },
+    {
+      "question": "Fruit 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "answer_evidence_refs": [
+        "experience_9fd143fe20a9"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Apple",
+      "concept_id": "concept_45dc3e8fce63",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Banana",
+      "concept_id": "concept_3aa4a4bcca62",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Grape",
+      "concept_id": "concept_fff8ebd0a431",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Mango",
+      "concept_id": "concept_ccb667dea2d8",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Orange",
+      "concept_id": "concept_56f442c79884",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Peach",
+      "concept_id": "concept_f71ae817ad0e",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Pear",
+      "concept_id": "concept_3b98c77bc751",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Tomato",
+      "concept_id": "concept_5959cbb71f37",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": [
+    {
+      "concept": "Allergy",
+      "concept_id": "concept_5b690b101fac",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "Digestion",
+      "concept_id": "concept_c1f19c7eb12a",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "Energy",
+      "concept_id": "concept_8434b9a26700",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "Health",
+      "concept_id": "concept_70602a02fe74",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "Nutrient",
+      "concept_id": "concept_533ddb8f7960",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "PlasticApple",
+      "concept_id": "concept_3e13f9be7db0",
+      "relation": "is-not-a"
+    },
+    {
+      "concept": "VitaminC",
+      "concept_id": "concept_fbf3e7f347e3",
+      "relation": "is-not-a"
+    }
+  ]
+}

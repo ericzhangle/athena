@@ -1,0 +1,216 @@
+{
+  "name": "Orange",
+  "display_name": null,
+  "concept_id": "concept_56f442c79884",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.816872+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Orange.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "Orange can be eaten according to the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_859172f92ec9",
+        "evidence_223f5d9963d8",
+        "evidence_7cc911157a1a",
+        "evidence_141175b3faa2"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    },
+    {
+      "name": "taste",
+      "value": "Orange has a described taste in the text.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_f4c9e728d7ad",
+        "evidence_e5acf863899c",
+        "evidence_5c34f1135c3d",
+        "evidence_5aed06513fa1"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "contains",
+      "target_concept": "VitaminC",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_b7a91d92f4cd",
+        "evidence_8f04fb18bdb6",
+        "evidence_3af436042292",
+        "evidence_81e090440ae8",
+        "evidence_edda3dead9a1",
+        "evidence_cbddc19ee79f",
+        "evidence_14f03a2c6983",
+        "evidence_c91a32a4faf2"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "contains",
+      "target_concept": "Vitamin",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_3c8371552272",
+        "evidence_43e23e5bb69b",
+        "evidence_27015a536da1"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_b0340c9b41d9",
+        "evidence_98b6d97aa18f",
+        "evidence_9c01f9ec9531",
+        "evidence_96c10892f7ca",
+        "evidence_3a7d6a590e41"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_b7a91d92f4cd",
+    "evidence_3c8371552272",
+    "knowledge_ingestion_backfill_fruit_example",
+    "evidence_8f04fb18bdb6",
+    "evidence_43e23e5bb69b",
+    "evidence_859172f92ec9",
+    "evidence_f4c9e728d7ad",
+    "evidence_3af436042292",
+    "evidence_27015a536da1",
+    "evidence_b0340c9b41d9",
+    "evidence_223f5d9963d8",
+    "evidence_81e090440ae8",
+    "evidence_e5acf863899c",
+    "evidence_98b6d97aa18f",
+    "evidence_7cc911157a1a",
+    "evidence_edda3dead9a1",
+    "evidence_5c34f1135c3d",
+    "evidence_9c01f9ec9531",
+    "evidence_141175b3faa2",
+    "evidence_cbddc19ee79f",
+    "evidence_5aed06513fa1",
+    "evidence_96c10892f7ca",
+    "evidence_14f03a2c6983",
+    "evidence_3a7d6a590e41",
+    "evidence_c91a32a4faf2"
+  ],
+  "open_questions": [
+    {
+      "question": "Orange contains VitaminC 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "VitaminC",
+      "relation_evidence_refs": [
+        "evidence_b7a91d92f4cd",
+        "evidence_8f04fb18bdb6",
+        "evidence_3af436042292",
+        "evidence_81e090440ae8"
+      ]
+    },
+    {
+      "question": "VitaminC 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Orange contains Vitamin 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_3c8371552272",
+        "evidence_43e23e5bb69b",
+        "evidence_27015a536da1"
+      ]
+    },
+    {
+      "question": "Vitamin 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Orange 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Orange 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Orange 的 taste 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear"
+    },
+    {
+      "question": "Orange 和一些已知 Fruit 例子有相似特征（rel:contains, rel:contains:Vitamin, rel:contains:VitaminC）。Orange 会不会也是一种 Fruit？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "橙子是一种水果，属于柑橘类，通常可以直接食用或榨汁。橙子含有维生素C，味道酸甜，果皮通常不能直接作为主要食物食用。",
+      "answer_evidence_refs": [
+        "experience_628418027c37"
+      ]
+    },
+    {
+      "question": "Orange is-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "is-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_b0340c9b41d9",
+        "evidence_98b6d97aa18f",
+        "evidence_9c01f9ec9531"
+      ],
+      "inferred_answer": "Orange is-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Orange contains VitaminC 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_3c8371552272",
+        "evidence_43e23e5bb69b",
+        "evidence_27015a536da1"
+      ]
+    },
+    {
+      "question": "Orange contains Vitamin 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "contains",
+      "relation_target": "Vitamin",
+      "relation_evidence_refs": [
+        "evidence_3c8371552272",
+        "evidence_43e23e5bb69b",
+        "evidence_27015a536da1"
+      ]
+    },
+    {
+      "question": "Orange 能吃这件事有什么条件或例外？什么时候不能简单推广？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Orange is a fruit. Orange belongs to the citrus group. Orange can usually be eaten directly or made into juice. Orange contains VitaminC.",
+      "answer_evidence_refs": [
+        "experience_b85632081abb"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,20 @@
+{
+  "current_task": "learn_peach_from_guided_example",
+  "visible_inputs": [
+    {
+      "input_id": "input_d7e4daf5244c",
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/peach_001.jpg",
+      "status": "available"
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_feca09a05185",
+      "speaker": "user",
+      "text": "桃子是一种水果。"
+    }
+  ],
+  "state_id": "external_state_b0ef3c6df8f0",
+  "timestamp": "2026-06-28T21:25:22.254185+00:00"
+}

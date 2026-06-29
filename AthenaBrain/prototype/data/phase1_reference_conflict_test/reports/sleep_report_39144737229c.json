@@ -1,0 +1,35 @@
+{
+  "sleep_report_id": "sleep_report_39144737229c",
+  "timestamp": "2026-06-28T21:16:29.373207+00:00",
+  "mode": "prototype_consolidation",
+  "input_refs": [
+    "experience_2cf37ed6b1a2",
+    "perception_4eb16e2bfca0"
+  ],
+  "operations": [
+    {
+      "operation": "extract_candidate_attributes",
+      "feature_count": 2,
+      "source": "perception_4eb16e2bfca0"
+    },
+    {
+      "operation": "create_candidate_relation",
+      "relation": "Apple is-a 车辆",
+      "confidence": 0.55,
+      "source": "evidence_324c1191bb2f"
+    }
+  ],
+  "conflicts_or_variations": [],
+  "generalized_attributes": [],
+  "generated_questions": [
+    {
+      "question": "Apple 的这些观察特征是普遍特征，还是只属于这一个例子？",
+      "reason": "single_example_cannot_support_generalization"
+    },
+    {
+      "question": "车辆 的边界是什么？还有哪些东西属于 车辆？",
+      "reason": "relation_target_concept_needs_definition"
+    }
+  ],
+  "summary": "Consolidated one experience into concept attributes and candidate relations."
+}

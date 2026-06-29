@@ -1,0 +1,193 @@
+{
+  "name": "Nutrient",
+  "display_name": null,
+  "concept_id": "concept_533ddb8f7960",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-29T00:14:26.070461+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early parent concept for Nutrient, abstracted from examples: DietaryFiber, Digestion, Mineral, Potassium, Vitamin, VitaminC.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-not-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_d47dc11b143a",
+        "evidence_691f3b1da661",
+        "evidence_a3895098794a",
+        "evidence_3450f2dd2236",
+        "evidence_0cae4c4410c1",
+        "evidence_b18c29e4c685",
+        "evidence_ddb534adf35c",
+        "evidence_043ec9209c0f",
+        "evidence_3778cc691a15"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "supports",
+      "target_concept": "Health",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_90056c152bb7",
+        "evidence_3da1ad45702b",
+        "evidence_228ffc78b927",
+        "evidence_6e4ca4eff308",
+        "evidence_5d2fa0e1a9ae",
+        "evidence_f9c3669281bf",
+        "evidence_d85b9885638d",
+        "evidence_2cc7601581bd",
+        "evidence_4d219f757ba7"
+      ],
+      "status": "candidate"
+    },
+    {
+      "relation_type": "related-to",
+      "target_concept": "Health",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_cf194831172f"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_d47dc11b143a",
+    "evidence_90056c152bb7",
+    "evidence_691f3b1da661",
+    "evidence_3da1ad45702b",
+    "evidence_cf194831172f",
+    "evidence_a3895098794a",
+    "evidence_228ffc78b927",
+    "evidence_3450f2dd2236",
+    "evidence_6e4ca4eff308",
+    "evidence_0cae4c4410c1",
+    "evidence_5d2fa0e1a9ae",
+    "evidence_b18c29e4c685",
+    "evidence_f9c3669281bf",
+    "evidence_ddb534adf35c",
+    "evidence_d85b9885638d",
+    "evidence_043ec9209c0f",
+    "evidence_2cc7601581bd",
+    "evidence_3778cc691a15",
+    "evidence_4d219f757ba7"
+  ],
+  "open_questions": [
+    {
+      "question": "Nutrient 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "除了这些例子，什么样的东西也可以属于 Nutrient？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "answer_evidence_refs": [
+        "experience_497c0473584b"
+      ]
+    },
+    {
+      "question": "Nutrient is-not-a Fruit 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "rejected_by_relation",
+      "relation_type": "is-not-a",
+      "relation_target": "Fruit",
+      "relation_evidence_refs": [
+        "evidence_d47dc11b143a",
+        "evidence_691f3b1da661",
+        "evidence_a3895098794a",
+        "evidence_3450f2dd2236",
+        "evidence_0cae4c4410c1"
+      ],
+      "inferred_answer": "Nutrient is-not-a Fruit 已由关系证据回答。"
+    },
+    {
+      "question": "Fruit 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Nutrient supports Health 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_90056c152bb7"
+      ]
+    },
+    {
+      "question": "Health 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "Nutrient 的共同特征是什么？这些例子为什么都属于 Nutrient？",
+      "reason": "parent_concept_needs_common_attributes"
+    },
+    {
+      "question": "Nutrient supports Health 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "supports",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_90056c152bb7"
+      ]
+    },
+    {
+      "question": "Nutrient related-to Health 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "related-to",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_cf194831172f"
+      ]
+    },
+    {
+      "question": "Nutrient related-to Health 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "related-to",
+      "relation_target": "Health",
+      "relation_evidence_refs": [
+        "evidence_cf194831172f"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "concept": "DietaryFiber",
+      "concept_id": "concept_dfd31d7aa66f",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Digestion",
+      "concept_id": "concept_c1f19c7eb12a",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Mineral",
+      "concept_id": "concept_91996eafdfdf",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Potassium",
+      "concept_id": "concept_e579ea772702",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Vitamin",
+      "concept_id": "concept_c5b63a542b41",
+      "relation": "is-a"
+    },
+    {
+      "concept": "VitaminC",
+      "concept_id": "concept_fbf3e7f347e3",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Health is not a fruit. Health is a condition of the body. Nutrient is related to Health. Digestion is related to Health. Immunity is related to Health. Energy is related to Health.",
+      "ref": "knowledge_text_9201b8a5a3fe"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_c1da8e14a9d4",
+  "timestamp": "2026-06-29T00:16:36.479378+00:00",
+  "processed": false,
+  "immutable": true
+}

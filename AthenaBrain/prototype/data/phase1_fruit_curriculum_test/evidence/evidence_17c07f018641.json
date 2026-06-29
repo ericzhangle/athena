@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "葡萄常见特征包括果实较小、成串生长、味道甜或酸甜，并含有水分和一些维生素",
+    "subject": "Water",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_4757fb51a2e9",
+    "experience_99b0c74aaa39"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_17c07f018641",
+  "timestamp": "2026-06-29T00:08:09.845930+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

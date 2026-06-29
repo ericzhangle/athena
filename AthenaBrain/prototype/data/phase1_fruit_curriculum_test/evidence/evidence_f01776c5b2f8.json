@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "statement": "塑料苹果不是一种水果。",
+    "subject": "PlasticApple",
+    "predicate": "is-not-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_statement",
+  "source_identity": "user",
+  "refs": [
+    "experience_3c7fd0a5fc0e"
+  ],
+  "status": "provisional",
+  "confidence": 0.7,
+  "evidence_id": "evidence_f01776c5b2f8",
+  "timestamp": "2026-06-28T21:32:28.654230+00:00",
+  "sample_id": "curriculum_plastic_apple_001",
+  "validation_events": []
+}

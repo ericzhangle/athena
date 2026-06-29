@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "维生素C是一种营养物质，不是水果。许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关。",
+      "ref": "knowledge_text_0270e3fc2599"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "mock_reference_provider",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_18cad3d3c859",
+  "timestamp": "2026-06-29T00:08:10.361823+00:00",
+  "processed": false,
+  "immutable": true
+}

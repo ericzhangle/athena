@@ -1,0 +1,77 @@
+{
+  "name": "NaturalSugar",
+  "display_name": null,
+  "concept_id": "concept_2f5c0ae3c706",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.833065+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: NaturalSugar.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "can_affect",
+      "target_concept": "Energy",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_c8d83eb9525f",
+        "evidence_c8b8c6bb5bd5",
+        "evidence_ed4fd42e5ef1",
+        "evidence_c44ce3f5f0d1",
+        "evidence_4d52e036f05c"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_c8d83eb9525f",
+    "evidence_c8b8c6bb5bd5",
+    "evidence_ed4fd42e5ef1",
+    "evidence_c44ce3f5f0d1",
+    "evidence_4d52e036f05c"
+  ],
+  "open_questions": [
+    {
+      "question": "NaturalSugar can_affect Energy 这件事为什么重要？它会带来什么影响？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "can_affect",
+      "relation_target": "Energy",
+      "relation_evidence_refs": [
+        "evidence_c8d83eb9525f",
+        "evidence_c8b8c6bb5bd5"
+      ]
+    },
+    {
+      "question": "Energy 是什么？它有哪些关键特性？",
+      "reason": "related_concept_needs_identity"
+    },
+    {
+      "question": "NaturalSugar 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "NaturalSugar 和 Energy 之间的“can_affect”关系，在我已有知识里意味着什么？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "这个问题需要进一步查证。可以先把它当作一个暂时未知的概念，记录它和当前已知概念之间可能存在的关系，再继续寻找证据。",
+      "answer_evidence_refs": [
+        "experience_c5030f031eb7"
+      ]
+    },
+    {
+      "question": "NaturalSugar can_affect Energy 这件事为什么重要？它背后的机制或条件是什么？",
+      "reason": "relation_mechanism_unclear",
+      "status": "answered_by_relation",
+      "relation_type": "can_affect",
+      "relation_target": "Energy",
+      "relation_evidence_refs": [
+        "evidence_c8d83eb9525f",
+        "evidence_c8b8c6bb5bd5"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

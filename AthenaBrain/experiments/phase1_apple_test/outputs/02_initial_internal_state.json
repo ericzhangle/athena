@@ -1,0 +1,77 @@
+{
+  "state_id": "internal_state_phase1_apple_001",
+  "timestamp": "2026-06-29T00:00:00Z",
+  "session_id": "phase1_apple_test_001",
+  "attention_focus": [
+    {
+      "target": "Apple",
+      "reason": "new_concept_introduced_by_user",
+      "strength": 0.85
+    },
+    {
+      "target": "Fruit",
+      "reason": "user_claimed_apple_is_a_fruit_but_fruit_is_undefined",
+      "strength": 0.75
+    }
+  ],
+  "pending_questions": [
+    {
+      "question_id": "question_001",
+      "question": "你说苹果是一种水果，那么水果是什么意思？",
+      "reason": "relation_target_concept_is_undefined",
+      "priority": 0.85,
+      "status": "open"
+    },
+    {
+      "question_id": "question_002",
+      "question": "你能给我看一个苹果的例子吗？",
+      "reason": "new_concept_needs_direct_evidence",
+      "priority": 0.9,
+      "status": "open"
+    }
+  ],
+  "active_concepts": [
+    {
+      "concept_id": "concept_candidate_apple",
+      "name": "Apple",
+      "status": "forming",
+      "confidence": 0.25,
+      "maturity": "seed",
+      "evidence_refs": [
+        "external_state_phase1_apple_001:conversation_context.turn_001"
+      ]
+    },
+    {
+      "concept_id": "concept_candidate_fruit",
+      "name": "Fruit",
+      "status": "undefined",
+      "confidence": 0.1,
+      "maturity": "seed",
+      "evidence_refs": [
+        "external_state_phase1_apple_001:conversation_context.turn_001"
+      ]
+    }
+  ],
+  "conflict_set": [],
+  "curiosity_queue": [
+    {
+      "topic": "Apple",
+      "reason": "no_direct_observation_yet",
+      "priority": 0.9
+    },
+    {
+      "topic": "Fruit",
+      "reason": "category_name_used_without_definition",
+      "priority": 0.8
+    }
+  ],
+  "identity_focus": [
+    "learn_from_evidence",
+    "avoid_encyclopedia_copying",
+    "ask_when_uncertain"
+  ],
+  "sleep_status": {
+    "state": "idle",
+    "last_run": null
+  }
+}

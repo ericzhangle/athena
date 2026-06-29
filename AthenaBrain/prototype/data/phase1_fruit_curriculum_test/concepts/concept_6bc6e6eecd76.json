@@ -1,0 +1,117 @@
+{
+  "name": "Plastic",
+  "display_name": null,
+  "concept_id": "concept_6bc6e6eecd76",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.375,
+  "created_at": "2026-06-28T22:07:42.594068+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept for Plastic, discovered from a user answer about Plasticapple.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "The user says Plastic cannot be eaten.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_dd46966b6cbc"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    },
+    {
+      "name": "material_property",
+      "value": "The user says Plastic can be used as a material.",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_dd46966b6cbc"
+      ],
+      "scope": "observed_example",
+      "generalization_status": "not_yet_general"
+    }
+  ],
+  "relations": [],
+  "evidence_refs": [
+    "evidence_dd46966b6cbc"
+  ],
+  "open_questions": [
+    {
+      "question": "Plastic 是什么？它为什么不能吃？它还有哪些特性？",
+      "reason": "new_concept_from_curiosity_answer",
+      "status": "answered_by_reference",
+      "last_answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "answer_evidence_refs": [
+        "experience_f661b5edbfc2"
+      ]
+    },
+    {
+      "question": "Plastic 是什么材料？它有哪些特性？",
+      "reason": "material_concept_from_curiosity_answer",
+      "status": "answered_by_reference",
+      "last_answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "answer_evidence_refs": [
+        "experience_856fe7703a14"
+      ]
+    },
+    {
+      "question": "Plastic 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Plastic 被 PlasticApple 通过“made-of”联系起来。这说明 Plastic 和 PlasticApple 有什么关系？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "answer_evidence_refs": [
+        "experience_6d2797d16ef0"
+      ]
+    },
+    {
+      "question": "Plastic 被 PlasticApple 等概念通过“made-of”联系起来。这说明 Plastic 在这些关系里扮演什么角色？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "塑料苹果不是水果，而是由塑料制成、外形像苹果的物体。它可能在颜色或形状上像苹果，但不能作为食物食用。",
+      "answer_evidence_refs": [
+        "experience_64ccd57152ef"
+      ]
+    },
+    {
+      "question": "Plastic 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "answer_evidence_refs": [
+        "experience_32b6af447489"
+      ]
+    },
+    {
+      "question": "Plastic 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "answer_evidence_refs": [
+        "experience_f5446c38edfd"
+      ]
+    },
+    {
+      "question": "Plastic 是由什么构成的？它有哪些材料或物理特性？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "answer_evidence_refs": [
+        "experience_c610909599b3"
+      ]
+    },
+    {
+      "question": "为什么 Plastic 不能吃？这个原因和我已经知道的哪些概念有关？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Plastic is a material, not a fruit. Plastic is not food. Plastic can be used to make containers, packaging, or toys.",
+      "answer_evidence_refs": [
+        "experience_898f737224df"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

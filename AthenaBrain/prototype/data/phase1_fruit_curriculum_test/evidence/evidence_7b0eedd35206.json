@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Digestion is not a fruit",
+    "subject": "Digestion",
+    "predicate": "is-not-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_9703f342c424",
+    "experience_3abdc3911232"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_7b0eedd35206",
+  "timestamp": "2026-06-29T00:14:26.064869+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

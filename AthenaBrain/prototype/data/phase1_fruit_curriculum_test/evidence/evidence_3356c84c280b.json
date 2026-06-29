@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "它可能在颜色或形状上像苹果，但不能作为食物食用",
+    "subject": "Apple",
+    "predicate": "edibility",
+    "object": "Apple can be eaten according to the text."
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider_replay_after_relation_extractor",
+  "refs": [
+    "knowledge_text_1d26f7673341",
+    "experience_156bc70effd5"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_3356c84c280b",
+  "timestamp": "2026-06-29T00:00:28.445860+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

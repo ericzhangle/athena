@@ -1,0 +1,20 @@
+{
+  "current_task": "learn_banana_from_guided_example",
+  "visible_inputs": [
+    {
+      "input_id": "input_11fcbe3623a3",
+      "type": "image",
+      "path": "../experiments/phase1_apple_test/inputs/banana_001.jpg",
+      "status": "available"
+    }
+  ],
+  "conversation_context": [
+    {
+      "turn_id": "turn_759b471e79e4",
+      "speaker": "user",
+      "text": "香蕉是一种水果。"
+    }
+  ],
+  "state_id": "external_state_8a5531d46582",
+  "timestamp": "2026-06-28T21:32:28.429852+00:00"
+}

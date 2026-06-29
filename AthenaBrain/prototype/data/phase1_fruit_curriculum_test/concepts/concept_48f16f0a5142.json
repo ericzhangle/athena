@@ -1,0 +1,42 @@
+{
+  "name": "Tangerine",
+  "display_name": null,
+  "concept_id": "concept_48f16f0a5142",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-28T22:42:25.830327+00:00",
+  "updated_at": "2026-06-29T00:19:11.834001+00:00",
+  "description": "An early concept mentioned in a knowledge text: Tangerine.",
+  "attributes": [],
+  "relations": [],
+  "evidence_refs": [
+    "knowledge_ingestion_backfill_fruit_example"
+  ],
+  "open_questions": [
+    {
+      "question": "Tangerine 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity"
+    },
+    {
+      "question": "Tangerine 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "This question needs more evidence. Treat the concept as temporarily unknown, record possible relations to known concepts, and continue looking for evidence.",
+      "answer_evidence_refs": [
+        "experience_c6b42dddc252"
+      ]
+    },
+    {
+      "question": "Tangerine 是不是一种 Nutrient，还是和 Nutrient 不同？",
+      "reason": "answered_curiosity_question",
+      "status": "answered_by_reference",
+      "last_answer": "Nutrient is not a fruit. Nutrient is a general category for substances that support BodyFunction and Health. Vitamin is a nutrient. Mineral is a nutrient. DietaryFiber is a nutrient. Potassium is a nutrient.",
+      "answer_evidence_refs": [
+        "experience_dacc2e08a53f"
+      ]
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

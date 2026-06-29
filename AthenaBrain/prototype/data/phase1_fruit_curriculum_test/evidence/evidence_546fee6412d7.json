@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "许多水果含有维生素C，维生素C可以帮助维持身体健康，并和免疫功能有关",
+    "subject": "Fruit",
+    "predicate": "contains",
+    "object": "Vitamin"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "mock_reference_provider",
+  "refs": [
+    "knowledge_text_898a60e16290",
+    "experience_97e582819695"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_546fee6412d7",
+  "timestamp": "2026-06-29T00:08:34.749321+00:00",
+  "sample_id": null,
+  "validation_events": []
+}
