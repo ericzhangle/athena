@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Food is something edible",
+    "subject": "Food",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "v1_food_fruit_curriculum",
+  "refs": [
+    "knowledge_text_d47ea155bc79",
+    "experience_d41118a9f732"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_9584b21e9e23",
+  "timestamp": "2026-06-29T21:07:02.727432+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

@@ -1,0 +1,246 @@
+{
+  "report_id": "knowledge_ingestion_report_95c632e350c9",
+  "text_ref": "knowledge_text_15cde9489c17",
+  "experience_id": "experience_0020ffba2755",
+  "claim_count": 6,
+  "evidence_count": 6,
+  "updated_concepts": [
+    "Apple",
+    "Cookie",
+    "Food",
+    "Fruit"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_d8c1b00dca87",
+      "concept": "Apple",
+      "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_16681aabe3b0",
+      "concept": "Cookie",
+      "question": "Cookie 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_9b731e09b035",
+      "concept": "Food",
+      "question": "除了这些例子，什么样的东西也可以属于 Food？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_f2c2fe41c87d",
+      "concept": "Food",
+      "question": "Food 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_d84fabf7f785",
+      "concept": "Fruit",
+      "question": "Fruit 是不是一种 Food，还是和 Food 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_61e8c2a03783",
+      "concept": "Food",
+      "question": "Food 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_75c8843c6738",
+      "concept": "Fruit",
+      "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_36f081c7f814",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_36f081c7f814",
+    "timestamp": "2026-06-30T21:43:12.519779+00:00",
+    "trigger": "knowledge_ingestion_llm",
+    "membership": [
+      {
+        "parent": "Food",
+        "examples": [
+          "Cookie"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      },
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Apple"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "is-a",
+      "object": "Fruit",
+      "relation_type": "is-a",
+      "target": "Fruit",
+      "statement": "Apple is a Fruit.",
+      "questions": []
+    },
+    {
+      "kind": "relation",
+      "subject": "Cookie",
+      "predicate": "is-a",
+      "object": "Food",
+      "relation_type": "is-a",
+      "target": "Food",
+      "statement": "Cookie is a Food.",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Apple",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Apple",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Fruit",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Cookie",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Cookie",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Food",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Food",
+      "questions": []
+    }
+  ],
+  "recall": {
+    "anchor_names": [
+      "Apple",
+      "Fruit",
+      "Cookie",
+      "Food"
+    ],
+    "anchor_ids": [],
+    "concept_ids": [],
+    "loaded_concepts": [],
+    "evidence_ids": []
+  },
+  "event_id": "event_0d5dc07e57c4"
+}

@@ -1,0 +1,160 @@
+{
+  "data_root": "C:\\Users\\User\\Desktop\\athena0.1\\AthenaBrain\\prototype\\data\\local_recall_grounded_qa_test",
+  "apple_answer": {
+    "question": "Apple belongs to what?",
+    "answer": "Based on my current memory, Apple belongs to Fruit.",
+    "grounded_bundle": {
+      "question": "Apple belongs to what?",
+      "question_type": "belongs_to",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Apple"
+      ],
+      "concepts": [
+        {
+          "name": "Apple",
+          "maturity": "early",
+          "description": "An early concept mentioned in a knowledge text: Apple.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Fruit",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "examples": {},
+      "events": [
+        {
+          "event_id": "event_fecb4c71f65d",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 7 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_ee881e7eeb18",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "used_concepts": [
+      "Apple"
+    ],
+    "used_relations": [
+      [
+        "Apple",
+        "is-a",
+        "Fruit"
+      ]
+    ],
+    "used_event_ids": [
+      "event_fecb4c71f65d"
+    ],
+    "used_evidence_ids": [
+      "evidence_ee881e7eeb18"
+    ],
+    "confidence": 0.82,
+    "insufficient_memory": false,
+    "llm_available": true,
+    "event_id": "event_fd22f1e7fee5",
+    "source": "grounded_local_llm",
+    "recall": {
+      "anchor_names": [
+        "Apple"
+      ],
+      "anchor_ids": [
+        "concept_7b3e7de32a93"
+      ],
+      "concept_ids": [
+        "concept_1c48a1d40364",
+        "concept_7476e5f3a628",
+        "concept_7b3e7de32a93",
+        "concept_d7086337d2c3"
+      ],
+      "loaded_concepts": [
+        "Grape",
+        "Fruit",
+        "Apple",
+        "Food"
+      ],
+      "evidence_ids": [
+        "evidence_9f562f9216aa",
+        "evidence_ee881e7eeb18",
+        "evidence_f1d70a7f07f0"
+      ],
+      "active_concepts": [
+        "Apple",
+        "Fruit",
+        "Grape"
+      ],
+      "working_memory_source": "concept_recall"
+    }
+  },
+  "apple_working_memory": [
+    "Apple",
+    "Food",
+    "Fruit",
+    "Grape"
+  ],
+  "missile_answer": {
+    "question": "导弹是什么？",
+    "answer": "我现在不知道，因为我的记忆里还没有足够直接的依据来回答这个问题。",
+    "grounded_bundle": {
+      "question": "导弹是什么？",
+      "question_type": "open_question",
+      "requested_attribute": null,
+      "matched_concepts": [],
+      "concepts": [],
+      "relations": [],
+      "examples": {},
+      "events": [],
+      "evidence": [],
+      "unknown": true
+    },
+    "used_concepts": [],
+    "used_relations": [],
+    "used_event_ids": [],
+    "used_evidence_ids": [],
+    "confidence": 0.0,
+    "insufficient_memory": true,
+    "llm_available": true,
+    "source": "no_direct_grounded_support",
+    "recall": {
+      "anchor_names": [],
+      "anchor_ids": [],
+      "concept_ids": [],
+      "loaded_concepts": [],
+      "evidence_ids": [],
+      "active_concepts": [],
+      "working_memory_source": "concept_recall"
+    }
+  },
+  "missile_working_memory": [],
+  "llm_answer_calls": [
+    "Apple belongs to what?"
+  ],
+  "validation_observations": [
+    "Apple recall anchors: ['Apple']",
+    "Apple working memory: ['Apple', 'Food', 'Fruit', 'Grape']",
+    "Missile recall anchors: []",
+    "Missile working memory: []",
+    "Language hub calls: ['Apple belongs to what?']"
+  ],
+  "remaining_issues": []
+}

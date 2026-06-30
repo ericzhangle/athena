@@ -1,0 +1,144 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 3 extracted claims.",
+  "source": "working_memory_scope_test",
+  "payload": {
+    "input_text": "Fruit is a Food.",
+    "experience_id": "experience_67c495bc9289",
+    "report_id": "knowledge_ingestion_report_51a69886fa9d",
+    "claim_count": 3,
+    "evidence_ids": [
+      "evidence_6d24854a029b",
+      "evidence_2cabd84f5117",
+      "evidence_3c404ba65db8"
+    ],
+    "updated_concepts": [
+      "Food",
+      "Fruit"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_0503b59693d4",
+        "concept": "Food",
+        "question": "Food 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_a9bfe5e7965f",
+        "concept": "Fruit",
+        "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_36cded25813b",
+        "concept": "Grape",
+        "question": "Grape 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_66ff9a2c637a"
+  },
+  "event_id": "event_01aa8815501b",
+  "timestamp": "2026-06-30T21:50:45.317921+00:00"
+}

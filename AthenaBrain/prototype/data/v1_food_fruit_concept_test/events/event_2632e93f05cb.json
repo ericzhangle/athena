@@ -1,0 +1,127 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 3 extracted claims.",
+  "source": "v1_food_fruit_curriculum",
+  "payload": {
+    "input_text": "Grape is a Fruit.",
+    "experience_id": "experience_cca9734645b5",
+    "report_id": "knowledge_ingestion_report_e553258bacc6",
+    "claim_count": 3,
+    "evidence_ids": [
+      "evidence_ee2b9deea44b",
+      "evidence_e308fdceeba8",
+      "evidence_ed8f63875d1d"
+    ],
+    "updated_concepts": [
+      "Fruit",
+      "Grape"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_3682b38b5921",
+        "concept": "Apple",
+        "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+        "reason": "attribute_scope_unclear",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "attribute_scope_unclear",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_36cded25813b",
+        "concept": "Grape",
+        "question": "Grape 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_a9bfe5e7965f",
+        "concept": "Fruit",
+        "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_9fa04da00373"
+  },
+  "event_id": "event_2632e93f05cb",
+  "timestamp": "2026-06-29T21:07:02.522194+00:00"
+}

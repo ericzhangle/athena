@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Grape can be eaten",
+    "subject": "Grape",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "v1_food_fruit_curriculum",
+  "refs": [
+    "knowledge_text_87a7a0ef761e",
+    "experience_d3bbbe261c11"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_c5c66d8d4ead",
+  "timestamp": "2026-06-29T21:07:02.530849+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

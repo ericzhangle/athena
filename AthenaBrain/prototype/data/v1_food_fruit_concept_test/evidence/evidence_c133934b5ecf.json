@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple can be eaten",
+    "subject": "Apple",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "v1_food_fruit_curriculum",
+  "refs": [
+    "knowledge_text_e404bd15b709",
+    "experience_7a947559127a"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_c133934b5ecf",
+  "timestamp": "2026-06-29T21:07:02.080950+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

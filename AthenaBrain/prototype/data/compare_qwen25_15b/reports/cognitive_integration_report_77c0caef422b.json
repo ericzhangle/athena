@@ -1,0 +1,18 @@
+{
+  "integration_report_id": "cognitive_integration_report_77c0caef422b",
+  "timestamp": "2026-06-30T20:45:01.205299+00:00",
+  "trigger": "knowledge_ingestion_llm",
+  "membership": [
+    {
+      "parent": "ConceptName",
+      "examples": [
+        "Fruit"
+      ],
+      "counterexamples": [],
+      "example_count": 1,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [],
+  "boundary_questions": []
+}

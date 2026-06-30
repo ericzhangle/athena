@@ -1,0 +1,52 @@
+{
+  "name": "Food",
+  "display_name": null,
+  "concept_id": "concept_46366696afbc",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T20:44:54.885267+00:00",
+  "updated_at": "2026-06-30T20:44:54.894190+00:00",
+  "description": "An early parent concept for Food, abstracted from examples: Fruit.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_5aefb9e2cc94"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_b5cdb94ce6e9"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_b5cdb94ce6e9",
+    "evidence_5aefb9e2cc94"
+  ],
+  "open_questions": [
+    {
+      "question": "Can all Food be considered edible?",
+      "reason": "The text states Food is edible"
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Fruit",
+      "concept_id": "concept_125b5da64d05",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

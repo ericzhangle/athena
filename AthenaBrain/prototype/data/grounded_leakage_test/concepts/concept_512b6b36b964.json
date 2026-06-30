@@ -1,0 +1,23 @@
+{
+  "name": "Food",
+  "display_name": null,
+  "concept_id": "concept_512b6b36b964",
+  "status": "forming",
+  "maturity": "seed",
+  "confidence": 0.1,
+  "created_at": "2026-06-30T21:43:12.514310+00:00",
+  "updated_at": "2026-06-30T21:43:12.519779+00:00",
+  "description": "An early parent concept for Food, abstracted from examples: Cookie.",
+  "attributes": [],
+  "relations": [],
+  "evidence_refs": [],
+  "open_questions": [],
+  "examples": [
+    {
+      "concept": "Cookie",
+      "concept_id": "concept_eba35dece8b0",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

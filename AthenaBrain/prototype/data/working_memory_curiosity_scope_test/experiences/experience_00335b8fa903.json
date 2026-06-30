@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Apple is a Fruit.",
+      "ref": "knowledge_text_b05c07271718"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "working_memory_scope_test",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_00335b8fa903",
+  "timestamp": "2026-06-30T21:50:44.330133+00:00",
+  "processed": false,
+  "immutable": true
+}

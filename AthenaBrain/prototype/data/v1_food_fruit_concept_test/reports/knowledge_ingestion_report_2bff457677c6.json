@@ -1,0 +1,242 @@
+{
+  "report_id": "knowledge_ingestion_report_2bff457677c6",
+  "text_ref": "knowledge_text_d47ea155bc79",
+  "experience_id": "experience_d41118a9f732",
+  "claim_count": 2,
+  "evidence_count": 2,
+  "updated_concepts": [
+    "Food"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_9b731e09b035",
+      "concept": "Food",
+      "question": "除了这些例子，什么样的东西也可以属于 Food？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_f2c2fe41c87d",
+      "concept": "Food",
+      "question": "Food 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_d84fabf7f785",
+      "concept": "Fruit",
+      "question": "Fruit 是不是一种 Food，还是和 Food 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_3682b38b5921",
+      "concept": "Apple",
+      "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_088b2c954edb",
+      "concept": "Grape",
+      "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_8b543ad7996f",
+      "concept": "Apple",
+      "question": "Apple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_c8818d7e21a0",
+      "concept": "Cookie",
+      "question": "Cookie 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_6eaa57f65bcb",
+      "concept": "Food",
+      "question": "Food 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_518151ef617b",
+      "concept": "Fruit",
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "parent_concept_needs_common_attributes",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_2201396a55cf",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_2201396a55cf",
+    "timestamp": "2026-06-29T21:07:02.727432+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Apple",
+          "Grape"
+        ],
+        "counterexamples": [],
+        "example_count": 2,
+        "counterexample_count": 0
+      },
+      {
+        "parent": "Food",
+        "examples": [
+          "Cookie"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "attribute",
+      "subject": "Food",
+      "predicate": "edibility",
+      "object": "Food is described as edible in the text.",
+      "attribute_name": "edibility",
+      "attribute_value": "Food is described as edible in the text.",
+      "statement": "Food is something edible",
+      "questions": [
+        {
+          "question": "Food 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Food",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Food is something edible",
+      "questions": [
+        {
+          "question": "Food 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ],
+  "event_id": "event_3db38367ed15"
+}

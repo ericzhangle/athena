@@ -11,10 +11,11 @@ INACTIVE_STATUSES = {"disputed", "invalidated", "contaminated"}
 class EvidenceLedger:
     """Tracks evidence status and validation history."""
 
-    def __init__(self, store: JsonMemoryStore) -> None:
+    def __init__(self, store: JsonMemoryStore, *, autoload: bool = True) -> None:
         self.store = store
         self.evidence: dict[str, Evidence] = {}
-        self._load_existing()
+        if autoload:
+            self._load_existing()
 
     def add_evidence(
         self,
@@ -94,6 +95,25 @@ class EvidenceLedger:
         if item is None:
             return True
         return item.status in ACTIVE_STATUSES
+
+    def clear(self) -> None:
+        self.evidence = {}
+
+    def load_evidence_ids(self, evidence_ids: list[str]) -> list[Evidence]:
+        loaded = []
+        for evidence_id in evidence_ids:
+            item = self.evidence.get(evidence_id)
+            if item is not None:
+                loaded.append(item)
+                continue
+            try:
+                payload = self.store.load("evidence", evidence_id)
+                item = evidence_from_dict(payload)
+            except (OSError, KeyError, ValueError, TypeError):
+                continue
+            self.evidence[item.evidence_id] = item
+            loaded.append(item)
+        return loaded
 
     def _load_existing(self) -> None:
         for path in self.store.list_records("evidence"):

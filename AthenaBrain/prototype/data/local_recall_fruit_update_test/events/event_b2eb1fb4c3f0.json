@@ -1,0 +1,117 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: What examples does Fruit have?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "What examples does Fruit have?",
+    "grounded_bundle": {
+      "question": "What examples does Fruit have?",
+      "question_type": "examples_of",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Fruit"
+      ],
+      "concepts": [
+        {
+          "name": "Fruit",
+          "maturity": "early",
+          "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape, Pear.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Food",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "examples": {
+        "Fruit": [
+          "Apple",
+          "Grape",
+          "Pear"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event_85b7deef5e72",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 3 extracted claims."
+        },
+        {
+          "event_id": "event_ddcd95e60c14",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 7 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_3bcdce99df69",
+          "subject": "Fruit",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Fruit is a Food",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_b7e4a753a54f",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_e8577fcad820",
+          "subject": "Pear",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Pear is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_f0cabcf4d681",
+          "subject": "Grape",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Grape is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "Based on my current memory, examples of Fruit include Apple, Grape, Pear.",
+      "used_concepts": [
+        "Fruit"
+      ],
+      "used_relations": [],
+      "used_event_ids": [
+        "event_85b7deef5e72",
+        "event_ddcd95e60c14"
+      ],
+      "used_evidence_ids": [
+        "evidence_3bcdce99df69",
+        "evidence_b7e4a753a54f",
+        "evidence_e8577fcad820",
+        "evidence_f0cabcf4d681"
+      ],
+      "confidence": 0.8,
+      "insufficient_memory": false
+    }
+  },
+  "event_id": "event_b2eb1fb4c3f0",
+  "timestamp": "2026-06-30T21:50:45.608201+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple is a Fruit",
+    "subject": "Apple",
+    "predicate": "is-a",
+    "object": "Fruit"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "setup",
+  "refs": [
+    "knowledge_text_7431b44829da",
+    "experience_030cc8aa596f"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_b7e4a753a54f",
+  "timestamp": "2026-06-30T21:50:44.542747+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

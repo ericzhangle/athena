@@ -1,0 +1,47 @@
+{
+  "name": "Food",
+  "display_name": null,
+  "concept_id": "concept_3081fd0de894",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T20:37:26.492428+00:00",
+  "updated_at": "2026-06-30T20:37:26.502675+00:00",
+  "description": "An early parent concept for Food, abstracted from examples: Fruit.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_bed7231b2425"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_871a24512b74"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_871a24512b74",
+    "evidence_bed7231b2425"
+  ],
+  "open_questions": [],
+  "examples": [
+    {
+      "concept": "Fruit",
+      "concept_id": "concept_783eb855917a",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

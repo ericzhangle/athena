@@ -1,0 +1,137 @@
+{
+  "report_id": "knowledge_ingestion_report_129ed2eb2614",
+  "text_ref": "knowledge_text_80ba6e6eba06",
+  "experience_id": "experience_94ec0a890bef",
+  "claim_count": 3,
+  "evidence_count": 3,
+  "updated_concepts": [
+    "Car",
+    "Vehicle"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_4d64fc21557e",
+      "concept": "Vehicle",
+      "question": "除了这些例子，什么样的东西也可以属于 Vehicle？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e0385ec65036",
+      "concept": "Car",
+      "question": "Car 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_2b6dfc9caa94",
+      "concept": "Vehicle",
+      "question": "Vehicle 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_407dce4d76e7",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_407dce4d76e7",
+    "timestamp": "2026-06-30T21:50:45.019397+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Vehicle",
+        "examples": [
+          "Car"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Car",
+      "predicate": "is-a",
+      "object": "Vehicle",
+      "relation_type": "is-a",
+      "target": "Vehicle",
+      "statement": "Car is a Vehicle",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Car",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Car is a Vehicle",
+      "questions": [
+        {
+          "question": "Car 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Vehicle",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Car is a Vehicle",
+      "questions": [
+        {
+          "question": "Vehicle 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ],
+  "recall": {
+    "anchor_names": [
+      "Car",
+      "Vehicle"
+    ],
+    "anchor_ids": [],
+    "concept_ids": [],
+    "loaded_concepts": [],
+    "evidence_ids": [],
+    "active_concepts": [
+      "Car",
+      "Vehicle"
+    ],
+    "working_memory_source": "concept_recall"
+  },
+  "event_id": "event_f0b06afaa9eb"
+}

@@ -1,0 +1,26 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Apple is a Fruit. Grape is a Fruit. Cookie is a Food. Fruit is a Food. Food is edible.",
+      "ref": "knowledge_text_50d3bb5fb115"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text",
+    "llm_language_hub"
+  ],
+  "sample_id": null,
+  "source_identity": "grounded_llm_ingestion_test",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_ca019983e726",
+  "timestamp": "2026-06-30T21:50:43.846800+00:00",
+  "processed": false,
+  "immutable": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Food",
+  "display_name": null,
+  "concept_id": "concept_dc918ba1847d",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.375,
+  "created_at": "2026-06-30T20:28:16.939907+00:00",
+  "updated_at": "2026-06-30T20:28:16.948850+00:00",
+  "description": "An early parent concept for Food, abstracted from examples: Fruit.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_b64ac356aea9"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [],
+  "evidence_refs": [
+    "evidence_b64ac356aea9"
+  ],
+  "open_questions": [
+    {
+      "question": "Are there non-edible Food items?",
+      "reason": "The text states Food is edible but may have exceptions"
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Fruit",
+      "concept_id": "concept_d99f631fc22c",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Grape",
+  "display_name": null,
+  "concept_id": "concept_ddab82310c7a",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T21:43:12.514310+00:00",
+  "updated_at": "2026-06-30T21:43:12.523954+00:00",
+  "description": "An early concept mentioned in a knowledge text: Grape.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_5767173f5852"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_5767173f5852"
+  ],
+  "open_questions": [],
+  "examples": [],
+  "counterexamples": []
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Fruit",
+  "display_name": null,
+  "concept_id": "concept_c753aff8a903",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T21:50:43.846800+00:00",
+  "updated_at": "2026-06-30T21:50:43.861503+00:00",
+  "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Food",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_6e6a5a026c18"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_6e6a5a026c18"
+  ],
+  "open_questions": [
+    {
+      "question": "What examples does Fruit have?",
+      "reason": "more_examples_needed"
+    },
+    {
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes"
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Apple",
+      "concept_id": "concept_65bad38556f3",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Grape",
+      "concept_id": "concept_6b605856adeb",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

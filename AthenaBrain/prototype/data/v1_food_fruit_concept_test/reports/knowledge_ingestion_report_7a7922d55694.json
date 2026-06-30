@@ -1,0 +1,182 @@
+{
+  "report_id": "knowledge_ingestion_report_7a7922d55694",
+  "text_ref": "knowledge_text_87a7a0ef761e",
+  "experience_id": "experience_d3bbbe261c11",
+  "claim_count": 2,
+  "evidence_count": 2,
+  "updated_concepts": [
+    "Grape"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_3682b38b5921",
+      "concept": "Apple",
+      "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_518151ef617b",
+      "concept": "Fruit",
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "parent_concept_needs_common_attributes",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_8b543ad7996f",
+      "concept": "Apple",
+      "question": "Apple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_36cded25813b",
+      "concept": "Grape",
+      "question": "Grape 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_088b2c954edb",
+      "concept": "Grape",
+      "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+      "reason": "attribute_scope_unclear",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "attribute_scope_unclear",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_a9bfe5e7965f",
+      "concept": "Fruit",
+      "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_26676c794495",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_26676c794495",
+    "timestamp": "2026-06-29T21:07:02.530849+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Apple",
+          "Grape"
+        ],
+        "counterexamples": [],
+        "example_count": 2,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "attribute",
+      "subject": "Grape",
+      "predicate": "edibility",
+      "object": "Grape is described as edible in the text.",
+      "attribute_name": "edibility",
+      "attribute_value": "Grape is described as edible in the text.",
+      "statement": "Grape can be eaten",
+      "questions": [
+        {
+          "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+          "reason": "attribute_scope_unclear"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Grape",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Grape can be eaten",
+      "questions": [
+        {
+          "question": "Grape 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ],
+  "event_id": "event_f5bd4ba1364c"
+}

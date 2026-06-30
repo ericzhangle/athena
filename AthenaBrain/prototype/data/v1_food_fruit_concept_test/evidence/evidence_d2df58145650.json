@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Cookie is a Food",
+    "subject": "Cookie",
+    "predicate": "is-a",
+    "object": "Food"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "v1_food_fruit_curriculum",
+  "refs": [
+    "knowledge_text_0e4f96ef4f74",
+    "experience_aa8745030e8c"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_d2df58145650",
+  "timestamp": "2026-06-29T21:07:02.697668+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

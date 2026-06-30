@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Fruit is a Food",
+    "subject": "Fruit",
+    "predicate": "is-a",
+    "object": "Food"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "setup",
+  "refs": [
+    "knowledge_text_b11dac909845",
+    "experience_0cc9c0097d30"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_f1d70a7f07f0",
+  "timestamp": "2026-06-30T21:50:44.569535+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

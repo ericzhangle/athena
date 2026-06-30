@@ -1,0 +1,160 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: Is Fruit a Food?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "Is Fruit a Food?",
+    "grounded_bundle": {
+      "question": "Is Fruit a Food?",
+      "question_type": "is_a",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "concepts": [
+        {
+          "name": "Fruit",
+          "maturity": "early",
+          "description": "An early parent concept for Fruit, abstracted from examples: Apple.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Food",
+              "confidence": 0.5
+            }
+          ]
+        },
+        {
+          "name": "Food",
+          "maturity": "early",
+          "description": "An early parent concept for Food, abstracted from examples: Fruit.",
+          "attributes": [
+            {
+              "name": "edibility",
+              "value": "edible",
+              "scope": "knowledge_text",
+              "confidence": 0.5
+            }
+          ],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "edible",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ],
+        [
+          "Food",
+          "is-a",
+          "edible"
+        ]
+      ],
+      "examples": {
+        "Fruit": [
+          "Apple"
+        ],
+        "Food": [
+          "Fruit"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event_b0119b921faa",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 7 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_9a6e47f1cfb8",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_3a0159a3c4ab",
+          "subject": "Fruit",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Fruit is a Food.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_871a24512b74",
+          "subject": "Food",
+          "predicate": "is-a",
+          "object": "edible",
+          "statement": "Food is edible.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_bed7231b2425",
+          "subject": "Food",
+          "predicate": "edibility",
+          "object": "edible",
+          "statement": "Food is edible.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_d14f877a6063",
+          "subject": "Fruit",
+          "predicate": "mentioned_in_llm_parse",
+          "object": "mentioned",
+          "statement": "Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_9a1b447ff28f",
+          "subject": "Food",
+          "predicate": "mentioned_in_llm_parse",
+          "object": "mentioned",
+          "statement": "Food",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "Yes, Fruit is a Food.",
+      "used_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "used_relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "used_event_ids": [
+        "event_b0119b921faa"
+      ],
+      "used_evidence_ids": [
+        "evidence_3a0159a3c4ab"
+      ],
+      "confidence": 0.58,
+      "insufficient_memory": false
+    }
+  },
+  "event_id": "event_f0819fbbe714",
+  "timestamp": "2026-06-30T20:37:46.748042+00:00"
+}

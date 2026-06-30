@@ -1,0 +1,29 @@
+{
+  "name": "Cookie",
+  "display_name": null,
+  "concept_id": "concept_0a3bbc277e7a",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T21:43:12.515483+00:00",
+  "updated_at": "2026-06-30T21:43:12.523954+00:00",
+  "description": "An early concept mentioned in a knowledge text: Cookie.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Food",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_03843d587103"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_03843d587103"
+  ],
+  "open_questions": [],
+  "examples": [],
+  "counterexamples": []
+}

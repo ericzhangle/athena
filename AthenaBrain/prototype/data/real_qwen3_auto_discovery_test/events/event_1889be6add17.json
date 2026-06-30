@@ -1,0 +1,140 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: Is Fruit a Food?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "Is Fruit a Food?",
+    "grounded_bundle": {
+      "question": "Is Fruit a Food?",
+      "question_type": "is_a",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "concepts": [
+        {
+          "name": "Fruit",
+          "maturity": "early",
+          "description": "An early parent concept for Fruit, abstracted from examples: Apple.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Food",
+              "confidence": 0.5
+            }
+          ]
+        },
+        {
+          "name": "Food",
+          "maturity": "early",
+          "description": "An early parent concept for Food, abstracted from examples: Fruit.",
+          "attributes": [
+            {
+              "name": "edibility",
+              "value": "edible",
+              "scope": "knowledge_text",
+              "confidence": 0.5
+            }
+          ],
+          "relations": []
+        }
+      ],
+      "relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "examples": {
+        "Fruit": [
+          "Apple"
+        ],
+        "Food": [
+          "Fruit"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event_e2598c44c69d",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 7 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_34eeab5e7ad7",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_644b400e67e6",
+          "subject": "Fruit",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Fruit is a Food",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_b64ac356aea9",
+          "subject": "Food",
+          "predicate": "edibility",
+          "object": "edible",
+          "statement": "Food is edible",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_056c43e1b593",
+          "subject": "Fruit",
+          "predicate": "mentioned_in_llm_parse",
+          "object": "mentioned",
+          "statement": "Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_e2c301305edd",
+          "subject": "Food",
+          "predicate": "mentioned_in_llm_parse",
+          "object": "mentioned",
+          "statement": "Food",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "Yes, Fruit is a Food. This is supported by the 'is-a' relation between Fruit and Food, with confidence 0.5, and direct evidence stating 'Fruit is a Food' (confidence 0.58).",
+      "used_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "used_relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "used_event_ids": [
+        "event_e2598c44c69d"
+      ],
+      "used_evidence_ids": [
+        "evidence_644b400e67e6"
+      ],
+      "confidence": 0.58,
+      "insufficient_memory": false
+    }
+  },
+  "event_id": "event_1889be6add17",
+  "timestamp": "2026-06-30T20:30:33.347678+00:00"
+}

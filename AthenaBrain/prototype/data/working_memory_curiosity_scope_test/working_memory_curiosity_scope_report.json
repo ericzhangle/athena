@@ -1,0 +1,218 @@
+{
+  "data_root": "C:\\Users\\User\\Desktop\\athena0.1\\AthenaBrain\\prototype\\data\\working_memory_curiosity_scope_test",
+  "dormant_questions": [],
+  "fruit_scope": {
+    "anchor_names": [
+      "Fruit"
+    ],
+    "active_concepts": [
+      "Apple",
+      "Food",
+      "Fruit",
+      "Grape"
+    ],
+    "loaded_concepts": [
+      "Apple",
+      "Food",
+      "Fruit",
+      "Grape"
+    ],
+    "source": "concept_recall"
+  },
+  "fruit_questions": [
+    {
+      "question_id": "curiosity_9b731e09b035",
+      "concept": "Food",
+      "question": "除了这些例子，什么样的东西也可以属于 Food？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_518151ef617b",
+      "concept": "Fruit",
+      "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+      "reason": "parent_concept_needs_common_attributes",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "parent_concept_needs_common_attributes",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_8b543ad7996f",
+      "concept": "Apple",
+      "question": "Apple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_0503b59693d4",
+      "concept": "Food",
+      "question": "Food 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_a9bfe5e7965f",
+      "concept": "Fruit",
+      "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_36cded25813b",
+      "concept": "Grape",
+      "question": "Grape 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "car_scope": {
+    "anchor_names": [
+      "Car"
+    ],
+    "active_concepts": [
+      "Car",
+      "Vehicle"
+    ],
+    "loaded_concepts": [
+      "Car",
+      "Vehicle"
+    ],
+    "source": "concept_recall"
+  },
+  "car_questions": [
+    {
+      "question_id": "curiosity_4d64fc21557e",
+      "concept": "Vehicle",
+      "question": "除了这些例子，什么样的东西也可以属于 Vehicle？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_e0385ec65036",
+      "concept": "Car",
+      "question": "Car 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_2b6dfc9caa94",
+      "concept": "Vehicle",
+      "question": "Vehicle 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "validation_observations": [
+    "Dormant curiosity count without working memory: 0",
+    "Fruit working-memory scope: {'anchor_names': ['Fruit'], 'active_concepts': ['Apple', 'Food', 'Fruit', 'Grape'], 'loaded_concepts': ['Apple', 'Food', 'Fruit', 'Grape'], 'source': 'concept_recall'}",
+    "Fruit question concepts: ['Apple', 'Food', 'Fruit', 'Grape']",
+    "Car working-memory scope: {'anchor_names': ['Car'], 'active_concepts': ['Car', 'Vehicle'], 'loaded_concepts': ['Car', 'Vehicle'], 'source': 'concept_recall'}",
+    "Car question concepts: ['Car', 'Vehicle']"
+  ],
+  "remaining_issues": []
+}

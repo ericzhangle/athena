@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Pear is a Fruit",
+    "subject": "Fruit",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "fruit_update",
+  "refs": [
+    "knowledge_text_3e57ea7df943",
+    "experience_56eedadeafee"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_efdcd07f1b40",
+  "timestamp": "2026-06-30T21:50:45.488119+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

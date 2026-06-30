@@ -1,0 +1,416 @@
+{
+  "data_root": "C:\\Users\\User\\Desktop\\athena0.1\\AthenaBrain\\prototype\\data\\local_recall_fruit_update_test",
+  "pear_ingestion_report": {
+    "report_id": "knowledge_ingestion_report_aeed2d9a2c37",
+    "text_ref": "knowledge_text_3e57ea7df943",
+    "experience_id": "experience_56eedadeafee",
+    "claim_count": 3,
+    "evidence_count": 3,
+    "updated_concepts": [
+      "Fruit",
+      "Pear"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_0503b59693d4",
+        "concept": "Food",
+        "question": "Food 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_a9bfe5e7965f",
+        "concept": "Fruit",
+        "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_36cded25813b",
+        "concept": "Grape",
+        "question": "Grape 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_f49bb70f33f8",
+        "concept": "Pear",
+        "question": "Pear 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_7e14d307e4c3",
+    "integration": {
+      "integration_report_id": "cognitive_integration_report_7e14d307e4c3",
+      "timestamp": "2026-06-30T21:50:45.488119+00:00",
+      "trigger": "knowledge_ingestion",
+      "membership": [
+        {
+          "parent": "Food",
+          "examples": [
+            "Fruit"
+          ],
+          "counterexamples": [],
+          "example_count": 1,
+          "counterexample_count": 0
+        },
+        {
+          "parent": "Fruit",
+          "examples": [
+            "Grape",
+            "Apple",
+            "Pear"
+          ],
+          "counterexamples": [],
+          "example_count": 3,
+          "counterexample_count": 0
+        }
+      ],
+      "question_resolution": [],
+      "boundary_questions": []
+    },
+    "claims": [
+      {
+        "kind": "relation",
+        "subject": "Pear",
+        "predicate": "is-a",
+        "object": "Fruit",
+        "relation_type": "is-a",
+        "target": "Fruit",
+        "statement": "Pear is a Fruit",
+        "questions": []
+      },
+      {
+        "kind": "concept",
+        "subject": "Pear",
+        "predicate": "mentioned_in_knowledge_text",
+        "object": "mentioned",
+        "statement": "Pear is a Fruit",
+        "questions": [
+          {
+            "question": "Pear 是什么？它和当前学习主题有什么关系？",
+            "reason": "mentioned_concept_needs_identity"
+          }
+        ]
+      },
+      {
+        "kind": "concept",
+        "subject": "Fruit",
+        "predicate": "mentioned_in_knowledge_text",
+        "object": "mentioned",
+        "statement": "Pear is a Fruit",
+        "questions": [
+          {
+            "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+            "reason": "mentioned_concept_needs_identity"
+          }
+        ]
+      }
+    ],
+    "recall": {
+      "anchor_names": [
+        "Pear",
+        "Fruit"
+      ],
+      "anchor_ids": [
+        "concept_4b48b8f3098c"
+      ],
+      "concept_ids": [
+        "concept_07c75695c9fd",
+        "concept_4b48b8f3098c",
+        "concept_5dd04133bc16",
+        "concept_6bad21ee2f22"
+      ],
+      "loaded_concepts": [
+        "Food",
+        "Fruit",
+        "Grape",
+        "Apple"
+      ],
+      "evidence_ids": [
+        "evidence_3bcdce99df69",
+        "evidence_b7e4a753a54f",
+        "evidence_f0cabcf4d681"
+      ],
+      "active_concepts": [
+        "Apple",
+        "Food",
+        "Fruit",
+        "Grape",
+        "Pear"
+      ],
+      "working_memory_source": "concept_recall"
+    },
+    "event_id": "event_85b7deef5e72"
+  },
+  "working_memory_names": [
+    "Apple",
+    "Food",
+    "Fruit",
+    "Grape",
+    "Pear"
+  ],
+  "fruit_answer": {
+    "question": "What examples does Fruit have?",
+    "answer": "Based on my current memory, examples of Fruit include Apple, Grape, Pear.",
+    "grounded_bundle": {
+      "question": "What examples does Fruit have?",
+      "question_type": "examples_of",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Fruit"
+      ],
+      "concepts": [
+        {
+          "name": "Fruit",
+          "maturity": "early",
+          "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape, Pear.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Food",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "examples": {
+        "Fruit": [
+          "Apple",
+          "Grape",
+          "Pear"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event_85b7deef5e72",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 3 extracted claims."
+        },
+        {
+          "event_id": "event_ddcd95e60c14",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 7 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_3bcdce99df69",
+          "subject": "Fruit",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Fruit is a Food",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_b7e4a753a54f",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_e8577fcad820",
+          "subject": "Pear",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Pear is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_f0cabcf4d681",
+          "subject": "Grape",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Grape is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "used_concepts": [
+      "Fruit"
+    ],
+    "used_relations": [],
+    "used_event_ids": [
+      "event_85b7deef5e72",
+      "event_ddcd95e60c14"
+    ],
+    "used_evidence_ids": [
+      "evidence_3bcdce99df69",
+      "evidence_b7e4a753a54f",
+      "evidence_e8577fcad820",
+      "evidence_f0cabcf4d681"
+    ],
+    "confidence": 0.8,
+    "insufficient_memory": false,
+    "llm_available": true,
+    "event_id": "event_b2eb1fb4c3f0",
+    "source": "grounded_local_llm",
+    "recall": {
+      "anchor_names": [
+        "Fruit"
+      ],
+      "anchor_ids": [
+        "concept_4b48b8f3098c"
+      ],
+      "concept_ids": [
+        "concept_07c75695c9fd",
+        "concept_4b48b8f3098c",
+        "concept_5dd04133bc16",
+        "concept_6bad21ee2f22",
+        "concept_dd02f7bafebc"
+      ],
+      "loaded_concepts": [
+        "Food",
+        "Fruit",
+        "Grape",
+        "Apple",
+        "Pear"
+      ],
+      "evidence_ids": [
+        "evidence_3bcdce99df69",
+        "evidence_b7e4a753a54f",
+        "evidence_e8577fcad820",
+        "evidence_f0cabcf4d681"
+      ],
+      "active_concepts": [
+        "Apple",
+        "Food",
+        "Fruit",
+        "Grape",
+        "Pear"
+      ],
+      "working_memory_source": "concept_recall"
+    }
+  },
+  "validation_observations": [
+    "Recall anchors during Pear update: ['Pear', 'Fruit']",
+    "Working memory after Pear update: ['Apple', 'Food', 'Fruit', 'Grape', 'Pear']",
+    "Fruit examples after local recall: ['Apple', 'Grape', 'Pear']",
+    "Fruit answer: Based on my current memory, examples of Fruit include Apple, Grape, Pear."
+  ],
+  "remaining_issues": []
+}

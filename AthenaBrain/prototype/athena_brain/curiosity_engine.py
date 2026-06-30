@@ -27,9 +27,21 @@ class CuriosityEngine:
             "rejected_by_relation",
         }
 
-    def propose_questions(self, graph: ConceptGraph, *, limit: int = 6) -> list[dict[str, object]]:
+    def propose_questions(
+        self,
+        graph: ConceptGraph,
+        *,
+        limit: int = 6,
+        focus_concepts: list[str] | None = None,
+    ) -> list[dict[str, object]]:
         candidates: list[dict[str, object]] = []
-        for concept in graph.all_concepts():
+        focus_set = {name for name in (focus_concepts or []) if name}
+        concepts = [
+            concept
+            for concept in graph.all_concepts()
+            if not focus_set or concept.name in focus_set
+        ]
+        for concept in concepts:
             candidates.extend(self._cognitive_gap_candidates(graph, concept))
 
         deduped: dict[tuple[object, object], dict[str, object]] = {}

@@ -1,0 +1,122 @@
+{
+  "report_id": "knowledge_ingestion_report_15a2d4116d87",
+  "text_ref": "knowledge_text_03f71f3ec66a",
+  "experience_id": "experience_39733689d601",
+  "claim_count": 3,
+  "evidence_count": 3,
+  "updated_concepts": [
+    "Apple",
+    "Fruit"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8b543ad7996f",
+      "concept": "Apple",
+      "question": "Apple 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    },
+    {
+      "question_id": "curiosity_a9bfe5e7965f",
+      "concept": "Fruit",
+      "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+      "reason": "mentioned_concept_needs_identity",
+      "priority": 0.74,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "mentioned_concept_needs_identity",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.16
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_1e32a2b33f04",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_1e32a2b33f04",
+    "timestamp": "2026-06-29T21:07:02.047547+00:00",
+    "trigger": "knowledge_ingestion",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Apple"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "is-a",
+      "object": "Fruit",
+      "relation_type": "is-a",
+      "target": "Fruit",
+      "statement": "Apple is a Fruit",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Apple",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Apple is a Fruit",
+      "questions": [
+        {
+          "question": "Apple 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_knowledge_text",
+      "object": "mentioned",
+      "statement": "Apple is a Fruit",
+      "questions": [
+        {
+          "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+          "reason": "mentioned_concept_needs_identity"
+        }
+      ]
+    }
+  ],
+  "event_id": "event_8267200e7d39"
+}

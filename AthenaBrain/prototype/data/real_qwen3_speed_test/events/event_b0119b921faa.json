@@ -1,0 +1,184 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 7 extracted claims.",
+  "source": "user_knowledge_text_llm",
+  "payload": {
+    "input_text": "Apple is a Fruit. Fruit is a Food. Food is edible.",
+    "experience_id": "experience_8589c5c721cd",
+    "report_id": "knowledge_ingestion_report_55faa1041d92",
+    "claim_count": 7,
+    "evidence_ids": [
+      "evidence_9a6e47f1cfb8",
+      "evidence_3a0159a3c4ab",
+      "evidence_871a24512b74",
+      "evidence_bed7231b2425",
+      "evidence_2ef0bf93435f",
+      "evidence_d14f877a6063",
+      "evidence_9a1b447ff28f"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "Food",
+      "Fruit",
+      "edible"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_d8c1b00dca87",
+        "concept": "Apple",
+        "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_75c8843c6738",
+        "concept": "Fruit",
+        "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_f3adee33a6f6",
+        "concept": "edible",
+        "question": "edible 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_435ad005cb9a",
+        "concept": "Apple",
+        "question": "What type of food is Apple?",
+        "reason": "To determine the category of Apple.",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "To determine the category of Apple.",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_b2c1961c7a92",
+        "concept": "edible",
+        "question": "edible 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_b4ceab0ca90e",
+        "concept": "edible",
+        "question": "除了这些例子，什么样的东西也可以属于 edible？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_6273c9e9fa90",
+        "concept": "Fruit",
+        "question": "Is Fruit always edible?",
+        "reason": "To explore the properties of Fruit.",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "To explore the properties of Fruit.",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_47823d6b9acb"
+  },
+  "event_id": "event_b0119b921faa",
+  "timestamp": "2026-06-30T20:37:26.508712+00:00"
+}

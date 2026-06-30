@@ -1,0 +1,201 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 7 extracted claims.",
+  "source": "user_knowledge_text_llm",
+  "payload": {
+    "input_text": "Apple is a Fruit. Fruit is a Food. Food is edible.",
+    "experience_id": "experience_db11ab012640",
+    "report_id": "knowledge_ingestion_report_7c71f81c5301",
+    "claim_count": 7,
+    "evidence_ids": [
+      "evidence_34eeab5e7ad7",
+      "evidence_644b400e67e6",
+      "evidence_b64ac356aea9",
+      "evidence_3ffe735431e2",
+      "evidence_056c43e1b593",
+      "evidence_e2c301305edd",
+      "evidence_4273c69e512e"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "Edibility",
+      "Food",
+      "Fruit"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_d8c1b00dca87",
+        "concept": "Apple",
+        "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_f61e7c7c22ec",
+        "concept": "Edibility",
+        "question": "Edibility 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_918d43fc1fff",
+        "concept": "Edibility",
+        "question": "Edibility 是不是一种 Food，还是和 Food 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_ae57e9c472b0",
+        "concept": "Apple",
+        "question": "Is Apple edible?",
+        "reason": "Based on being a Food",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "Based on being a Food",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_f3bf533730b3",
+        "concept": "Food",
+        "question": "Are there non-edible Food items?",
+        "reason": "The text states Food is edible but may have exceptions",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "The text states Food is edible but may have exceptions",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_61e8c2a03783",
+        "concept": "Food",
+        "question": "Food 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_75c8843c6738",
+        "concept": "Fruit",
+        "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_8732b826338b",
+        "concept": "Edibility",
+        "question": "Edibility 是不是一种 Fruit，还是和 Fruit 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_af14144bf91c"
+  },
+  "event_id": "event_e2598c44c69d",
+  "timestamp": "2026-06-30T20:28:16.953776+00:00"
+}

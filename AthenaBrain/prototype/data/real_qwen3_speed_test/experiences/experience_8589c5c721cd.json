@@ -1,0 +1,26 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Apple is a Fruit. Fruit is a Food. Food is edible.",
+      "ref": "knowledge_text_a032f283dd9e"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text",
+    "llm_language_hub"
+  ],
+  "sample_id": null,
+  "source_identity": "user_knowledge_text_llm",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_8589c5c721cd",
+  "timestamp": "2026-06-30T20:37:26.490000+00:00",
+  "processed": false,
+  "immutable": true
+}

@@ -1,0 +1,91 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 2 extracted claims.",
+  "source": "v1_food_fruit_curriculum",
+  "payload": {
+    "input_text": "Apple can be eaten.",
+    "experience_id": "experience_7a947559127a",
+    "report_id": "knowledge_ingestion_report_c049210bb5e8",
+    "claim_count": 2,
+    "evidence_ids": [
+      "evidence_99940d80025e",
+      "evidence_c133934b5ecf"
+    ],
+    "updated_concepts": [
+      "Apple"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_3682b38b5921",
+        "concept": "Apple",
+        "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+        "reason": "attribute_scope_unclear",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "attribute_scope_unclear",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_a9bfe5e7965f",
+        "concept": "Fruit",
+        "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_48d33bfed29a"
+  },
+  "event_id": "event_cc5ff08c0532",
+  "timestamp": "2026-06-29T21:07:02.080950+00:00"
+}

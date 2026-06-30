@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple",
+    "subject": "Apple",
+    "predicate": "mentioned_in_llm_parse",
+    "object": "mentioned"
+  },
+  "source_type": "llm_knowledge_text",
+  "source_identity": "user_knowledge_text_llm",
+  "refs": [
+    "knowledge_text_adcaf45bd4e0",
+    "experience_dfe0cf649c99"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_7989fed86ba7",
+  "timestamp": "2026-06-30T20:45:01.201475+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

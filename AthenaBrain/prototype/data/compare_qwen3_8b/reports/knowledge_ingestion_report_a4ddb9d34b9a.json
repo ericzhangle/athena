@@ -1,0 +1,344 @@
+{
+  "report_id": "knowledge_ingestion_report_a4ddb9d34b9a",
+  "text_ref": "knowledge_text_a86977747db7",
+  "experience_id": "experience_bff1736f9acd",
+  "claim_count": 9,
+  "evidence_count": 9,
+  "updated_concepts": [
+    "Apple",
+    "Food",
+    "Fruit",
+    "Grape",
+    "edible"
+  ],
+  "generated_questions": [
+    {
+      "question_id": "curiosity_d8c1b00dca87",
+      "concept": "Apple",
+      "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_75c8843c6738",
+      "concept": "Fruit",
+      "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_9b731e09b035",
+      "concept": "Food",
+      "question": "除了这些例子，什么样的东西也可以属于 Food？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_1c7d20c91cc5",
+      "concept": "Fruit",
+      "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_f3adee33a6f6",
+      "concept": "edible",
+      "question": "edible 是不是一种 Fruit，还是和 Fruit 不同？",
+      "reason": "classify_against_known_category",
+      "priority": 0.88,
+      "domain": "classification",
+      "status": "open",
+      "score_factors": {
+        "base": "classify_against_known_category",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_8fb6bc0e7193",
+      "concept": "Apple",
+      "question": "Is Apple a type of Fruit?",
+      "reason": "The text states Apple is a Fruit",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "The text states Apple is a Fruit",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_cebefd171c67",
+      "concept": "Food",
+      "question": "Can all Food be considered edible?",
+      "reason": "The text states Food is edible",
+      "priority": 0.78,
+      "domain": "open",
+      "status": "open",
+      "score_factors": {
+        "base": "The text states Food is edible",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.12
+      }
+    },
+    {
+      "question_id": "curiosity_2a6b68fd1f1b",
+      "concept": "Grape",
+      "question": "Grape 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_b2c1961c7a92",
+      "concept": "edible",
+      "question": "edible 到底是什么？它最关键、最能区分它的特征是什么？",
+      "reason": "identity_gap",
+      "priority": 0.98,
+      "domain": "identity",
+      "status": "open",
+      "score_factors": {
+        "base": "identity_gap",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.04,
+        "redundancy_penalty": 0.0
+      }
+    },
+    {
+      "question_id": "curiosity_b4ceab0ca90e",
+      "concept": "edible",
+      "question": "除了这些例子，什么样的东西也可以属于 edible？",
+      "reason": "more_examples_needed",
+      "priority": 0.94,
+      "domain": "boundary",
+      "status": "open",
+      "score_factors": {
+        "base": "more_examples_needed",
+        "uncertainty": 0.16,
+        "novelty": 0.12,
+        "conflict": 0.0,
+        "abstraction": 0.16,
+        "redundancy_penalty": 0.0
+      }
+    }
+  ],
+  "integration_report_id": "cognitive_integration_report_88c0d3304049",
+  "integration": {
+    "integration_report_id": "cognitive_integration_report_88c0d3304049",
+    "timestamp": "2026-06-30T20:44:54.894190+00:00",
+    "trigger": "knowledge_ingestion_llm",
+    "membership": [
+      {
+        "parent": "Fruit",
+        "examples": [
+          "Apple",
+          "Grape"
+        ],
+        "counterexamples": [],
+        "example_count": 2,
+        "counterexample_count": 0
+      },
+      {
+        "parent": "Food",
+        "examples": [
+          "Fruit"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      },
+      {
+        "parent": "edible",
+        "examples": [
+          "Food"
+        ],
+        "counterexamples": [],
+        "example_count": 1,
+        "counterexample_count": 0
+      }
+    ],
+    "question_resolution": [],
+    "boundary_questions": []
+  },
+  "claims": [
+    {
+      "kind": "relation",
+      "subject": "Apple",
+      "predicate": "is-a",
+      "object": "Fruit",
+      "relation_type": "is-a",
+      "target": "Fruit",
+      "statement": "Apple is a Fruit",
+      "questions": [
+        {
+          "question": "Is Apple a type of Fruit?",
+          "reason": "The text states Apple is a Fruit"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Grape",
+      "predicate": "is-a",
+      "object": "Fruit",
+      "relation_type": "is-a",
+      "target": "Fruit",
+      "statement": "Grape is a Fruit",
+      "questions": []
+    },
+    {
+      "kind": "relation",
+      "subject": "Fruit",
+      "predicate": "is-a",
+      "object": "Food",
+      "relation_type": "is-a",
+      "target": "Food",
+      "statement": "Fruit is a Food",
+      "questions": [
+        {
+          "question": "Is Fruit a type of Food?",
+          "reason": "The text states Fruit is a Food"
+        }
+      ]
+    },
+    {
+      "kind": "relation",
+      "subject": "Food",
+      "predicate": "is-a",
+      "object": "edible",
+      "relation_type": "is-a",
+      "target": "edible",
+      "statement": "Food is edible",
+      "questions": [
+        {
+          "question": "Can all Food be considered edible?",
+          "reason": "The text states Food is edible"
+        }
+      ]
+    },
+    {
+      "kind": "attribute",
+      "subject": "Food",
+      "predicate": "edibility",
+      "object": "edible",
+      "attribute_name": "edibility",
+      "attribute_value": "edible",
+      "statement": "Food is edible",
+      "questions": [
+        {
+          "question": "Can all Food be considered edible?",
+          "reason": "The text states Food is edible"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Apple",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Apple",
+      "questions": [
+        {
+          "question": "Is Apple a type of Fruit?",
+          "reason": "The text states Apple is a Fruit"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Fruit",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Fruit",
+      "questions": [
+        {
+          "question": "Is Fruit a type of Food?",
+          "reason": "The text states Fruit is a Food"
+        }
+      ]
+    },
+    {
+      "kind": "concept",
+      "subject": "Grape",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Grape",
+      "questions": []
+    },
+    {
+      "kind": "concept",
+      "subject": "Food",
+      "predicate": "mentioned_in_llm_parse",
+      "object": "mentioned",
+      "statement": "Food",
+      "questions": [
+        {
+          "question": "Can all Food be considered edible?",
+          "reason": "The text states Food is edible"
+        }
+      ]
+    }
+  ],
+  "event_id": "event_38563af194ac"
+}

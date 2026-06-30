@@ -1,0 +1,90 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: Apple belongs to what?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "Apple belongs to what?",
+    "grounded_bundle": {
+      "question": "Apple belongs to what?",
+      "question_type": "belongs_to",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Apple"
+      ],
+      "concepts": [
+        {
+          "name": "Apple",
+          "maturity": "early",
+          "description": "An early concept mentioned in a knowledge text: Apple.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Fruit",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "examples": {},
+      "events": [
+        {
+          "event_id": "event_38563af194ac",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 9 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_41a48e946913",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_2244c613e313",
+          "subject": "Apple",
+          "predicate": "mentioned_in_llm_parse",
+          "object": "mentioned",
+          "statement": "Apple",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "Apple belongs to Fruit.",
+      "used_concepts": [
+        "Apple"
+      ],
+      "used_relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "used_event_ids": [
+        "event_38563af194ac"
+      ],
+      "used_evidence_ids": [
+        "evidence_41a48e946913"
+      ],
+      "confidence": 0.58,
+      "insufficient_memory": false
+    }
+  },
+  "event_id": "event_6adebc500518",
+  "timestamp": "2026-06-30T20:45:21.231514+00:00"
+}

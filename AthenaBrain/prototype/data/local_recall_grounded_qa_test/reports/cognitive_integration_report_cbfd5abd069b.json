@@ -1,0 +1,18 @@
+{
+  "integration_report_id": "cognitive_integration_report_cbfd5abd069b",
+  "timestamp": "2026-06-30T21:50:45.078097+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Vehicle",
+      "examples": [
+        "Car"
+      ],
+      "counterexamples": [],
+      "example_count": 1,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [],
+  "boundary_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "integration_report_id": "cognitive_integration_report_7e14d307e4c3",
+  "timestamp": "2026-06-30T21:50:45.488119+00:00",
+  "trigger": "knowledge_ingestion",
+  "membership": [
+    {
+      "parent": "Food",
+      "examples": [
+        "Fruit"
+      ],
+      "counterexamples": [],
+      "example_count": 1,
+      "counterexample_count": 0
+    },
+    {
+      "parent": "Fruit",
+      "examples": [
+        "Grape",
+        "Apple",
+        "Pear"
+      ],
+      "counterexamples": [],
+      "example_count": 3,
+      "counterexample_count": 0
+    }
+  ],
+  "question_resolution": [],
+  "boundary_questions": []
+}

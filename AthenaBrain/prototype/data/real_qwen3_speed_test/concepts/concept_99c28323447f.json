@@ -1,0 +1,34 @@
+{
+  "name": "Apple",
+  "display_name": null,
+  "concept_id": "concept_99c28323447f",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.425,
+  "created_at": "2026-06-30T20:37:26.492428+00:00",
+  "updated_at": "2026-06-30T20:37:26.502675+00:00",
+  "description": "An early concept mentioned in a knowledge text: Apple.",
+  "attributes": [],
+  "relations": [
+    {
+      "relation_type": "is-a",
+      "target_concept": "Fruit",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_9a6e47f1cfb8"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "evidence_refs": [
+    "evidence_9a6e47f1cfb8"
+  ],
+  "open_questions": [
+    {
+      "question": "What type of food is Apple?",
+      "reason": "To determine the category of Apple."
+    }
+  ],
+  "examples": [],
+  "counterexamples": []
+}

@@ -100,6 +100,16 @@ class Experience:
 
 
 @dataclass
+class CognitiveEvent:
+    event_type: str
+    summary: str
+    source: str
+    payload: dict[str, Any]
+    event_id: str = field(default_factory=lambda: new_id("event"))
+    timestamp: str = field(default_factory=now_iso)
+
+
+@dataclass
 class ConceptAttribute:
     name: str
     value: str

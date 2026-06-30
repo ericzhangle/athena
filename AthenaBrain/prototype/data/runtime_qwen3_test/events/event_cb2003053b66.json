@@ -1,0 +1,102 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: Apple belongs to what?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "Apple belongs to what?",
+    "grounded_bundle": {
+      "question": "Apple belongs to what?",
+      "question_type": "belongs_to",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Apple"
+      ],
+      "concepts": [
+        {
+          "name": "Apple",
+          "maturity": "early",
+          "description": "An early concept mentioned in a knowledge text: Apple.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Fruit",
+              "confidence": 0.5
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "examples": {},
+      "events": [
+        {
+          "event_id": "event_3bf9ceee4089",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 5 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_7facb1401099",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_6d0d75b80411",
+          "subject": "Apple",
+          "predicate": "mentioned_in_knowledge_text",
+          "object": "mentioned",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_870ba1b38899",
+          "subject": "Fruit",
+          "predicate": "mentioned_in_knowledge_text",
+          "object": "mentioned",
+          "statement": "Apple is a Fruit",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "Apple belongs to the category of Fruit.",
+      "used_concepts": [
+        "Apple",
+        "Fruit"
+      ],
+      "used_relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "used_event_ids": [
+        "event_3bf9ceee4089"
+      ],
+      "used_evidence_ids": [
+        "evidence_7facb1401099",
+        "evidence_6d0d75b80411",
+        "evidence_870ba1b38899"
+      ],
+      "confidence": 0.58,
+      "insufficient_memory": false
+    }
+  },
+  "event_id": "event_cb2003053b66",
+  "timestamp": "2026-06-30T20:06:48.404769+00:00"
+}

@@ -1,0 +1,201 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 6 extracted claims.",
+  "source": "user_knowledge_text_llm",
+  "payload": {
+    "input_text": "Apple is a Fruit. Grape is a Fruit. Fruit is a Food. Food is edible.",
+    "experience_id": "experience_dfe0cf649c99",
+    "report_id": "knowledge_ingestion_report_c209976dfacf",
+    "claim_count": 6,
+    "evidence_ids": [
+      "evidence_d4eca67be3e9",
+      "evidence_0302039818e9",
+      "evidence_7989fed86ba7",
+      "evidence_63ea77bacadf",
+      "evidence_47ae0dcb6262",
+      "evidence_259b0966cc0e"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "ConceptName",
+      "Food",
+      "Fruit",
+      "Grape"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_d8c1b00dca87",
+        "concept": "Apple",
+        "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_d45c29d41352",
+        "concept": "ConceptName",
+        "question": "ConceptName 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_3d22e4d49da0",
+        "concept": "ConceptName",
+        "question": "除了这些例子，什么样的东西也可以属于 ConceptName？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_0afdee8a3be4",
+        "concept": "Apple",
+        "question": "Apple 是不是一种 ConceptName，还是和 ConceptName 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_df9c91231bfe",
+        "concept": "Food",
+        "question": "Food 是不是一种 ConceptName，还是和 ConceptName 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_7ddb5559837b",
+        "concept": "Fruit",
+        "question": "Are grapes a fruit?",
+        "reason": "llm_suggested_question",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "llm_suggested_question",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_61e8c2a03783",
+        "concept": "Food",
+        "question": "Food 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_75c8843c6738",
+        "concept": "Fruit",
+        "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_2a6b68fd1f1b",
+        "concept": "Grape",
+        "question": "Grape 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_be91ec5f33a0",
+        "concept": "Grape",
+        "question": "Grape 是不是一种 ConceptName，还是和 ConceptName 不同？",
+        "reason": "classify_against_known_category",
+        "priority": 0.88,
+        "domain": "classification",
+        "status": "open",
+        "score_factors": {
+          "base": "classify_against_known_category",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_77c0caef422b"
+  },
+  "event_id": "event_61470a54e3d5",
+  "timestamp": "2026-06-30T20:45:01.211938+00:00"
+}

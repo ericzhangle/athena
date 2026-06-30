@@ -1,0 +1,804 @@
+{
+  "data_root": "C:\\Users\\User\\Desktop\\athena0.1\\AthenaBrain\\prototype\\data\\memory_retrieval_test",
+  "answers": {
+    "Apple belongs to what?": {
+      "question": "Apple belongs to what?",
+      "answer": "Based on my current memory, Apple belongs to Fruit.",
+      "grounded_bundle": {
+        "question": "Apple belongs to what?",
+        "question_type": "belongs_to",
+        "requested_attribute": null,
+        "matched_concepts": [
+          "Apple"
+        ],
+        "concepts": [
+          {
+            "name": "Apple",
+            "maturity": "early",
+            "description": "An early concept mentioned in a knowledge text: Apple.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Fruit",
+                "confidence": 0.5
+              }
+            ]
+          }
+        ],
+        "relations": [
+          [
+            "Apple",
+            "is-a",
+            "Fruit"
+          ]
+        ],
+        "examples": {},
+        "events": [
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_023fe21cba52",
+            "subject": "Apple",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Apple is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Apple"
+      ],
+      "used_relations": [
+        [
+          "Apple",
+          "is-a",
+          "Fruit"
+        ]
+      ],
+      "used_event_ids": [
+        "event_d7c35a922d29"
+      ],
+      "used_evidence_ids": [
+        "evidence_023fe21cba52"
+      ],
+      "confidence": 0.74,
+      "insufficient_memory": false,
+      "llm_available": true,
+      "event_id": "event_be58443da1b8",
+      "source": "grounded_local_llm",
+      "recall": {
+        "anchor_names": [
+          "Apple"
+        ],
+        "anchor_ids": [
+          "concept_87c625ab5034"
+        ],
+        "concept_ids": [
+          "concept_7492e0bcf7c8",
+          "concept_87c625ab5034",
+          "concept_8fef56f75ce7",
+          "concept_ddab82310c7a"
+        ],
+        "loaded_concepts": [
+          "Food",
+          "Apple",
+          "Fruit",
+          "Grape"
+        ],
+        "evidence_ids": [
+          "evidence_023fe21cba52",
+          "evidence_05d603dc6e76",
+          "evidence_5767173f5852",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    },
+    "What examples does Fruit have?": {
+      "question": "What examples does Fruit have?",
+      "answer": "Based on my current memory, examples of Fruit include Apple, Grape.",
+      "grounded_bundle": {
+        "question": "What examples does Fruit have?",
+        "question_type": "examples_of",
+        "requested_attribute": null,
+        "matched_concepts": [
+          "Fruit"
+        ],
+        "concepts": [
+          {
+            "name": "Fruit",
+            "maturity": "early",
+            "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Food",
+                "confidence": 0.5
+              }
+            ]
+          }
+        ],
+        "relations": [
+          [
+            "Fruit",
+            "is-a",
+            "Food"
+          ]
+        ],
+        "examples": {
+          "Fruit": [
+            "Apple",
+            "Grape"
+          ]
+        },
+        "events": [
+          {
+            "event_id": "event_be58443da1b8",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Apple belongs to what?"
+          },
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_023fe21cba52",
+            "subject": "Apple",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Apple is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_5767173f5852",
+            "subject": "Grape",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Grape is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_9a9e48c5f1ef",
+            "subject": "Fruit",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Fruit is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Fruit"
+      ],
+      "used_relations": [],
+      "used_event_ids": [
+        "event_be58443da1b8",
+        "event_d7c35a922d29"
+      ],
+      "used_evidence_ids": [
+        "evidence_023fe21cba52",
+        "evidence_5767173f5852",
+        "evidence_9a9e48c5f1ef"
+      ],
+      "confidence": 0.74,
+      "insufficient_memory": false,
+      "llm_available": true,
+      "event_id": "event_59aa9ffa22f9",
+      "source": "grounded_local_llm",
+      "recall": {
+        "anchor_names": [
+          "Fruit"
+        ],
+        "anchor_ids": [
+          "concept_8fef56f75ce7"
+        ],
+        "concept_ids": [
+          "concept_0a3bbc277e7a",
+          "concept_7492e0bcf7c8",
+          "concept_87c625ab5034",
+          "concept_8fef56f75ce7",
+          "concept_ddab82310c7a"
+        ],
+        "loaded_concepts": [
+          "Cookie",
+          "Food",
+          "Apple",
+          "Fruit",
+          "Grape"
+        ],
+        "evidence_ids": [
+          "evidence_023fe21cba52",
+          "evidence_03843d587103",
+          "evidence_05d603dc6e76",
+          "evidence_5767173f5852",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    },
+    "Is Fruit a Food?": {
+      "question": "Is Fruit a Food?",
+      "answer": "Based on my current memory, yes, Fruit is a Food.",
+      "grounded_bundle": {
+        "question": "Is Fruit a Food?",
+        "question_type": "is_a",
+        "requested_attribute": null,
+        "matched_concepts": [
+          "Fruit",
+          "Food"
+        ],
+        "concepts": [
+          {
+            "name": "Fruit",
+            "maturity": "early",
+            "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Food",
+                "confidence": 0.5
+              }
+            ]
+          },
+          {
+            "name": "Food",
+            "maturity": "early",
+            "description": "An early parent concept for Food, abstracted from examples: Cookie, Fruit.",
+            "attributes": [
+              {
+                "name": "edibility",
+                "value": "edible",
+                "scope": "knowledge_text",
+                "confidence": 0.5
+              }
+            ],
+            "relations": []
+          }
+        ],
+        "relations": [
+          [
+            "Fruit",
+            "is-a",
+            "Food"
+          ]
+        ],
+        "examples": {
+          "Fruit": [
+            "Apple",
+            "Grape"
+          ],
+          "Food": [
+            "Cookie",
+            "Fruit"
+          ]
+        },
+        "events": [
+          {
+            "event_id": "event_59aa9ffa22f9",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: What examples does Fruit have?"
+          },
+          {
+            "event_id": "event_be58443da1b8",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Apple belongs to what?"
+          },
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_023fe21cba52",
+            "subject": "Apple",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Apple is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_03843d587103",
+            "subject": "Cookie",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Cookie is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_05d603dc6e76",
+            "subject": "Food",
+            "predicate": "edibility",
+            "object": "edible",
+            "statement": "Food is edible.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_5767173f5852",
+            "subject": "Grape",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Grape is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_9a9e48c5f1ef",
+            "subject": "Fruit",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Fruit is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "used_relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "used_event_ids": [
+        "event_59aa9ffa22f9",
+        "event_be58443da1b8",
+        "event_d7c35a922d29"
+      ],
+      "used_evidence_ids": [
+        "evidence_023fe21cba52",
+        "evidence_03843d587103",
+        "evidence_05d603dc6e76",
+        "evidence_5767173f5852",
+        "evidence_9a9e48c5f1ef"
+      ],
+      "confidence": 0.74,
+      "insufficient_memory": false,
+      "llm_available": true,
+      "event_id": "event_bfd19c19e594",
+      "source": "grounded_local_llm",
+      "recall": {
+        "anchor_names": [
+          "Fruit",
+          "Food"
+        ],
+        "anchor_ids": [
+          "concept_8fef56f75ce7",
+          "concept_7492e0bcf7c8"
+        ],
+        "concept_ids": [
+          "concept_0a3bbc277e7a",
+          "concept_7492e0bcf7c8",
+          "concept_87c625ab5034",
+          "concept_8fef56f75ce7",
+          "concept_ddab82310c7a"
+        ],
+        "loaded_concepts": [
+          "Cookie",
+          "Food",
+          "Apple",
+          "Fruit",
+          "Grape"
+        ],
+        "evidence_ids": [
+          "evidence_023fe21cba52",
+          "evidence_03843d587103",
+          "evidence_05d603dc6e76",
+          "evidence_5767173f5852",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    },
+    "Is Food a Fruit?": {
+      "question": "Is Food a Fruit?",
+      "answer": "I do not know yet whether Food is a Fruit from my current memory.",
+      "grounded_bundle": {
+        "question": "Is Food a Fruit?",
+        "question_type": "is_a",
+        "requested_attribute": null,
+        "matched_concepts": [
+          "Fruit",
+          "Food"
+        ],
+        "concepts": [
+          {
+            "name": "Fruit",
+            "maturity": "early",
+            "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Food",
+                "confidence": 0.5
+              }
+            ]
+          },
+          {
+            "name": "Food",
+            "maturity": "early",
+            "description": "An early parent concept for Food, abstracted from examples: Cookie, Fruit.",
+            "attributes": [
+              {
+                "name": "edibility",
+                "value": "edible",
+                "scope": "knowledge_text",
+                "confidence": 0.5
+              }
+            ],
+            "relations": []
+          }
+        ],
+        "relations": [
+          [
+            "Fruit",
+            "is-a",
+            "Food"
+          ]
+        ],
+        "examples": {
+          "Fruit": [
+            "Apple",
+            "Grape"
+          ],
+          "Food": [
+            "Cookie",
+            "Fruit"
+          ]
+        },
+        "events": [
+          {
+            "event_id": "event_59aa9ffa22f9",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: What examples does Fruit have?"
+          },
+          {
+            "event_id": "event_be58443da1b8",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Apple belongs to what?"
+          },
+          {
+            "event_id": "event_bfd19c19e594",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Is Fruit a Food?"
+          },
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_023fe21cba52",
+            "subject": "Apple",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Apple is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_03843d587103",
+            "subject": "Cookie",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Cookie is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_05d603dc6e76",
+            "subject": "Food",
+            "predicate": "edibility",
+            "object": "edible",
+            "statement": "Food is edible.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_5767173f5852",
+            "subject": "Grape",
+            "predicate": "is-a",
+            "object": "Fruit",
+            "statement": "Grape is a Fruit.",
+            "status": "provisional",
+            "confidence": 0.58
+          },
+          {
+            "evidence_id": "evidence_9a9e48c5f1ef",
+            "subject": "Fruit",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Fruit is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "used_relations": [],
+      "used_event_ids": [
+        "event_59aa9ffa22f9",
+        "event_be58443da1b8",
+        "event_bfd19c19e594",
+        "event_d7c35a922d29"
+      ],
+      "used_evidence_ids": [
+        "evidence_023fe21cba52",
+        "evidence_03843d587103",
+        "evidence_05d603dc6e76",
+        "evidence_5767173f5852",
+        "evidence_9a9e48c5f1ef"
+      ],
+      "confidence": 0.2,
+      "insufficient_memory": true,
+      "llm_available": true,
+      "event_id": "event_ae655d15a558",
+      "source": "grounded_local_llm",
+      "recall": {
+        "anchor_names": [
+          "Fruit",
+          "Food"
+        ],
+        "anchor_ids": [
+          "concept_8fef56f75ce7",
+          "concept_7492e0bcf7c8"
+        ],
+        "concept_ids": [
+          "concept_0a3bbc277e7a",
+          "concept_7492e0bcf7c8",
+          "concept_87c625ab5034",
+          "concept_8fef56f75ce7",
+          "concept_ddab82310c7a"
+        ],
+        "loaded_concepts": [
+          "Cookie",
+          "Food",
+          "Apple",
+          "Fruit",
+          "Grape"
+        ],
+        "evidence_ids": [
+          "evidence_023fe21cba52",
+          "evidence_03843d587103",
+          "evidence_05d603dc6e76",
+          "evidence_5767173f5852",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    },
+    "What color is Cookie?": {
+      "question": "What color is Cookie?",
+      "answer": "我现在不知道，因为我的记忆里还没有足够直接的依据来回答这个问题。",
+      "grounded_bundle": {
+        "question": "What color is Cookie?",
+        "question_type": "open_question",
+        "requested_attribute": "color",
+        "matched_concepts": [
+          "Cookie"
+        ],
+        "concepts": [
+          {
+            "name": "Cookie",
+            "maturity": "early",
+            "description": "An early concept mentioned in a knowledge text: Cookie.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Food",
+                "confidence": 0.5
+              }
+            ]
+          }
+        ],
+        "relations": [
+          [
+            "Cookie",
+            "is-a",
+            "Food"
+          ]
+        ],
+        "examples": {},
+        "events": [
+          {
+            "event_id": "event_ae655d15a558",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Is Food a Fruit?"
+          },
+          {
+            "event_id": "event_bfd19c19e594",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Is Fruit a Food?"
+          },
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_03843d587103",
+            "subject": "Cookie",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Cookie is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Cookie"
+      ],
+      "used_relations": [],
+      "used_event_ids": [],
+      "used_evidence_ids": [],
+      "confidence": 0.0,
+      "insufficient_memory": true,
+      "llm_available": true,
+      "source": "no_direct_grounded_support",
+      "recall": {
+        "anchor_names": [
+          "Cookie"
+        ],
+        "anchor_ids": [
+          "concept_0a3bbc277e7a"
+        ],
+        "concept_ids": [
+          "concept_0a3bbc277e7a",
+          "concept_7492e0bcf7c8",
+          "concept_8fef56f75ce7"
+        ],
+        "loaded_concepts": [
+          "Cookie",
+          "Food",
+          "Fruit"
+        ],
+        "evidence_ids": [
+          "evidence_03843d587103",
+          "evidence_05d603dc6e76",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    },
+    "Is Cookie a dessert?": {
+      "question": "Is Cookie a dessert?",
+      "answer": "我现在不知道，因为我的记忆里还没有足够直接的依据来回答这个问题。",
+      "grounded_bundle": {
+        "question": "Is Cookie a dessert?",
+        "question_type": "is_a",
+        "requested_attribute": null,
+        "matched_concepts": [
+          "Cookie"
+        ],
+        "concepts": [
+          {
+            "name": "Cookie",
+            "maturity": "early",
+            "description": "An early concept mentioned in a knowledge text: Cookie.",
+            "attributes": [],
+            "relations": [
+              {
+                "relation_type": "is-a",
+                "target": "Food",
+                "confidence": 0.5
+              }
+            ]
+          }
+        ],
+        "relations": [
+          [
+            "Cookie",
+            "is-a",
+            "Food"
+          ]
+        ],
+        "examples": {},
+        "events": [
+          {
+            "event_id": "event_ae655d15a558",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Is Food a Fruit?"
+          },
+          {
+            "event_id": "event_bfd19c19e594",
+            "event_type": "grounded_question_answered",
+            "summary": "Answered grounded question: Is Fruit a Food?"
+          },
+          {
+            "event_id": "event_d7c35a922d29",
+            "event_type": "knowledge_ingested",
+            "summary": "Ingested knowledge text with 10 extracted claims."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "evidence_03843d587103",
+            "subject": "Cookie",
+            "predicate": "is-a",
+            "object": "Food",
+            "statement": "Cookie is a Food.",
+            "status": "provisional",
+            "confidence": 0.58
+          }
+        ],
+        "unknown": false
+      },
+      "used_concepts": [
+        "Cookie"
+      ],
+      "used_relations": [],
+      "used_event_ids": [],
+      "used_evidence_ids": [],
+      "confidence": 0.0,
+      "insufficient_memory": true,
+      "llm_available": true,
+      "source": "no_direct_grounded_support",
+      "recall": {
+        "anchor_names": [
+          "Cookie"
+        ],
+        "anchor_ids": [
+          "concept_0a3bbc277e7a"
+        ],
+        "concept_ids": [
+          "concept_0a3bbc277e7a",
+          "concept_7492e0bcf7c8",
+          "concept_8fef56f75ce7"
+        ],
+        "loaded_concepts": [
+          "Cookie",
+          "Food",
+          "Fruit"
+        ],
+        "evidence_ids": [
+          "evidence_03843d587103",
+          "evidence_05d603dc6e76",
+          "evidence_9a9e48c5f1ef"
+        ]
+      }
+    }
+  },
+  "validation_observations": [
+    "Apple belongs to what? -> Based on my current memory, Apple belongs to Fruit.",
+    "What examples does Fruit have? -> Based on my current memory, examples of Fruit include Apple, Grape.",
+    "Is Fruit a Food? -> Based on my current memory, yes, Fruit is a Food.",
+    "Is Food a Fruit? -> I do not know yet whether Food is a Fruit from my current memory.",
+    "What color is Cookie? -> 我现在不知道，因为我的记忆里还没有足够直接的依据来回答这个问题。",
+    "Is Cookie a dessert? -> 我现在不知道，因为我的记忆里还没有足够直接的依据来回答这个问题。"
+  ],
+  "remaining_issues": []
+}

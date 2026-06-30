@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Food is edible",
+    "subject": "Food",
+    "predicate": "edibility",
+    "object": "edible"
+  },
+  "source_type": "llm_knowledge_text",
+  "source_identity": "user_knowledge_text_llm",
+  "refs": [
+    "knowledge_text_e9fbde395896",
+    "experience_538621056f54"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_b5f6cd9f40fa",
+  "timestamp": "2026-06-30T20:21:04.092021+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

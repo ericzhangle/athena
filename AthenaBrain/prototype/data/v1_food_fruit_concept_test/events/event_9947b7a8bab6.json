@@ -1,0 +1,195 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 3 extracted claims.",
+  "source": "mock_reference_answer_for_food_fruit_relation",
+  "payload": {
+    "input_text": "Fruit is a Food.",
+    "experience_id": "experience_d175e5f0bb52",
+    "report_id": "knowledge_ingestion_report_416488dfdfef",
+    "claim_count": 3,
+    "evidence_ids": [
+      "evidence_8fe9fb58f44b",
+      "evidence_c90434a9253b",
+      "evidence_d6490d840d74"
+    ],
+    "updated_concepts": [
+      "Food",
+      "Fruit"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_3682b38b5921",
+        "concept": "Apple",
+        "question": "Apple 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+        "reason": "attribute_scope_unclear",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "attribute_scope_unclear",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_6eaa57f65bcb",
+        "concept": "Food",
+        "question": "Food 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+        "reason": "attribute_scope_unclear",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "attribute_scope_unclear",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_c8818d7e21a0",
+        "concept": "Cookie",
+        "question": "Cookie 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_fa548944e403",
+        "concept": "Food",
+        "question": "Food 的共同特征是什么？这些例子为什么都属于 Food？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_088b2c954edb",
+        "concept": "Grape",
+        "question": "Grape 的 edibility 是普遍特征、常见特征，还是只适用于部分例子？",
+        "reason": "attribute_scope_unclear",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "attribute_scope_unclear",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_0503b59693d4",
+        "concept": "Food",
+        "question": "Food 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_b6fe7d264136"
+  },
+  "event_id": "event_9947b7a8bab6",
+  "timestamp": "2026-06-29T21:07:02.980962+00:00"
+}

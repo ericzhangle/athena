@@ -1,0 +1,202 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 8 extracted claims.",
+  "source": "user_knowledge_text_llm",
+  "payload": {
+    "input_text": "Apple is a Fruit. Grape is a Fruit. Fruit is a Food. Food is edible.",
+    "experience_id": "experience_0bc14217297e",
+    "report_id": "knowledge_ingestion_report_4d75aecdaeb6",
+    "claim_count": 8,
+    "evidence_ids": [
+      "evidence_10a7956b6004",
+      "evidence_3bb016d7219f",
+      "evidence_f5df846f5641",
+      "evidence_224d703647f6",
+      "evidence_91ab94b80276",
+      "evidence_9d1c8885d39a",
+      "evidence_31b7150bb250",
+      "evidence_cc073e86249f"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "Food",
+      "Fruit",
+      "Grape"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_d8c1b00dca87",
+        "concept": "Apple",
+        "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_61e8c2a03783",
+        "concept": "Food",
+        "question": "Food 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_93c6c0ff4809",
+        "concept": "Apple",
+        "question": "Is Apple a type of Food?",
+        "reason": "Apple is a Fruit and Fruit is a Food",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "Apple is a Fruit and Fruit is a Food",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_d3550a4ac6d9",
+        "concept": "Fruit",
+        "question": "Can all Fruits be eaten?",
+        "reason": "Fruit is a Food and Food is edible",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "Fruit is a Food and Food is edible",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_75c8843c6738",
+        "concept": "Fruit",
+        "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_2a6b68fd1f1b",
+        "concept": "Grape",
+        "question": "Grape 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_4f547a1c92ed",
+        "concept": "Food",
+        "question": "What makes something a Food?",
+        "reason": "Food is defined as edible",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "Food is defined as edible",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_a7d51d121e48"
+  },
+  "event_id": "event_dbb52889fabc",
+  "timestamp": "2026-06-30T21:07:07.245036+00:00"
+}

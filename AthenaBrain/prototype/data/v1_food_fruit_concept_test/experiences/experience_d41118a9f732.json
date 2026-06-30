@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Food is something edible.",
+      "ref": "knowledge_text_d47ea155bc79"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "v1_food_fruit_curriculum",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_d41118a9f732",
+  "timestamp": "2026-06-29T21:07:02.725414+00:00",
+  "processed": false,
+  "immutable": true
+}

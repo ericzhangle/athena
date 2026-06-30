@@ -1,0 +1,46 @@
+{
+  "name": "Food",
+  "display_name": null,
+  "concept_id": "concept_7492e0bcf7c8",
+  "status": "forming",
+  "maturity": "early",
+  "confidence": 0.375,
+  "created_at": "2026-06-30T21:43:12.515483+00:00",
+  "updated_at": "2026-06-30T21:43:12.523954+00:00",
+  "description": "An early parent concept for Food, abstracted from examples: Cookie, Fruit.",
+  "attributes": [
+    {
+      "name": "edibility",
+      "value": "edible",
+      "confidence": 0.5,
+      "evidence_refs": [
+        "evidence_05d603dc6e76"
+      ],
+      "scope": "knowledge_text",
+      "generalization_status": "provisional_from_text"
+    }
+  ],
+  "relations": [],
+  "evidence_refs": [
+    "evidence_05d603dc6e76"
+  ],
+  "open_questions": [
+    {
+      "question": "Food 的共同特征是什么？这些例子为什么都属于 Food？",
+      "reason": "parent_concept_needs_common_attributes"
+    }
+  ],
+  "examples": [
+    {
+      "concept": "Cookie",
+      "concept_id": "concept_0a3bbc277e7a",
+      "relation": "is-a"
+    },
+    {
+      "concept": "Fruit",
+      "concept_id": "concept_8fef56f75ce7",
+      "relation": "is-a"
+    }
+  ],
+  "counterexamples": []
+}

@@ -47,7 +47,7 @@ HTML = r"""<!doctype html>
 <body>
   <header>
     <h1>Athena Brain Console</h1>
-    <div class="muted">本地原型控制台：查看概念成长、证据状态，并进行无 LLM 的有限问答。</div>
+    <div class="muted">本地原型控制台：查看概念成长、证据状态，并使用 grounded retrieval + 本地 LLM 语言中枢问答。</div>
   </header>
   <main>
     <aside>
@@ -76,7 +76,7 @@ HTML = r"""<!doctype html>
             <button onclick="ask()">提问</button>
           </div>
           <pre id="answer"></pre>
-          <div class="muted">无 LLM 模式支持：描述/特点/知道什么 + 概念名，例如“描述 Apple”“Fruit 有什么特点”。</div>
+          <div class="muted">回答会先检索 Athena 自己的概念/关系/事件/证据，再交给本地 LLM 组织语言；如果本地模型未配置或记忆不足，会明确说明。</div>
         </div>
       </div>
       <h3>Athena 的主动问题 / 好奇心</h3>
@@ -86,7 +86,10 @@ HTML = r"""<!doctype html>
       <h3>输入知识文章</h3>
       <div class="muted">把一段知识交给 Athena。她会拆成 provisional claims，更新概念，并提出新的好奇问题。</div>
       <textarea id="knowledgeText" placeholder="在这里粘贴一段知识文章，例如关于水果、维生素C、膳食纤维的说明..."></textarea>
-      <div class="row"><button onclick="ingestKnowledge()">吸收这段知识</button></div>
+      <div class="row">
+        <button onclick="ingestKnowledge()">规则方式吸收</button>
+        <button onclick="ingestKnowledgeWithLlm()">LLM 方式吸收</button>
+      </div>
       <pre id="knowledgeResult"></pre>
       <h3>规则 / 推理</h3>
       <div class="muted">规则来自用户回答，推理属性会低置信度写入相关概念，并可关闭已能推断的问题。</div>
@@ -202,7 +205,8 @@ HTML = r"""<!doctype html>
     }
 
     async function loadCuriosity() {
-      const data = await api(`/api/curiosity?dataset=${encodeURIComponent(currentDataset)}`);
+      const conceptParam = currentConcept ? `&concept=${encodeURIComponent(currentConcept)}` : "";
+      const data = await api(`/api/curiosity?dataset=${encodeURIComponent(currentDataset)}${conceptParam}`);
       const node = document.getElementById("curiosity");
       node.innerHTML = "";
       if (!data.questions.length) {
@@ -261,6 +265,26 @@ HTML = r"""<!doctype html>
         `吸收 claims: ${data.claim_count}`,
         `生成 evidence: ${data.evidence_count}`,
         `更新概念: ${data.updated_concepts.join(", ")}`
+      ].join("\n");
+      document.getElementById("knowledgeResult").textContent = summary + "\n\n" + JSON.stringify(data, null, 2);
+      await loadConcepts();
+      await loadCuriosity();
+      await loadRules();
+    }
+
+    async function ingestKnowledgeWithLlm() {
+      const text = document.getElementById("knowledgeText").value;
+      const data = await api("/api/knowledge/ingest_llm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ dataset: currentDataset, text })
+      });
+      const summary = [
+        `吸收 claims: ${data.claim_count}`,
+        `生成 evidence: ${data.evidence_count}`,
+        `更新概念: ${data.updated_concepts.join(", ")}`,
+        `LLM concepts: ${((data.llm_parse || {}).concepts || []).length}`,
+        `LLM relations: ${((data.llm_parse || {}).relations || []).length}`
       ].join("\n");
       document.getElementById("knowledgeResult").textContent = summary + "\n\n" + JSON.stringify(data, null, 2);
       await loadConcepts();
@@ -330,13 +354,13 @@ class AthenaConsoleHandler(BaseHTTPRequestHandler):
             engine = engine_for(dataset)
             concepts = [
                 {
-                    "name": concept.name,
-                    "maturity": concept.maturity,
-                    "confidence": concept.confidence,
-                    "attributes": len(concept.attributes),
-                    "relations": len(concept.relations),
+                    "name": concept["name"],
+                    "maturity": concept["maturity"],
+                    "confidence": concept["confidence"],
+                    "attributes": 0,
+                    "relations": 0,
                 }
-                for concept in sorted(engine.graph.all_concepts(), key=lambda item: item.name)
+                for concept in engine.list_known_concepts()
             ]
             self._send_json({"concepts": concepts})
             return
@@ -345,6 +369,7 @@ class AthenaConsoleHandler(BaseHTTPRequestHandler):
             dataset = query.get("dataset", [default_dataset()])[0]
             name = query.get("name", [""])[0]
             engine = engine_for(dataset)
+            engine.recall_concepts_into_working_memory([resolve_name(name)], hops=2)
             concept = engine.graph.get_or_create(resolve_name(name))
             self._send_json({
                 "concept": concept_to_dict(concept),
@@ -354,8 +379,14 @@ class AthenaConsoleHandler(BaseHTTPRequestHandler):
         if parsed.path == "/api/curiosity":
             query = parse_qs(parsed.query)
             dataset = query.get("dataset", [default_dataset()])[0]
+            concept = query.get("concept", [""])[0]
             engine = engine_for(dataset)
-            self._send_json({"questions": engine.propose_curiosity_questions(limit=24)})
+            if concept:
+                engine.recall_concepts_into_working_memory([resolve_name(concept)], hops=2)
+            self._send_json({
+                "questions": engine.propose_curiosity_questions(limit=24),
+                "working_memory": engine.working_memory_summary(),
+            })
             return
         if parsed.path == "/api/rules":
             query = parse_qs(parsed.query)
@@ -392,6 +423,15 @@ class AthenaConsoleHandler(BaseHTTPRequestHandler):
             dataset = payload.get("dataset") or default_dataset()
             engine = engine_for(dataset)
             result = engine.ingest_knowledge_text(
+                text=payload.get("text", ""),
+            )
+            self._send_json(result)
+            return
+        if parsed.path == "/api/knowledge/ingest_llm":
+            payload = self._read_json()
+            dataset = payload.get("dataset") or default_dataset()
+            engine = engine_for(dataset)
+            result = engine.ingest_knowledge_with_llm(
                 text=payload.get("text", ""),
             )
             self._send_json(result)
@@ -491,19 +531,14 @@ def extract_concept_name(question: str, concepts: list[str]) -> str | None:
 
 def answer_question(dataset: str, question: str) -> dict:
     engine = engine_for(dataset)
-    concept_names = [concept.name for concept in engine.graph.all_concepts()]
-    concept_name = extract_concept_name(question, concept_names)
-    if not concept_name:
-        return {
-            "answer": (
-                "我现在还没有 LLM，所以只能回答有限的问题。"
-                "你可以问：描述 Apple、Fruit 有什么特点、描述塑料苹果。"
-            ),
-            "concept": None,
-        }
+    result = engine.answer_grounded_question(question=question)
+    concept_names = result.get("used_concepts") or result.get("grounded_bundle", {}).get("matched_concepts", [])
     return {
-        "answer": engine.describe_concept(concept_name),
-        "concept": concept_name,
+        "answer": result["answer"],
+        "concept": concept_names[0] if concept_names else None,
+        "grounded_bundle": result.get("grounded_bundle", {}),
+        "llm_available": result.get("llm_available", False),
+        "source": result.get("source", "unknown"),
     }
 
 

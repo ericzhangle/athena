@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Grape is a Fruit.",
+      "ref": "knowledge_text_578815e1bf9e"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "v1_food_fruit_curriculum",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_cca9734645b5",
+  "timestamp": "2026-06-29T21:07:02.515987+00:00",
+  "processed": false,
+  "immutable": true
+}

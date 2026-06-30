@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Apple",
+    "subject": "Apple",
+    "predicate": "mentioned_in_llm_parse",
+    "object": "mentioned"
+  },
+  "source_type": "llm_knowledge_text",
+  "source_identity": "grounded_leakage_test_setup",
+  "refs": [
+    "knowledge_text_15cde9489c17",
+    "experience_0020ffba2755"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_ee7f05de94e2",
+  "timestamp": "2026-06-30T21:43:12.514310+00:00",
+  "sample_id": null,
+  "validation_events": []
+}

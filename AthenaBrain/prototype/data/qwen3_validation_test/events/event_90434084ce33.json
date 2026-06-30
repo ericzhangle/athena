@@ -1,0 +1,203 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 9 extracted claims.",
+  "source": "user_knowledge_text_llm",
+  "payload": {
+    "input_text": "Apple is a Fruit. Grape is a Fruit. Fruit is a Food. Food is edible.",
+    "experience_id": "experience_a01035532685",
+    "report_id": "knowledge_ingestion_report_f8850520f951",
+    "claim_count": 9,
+    "evidence_ids": [
+      "evidence_2a1c8f5031cb",
+      "evidence_91135730f6b8",
+      "evidence_421e83893a57",
+      "evidence_1a4f338c928f",
+      "evidence_50806791982e",
+      "evidence_512a35e61b39",
+      "evidence_56377d172dc9",
+      "evidence_5a8884e03297",
+      "evidence_c79d6dfd09e6"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "Food",
+      "Fruit",
+      "Grape"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_d8c1b00dca87",
+        "concept": "Apple",
+        "question": "Apple 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_61e8c2a03783",
+        "concept": "Food",
+        "question": "Food 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_9b731e09b035",
+        "concept": "Food",
+        "question": "除了这些例子，什么样的东西也可以属于 Food？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_593dc40ad5c1",
+        "concept": "Apple",
+        "question": "Is Apple related to any other food category?",
+        "reason": "To explore its classification beyond Fruit",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "To explore its classification beyond Fruit",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_5f9f12005f72",
+        "concept": "Fruit",
+        "question": "Are all Fruits edible?",
+        "reason": "To check if all Fruits share the same edibility attribute",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "To check if all Fruits share the same edibility attribute",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_75c8843c6738",
+        "concept": "Fruit",
+        "question": "Fruit 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_2a6b68fd1f1b",
+        "concept": "Grape",
+        "question": "Grape 到底是什么？它最关键、最能区分它的特征是什么？",
+        "reason": "identity_gap",
+        "priority": 0.98,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "identity_gap",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_62e3c45a9e80",
+        "concept": "Food",
+        "question": "What are the properties of Food?",
+        "reason": "To understand the broader characteristics of Food",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "To understand the broader characteristics of Food",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      },
+      {
+        "question_id": "curiosity_518151ef617b",
+        "concept": "Fruit",
+        "question": "Fruit 的共同特征是什么？这些例子为什么都属于 Fruit？",
+        "reason": "parent_concept_needs_common_attributes",
+        "priority": 0.78,
+        "domain": "open",
+        "status": "open",
+        "score_factors": {
+          "base": "parent_concept_needs_common_attributes",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.12
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_55056fdef1c2"
+  },
+  "event_id": "event_90434084ce33",
+  "timestamp": "2026-06-30T21:05:28.378179+00:00"
+}

@@ -1,0 +1,158 @@
+{
+  "event_type": "grounded_question_answered",
+  "summary": "Answered grounded question: Is Food a Fruit?",
+  "source": "local_llm_language_hub",
+  "payload": {
+    "question": "Is Food a Fruit?",
+    "grounded_bundle": {
+      "question": "Is Food a Fruit?",
+      "question_type": "is_a",
+      "requested_attribute": null,
+      "matched_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "concepts": [
+        {
+          "name": "Fruit",
+          "maturity": "early",
+          "description": "An early parent concept for Fruit, abstracted from examples: Apple, Grape.",
+          "attributes": [],
+          "relations": [
+            {
+              "relation_type": "is-a",
+              "target": "Food",
+              "confidence": 0.5
+            }
+          ]
+        },
+        {
+          "name": "Food",
+          "maturity": "early",
+          "description": "An early parent concept for Food, abstracted from examples: Cookie, Fruit.",
+          "attributes": [
+            {
+              "name": "edibility",
+              "value": "edible",
+              "scope": "knowledge_text",
+              "confidence": 0.5
+            }
+          ],
+          "relations": []
+        }
+      ],
+      "relations": [
+        [
+          "Fruit",
+          "is-a",
+          "Food"
+        ]
+      ],
+      "examples": {
+        "Fruit": [
+          "Apple",
+          "Grape"
+        ],
+        "Food": [
+          "Cookie",
+          "Fruit"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event_59aa9ffa22f9",
+          "event_type": "grounded_question_answered",
+          "summary": "Answered grounded question: What examples does Fruit have?"
+        },
+        {
+          "event_id": "event_be58443da1b8",
+          "event_type": "grounded_question_answered",
+          "summary": "Answered grounded question: Apple belongs to what?"
+        },
+        {
+          "event_id": "event_bfd19c19e594",
+          "event_type": "grounded_question_answered",
+          "summary": "Answered grounded question: Is Fruit a Food?"
+        },
+        {
+          "event_id": "event_d7c35a922d29",
+          "event_type": "knowledge_ingested",
+          "summary": "Ingested knowledge text with 10 extracted claims."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "evidence_023fe21cba52",
+          "subject": "Apple",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Apple is a Fruit.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_03843d587103",
+          "subject": "Cookie",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Cookie is a Food.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_05d603dc6e76",
+          "subject": "Food",
+          "predicate": "edibility",
+          "object": "edible",
+          "statement": "Food is edible.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_5767173f5852",
+          "subject": "Grape",
+          "predicate": "is-a",
+          "object": "Fruit",
+          "statement": "Grape is a Fruit.",
+          "status": "provisional",
+          "confidence": 0.58
+        },
+        {
+          "evidence_id": "evidence_9a9e48c5f1ef",
+          "subject": "Fruit",
+          "predicate": "is-a",
+          "object": "Food",
+          "statement": "Fruit is a Food.",
+          "status": "provisional",
+          "confidence": 0.58
+        }
+      ],
+      "unknown": false
+    },
+    "llm_result": {
+      "answer": "I do not know yet whether Food is a Fruit from my current memory.",
+      "used_concepts": [
+        "Fruit",
+        "Food"
+      ],
+      "used_relations": [],
+      "used_event_ids": [
+        "event_59aa9ffa22f9",
+        "event_be58443da1b8",
+        "event_bfd19c19e594",
+        "event_d7c35a922d29"
+      ],
+      "used_evidence_ids": [
+        "evidence_023fe21cba52",
+        "evidence_03843d587103",
+        "evidence_05d603dc6e76",
+        "evidence_5767173f5852",
+        "evidence_9a9e48c5f1ef"
+      ],
+      "confidence": 0.2,
+      "insufficient_memory": true
+    }
+  },
+  "event_id": "event_ae655d15a558",
+  "timestamp": "2026-06-30T21:43:12.678107+00:00"
+}

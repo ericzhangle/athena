@@ -1,0 +1,25 @@
+{
+  "raw_inputs": [
+    {
+      "type": "text",
+      "speaker": "user",
+      "content": "Car is a Vehicle.",
+      "ref": "knowledge_text_759f13a29bd9"
+    }
+  ],
+  "perception_refs": [],
+  "athena_questions": [],
+  "user_feedback": [],
+  "tags": [
+    "knowledge_ingestion",
+    "article_text"
+  ],
+  "sample_id": null,
+  "source_identity": "setup",
+  "source_diversity": "single_text_source",
+  "independence_score": 0.45,
+  "experience_id": "experience_762d91712b0c",
+  "timestamp": "2026-06-30T21:50:45.078097+00:00",
+  "processed": false,
+  "immutable": true
+}

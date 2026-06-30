@@ -21,6 +21,7 @@ class JsonMemoryStore:
             "states": self.root / "states",
             "perceptions": self.root / "perceptions",
             "experiences": self.root / "experiences",
+            "events": self.root / "events",
             "evidence": self.root / "evidence",
             "concepts": self.root / "concepts",
             "rules": self.root / "rules",

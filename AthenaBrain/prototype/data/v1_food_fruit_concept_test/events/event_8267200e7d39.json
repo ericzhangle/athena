@@ -1,0 +1,76 @@
+{
+  "event_type": "knowledge_ingested",
+  "summary": "Ingested knowledge text with 3 extracted claims.",
+  "source": "v1_food_fruit_curriculum",
+  "payload": {
+    "input_text": "Apple is a Fruit.",
+    "experience_id": "experience_39733689d601",
+    "report_id": "knowledge_ingestion_report_15a2d4116d87",
+    "claim_count": 3,
+    "evidence_ids": [
+      "evidence_77f7ec04d36c",
+      "evidence_59f732dee6c8",
+      "evidence_8fe5cdb2df42"
+    ],
+    "updated_concepts": [
+      "Apple",
+      "Fruit"
+    ],
+    "generated_questions": [
+      {
+        "question_id": "curiosity_1c7d20c91cc5",
+        "concept": "Fruit",
+        "question": "除了这些例子，什么样的东西也可以属于 Fruit？",
+        "reason": "more_examples_needed",
+        "priority": 0.94,
+        "domain": "boundary",
+        "status": "open",
+        "score_factors": {
+          "base": "more_examples_needed",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.16,
+          "redundancy_penalty": 0.0
+        }
+      },
+      {
+        "question_id": "curiosity_8b543ad7996f",
+        "concept": "Apple",
+        "question": "Apple 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      },
+      {
+        "question_id": "curiosity_a9bfe5e7965f",
+        "concept": "Fruit",
+        "question": "Fruit 是什么？它和当前学习主题有什么关系？",
+        "reason": "mentioned_concept_needs_identity",
+        "priority": 0.74,
+        "domain": "identity",
+        "status": "open",
+        "score_factors": {
+          "base": "mentioned_concept_needs_identity",
+          "uncertainty": 0.16,
+          "novelty": 0.12,
+          "conflict": 0.0,
+          "abstraction": 0.04,
+          "redundancy_penalty": 0.16
+        }
+      }
+    ],
+    "integration_report_id": "cognitive_integration_report_1e32a2b33f04"
+  },
+  "event_id": "event_8267200e7d39",
+  "timestamp": "2026-06-29T21:07:02.066376+00:00"
+}

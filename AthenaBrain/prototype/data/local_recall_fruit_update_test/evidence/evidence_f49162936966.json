@@ -1,0 +1,20 @@
+{
+  "claim": {
+    "statement": "Car is a Vehicle",
+    "subject": "Car",
+    "predicate": "mentioned_in_knowledge_text",
+    "object": "mentioned"
+  },
+  "source_type": "user_knowledge_text",
+  "source_identity": "setup",
+  "refs": [
+    "knowledge_text_80ba6e6eba06",
+    "experience_94ec0a890bef"
+  ],
+  "status": "provisional",
+  "confidence": 0.58,
+  "evidence_id": "evidence_f49162936966",
+  "timestamp": "2026-06-30T21:50:45.017389+00:00",
+  "sample_id": null,
+  "validation_events": []
+}
